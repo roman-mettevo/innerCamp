@@ -1,0 +1,1597 @@
+//done
+section.workshop__1 {
+  @extend %flex;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/workshop/top-background.jpg);
+  background-position: center center;
+  background-size: cover;
+  min-height: 754px;
+  @include wid(600) {
+    min-height: 812px;
+  }
+  .col {
+    position: relative;
+    @include wid(600) {
+      padding: 0 20px;
+    }
+    &::before {
+      @extend %bef-aft;
+      position: absolute;
+      left: 0;
+      top: -20px;
+      height: 512px;
+      width: 2px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 52.68%,
+        rgba(255, 255, 255, 0) 99.15%
+      );
+      @include wid(992-1199) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @include wid(991) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @include wid(600) {
+        display: none;
+      }
+    }
+    &::after {
+      @extend %bef-aft;
+      position: absolute;
+      right: 0;
+      top: -20px;
+      height: 512px;
+      width: 2px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 52.68%,
+        rgba(255, 255, 255, 0) 99.15%
+      );
+      @include wid(992-1199) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @include wid(991) {
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      @include wid(600) {
+        display: none;
+      }
+    }
+  }
+  .title {
+    color: var(--white-color-1);
+    text-align: center;
+    max-width: 982px;
+    margin: 0 auto 30px;
+    line-height: 1.02em;
+    position: relative;
+    @include wid(600) {
+      font-size: 36px;
+      line-height: 1.06em;
+      padding: 30px 20px;
+      letter-spacing: -0.035em;
+    }
+    &::before {
+      @extend %bef-aft;
+      position: absolute;
+      left: 0;
+      top: 0;
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 52.68%,
+        rgba(255, 255, 255, 0) 99.15%
+      );
+      display: none;
+      @include wid(600) {
+        display: block;
+      }
+    }
+    &::after {
+      @extend %bef-aft;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      height: 2px;
+      width: 100%;
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 52.68%,
+        rgba(255, 255, 255, 0) 99.15%
+      );
+      display: none;
+      @include wid(600) {
+        display: block;
+      }
+    }
+  }
+  p {
+    color: var(--white-color-1);
+    letter-spacing: 0.005em;
+    font: 18px/1.65em var(--ob);
+    text-align: center;
+    max-width: 525px;
+    margin: 0 auto 30px;
+    @include wid(601-991) {
+      font: 16px/1.64em var(--ob);
+    }
+    @include wid(600) {
+      font: 14px/1.62em var(--ob);
+      padding: 0 10px;
+    }
+  }
+  .bundle {
+    max-width: 236px;
+    margin: 0 auto;
+    @include wid(600) {
+      max-width: 314px;
+    }
+  }
+}
+
+section.workshop__2 {
+  padding: 180px 0;
+  background: url('../img/workshop/bg.svg') repeat;
+  @include wid(601-991) {
+    padding: 130px 0 150px;
+  }
+  @include wid(600) {
+    padding: 80px 0 120px;
+  }
+  .title {
+    color: var(--green-color-5);
+  }
+  .col {
+    @include wid(1500) {
+      padding: 0;
+    }
+    @include wid(600) {
+      padding: 0 30px;
+    }
+  }
+  .col:nth-child(1) {
+    margin-bottom: 180px;
+    @include wid(601-991) {
+      margin-bottom: 150px;
+    }
+    @include wid(600) {
+      margin-bottom: 120px;
+    }
+    .notice {
+      display: inline-flex;
+      background: var(--green-color-5);
+      border-radius: 23px;
+      padding: 8px 21px;
+      color: var(--white-color-1);
+      font: 18px/1.65em var(--ob);
+      letter-spacing: 0.005em;
+      margin-bottom: 30px;
+      @include wid(601-991) {
+        font: 16px/1.65em var(--ob);
+      }
+      @include wid(600) {
+        font: 14px/1.65em var(--ob);
+      }
+    }
+    .card {
+      border-radius: 34px;
+      overflow: hidden;
+    }
+    .card-body {
+      display: flex;
+      @include wid(991) {
+        flex-direction: column;
+      }
+      @include wid(600) {
+      }
+    }
+    .img {
+      max-width: 721px;
+      width: 100%;
+      background: url(../img/workshop/man-and-woman.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center center;
+      img {
+        width: 100%;
+        display: block;
+      }
+      @include wid(991) {
+        min-height: 189px;
+        max-width: unset;
+      }
+    }
+    .bundle {
+      margin-bottom: 41px;
+      position: relative;
+      @include wid(600) {
+        margin-bottom: 30px;
+      }
+      &::before {
+        @extend %bef-aft;
+        position: absolute;
+        bottom: -41px;
+        background: linear-gradient(
+          90deg,
+          rgba(182, 135, 66, 0) 0%,
+          #b68742 52.68%,
+          rgba(182, 135, 66, 0) 99.15%
+        );
+        height: 2px;
+        width: 100%;
+        @include wid(600) {
+          bottom: -30px;
+        }
+      }
+    }
+    .description {
+      width: 100%;
+      max-width: 521px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 84px 69px;
+      position: relative;
+      @include wid(991) {
+        max-width: unset;
+      }
+      @include wid(600) {
+        padding: 30px 22px;
+      }
+    }
+    .info-list {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+    .info-item {
+      white-space: nowrap;
+      position: relative;
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        @include wid(600) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .info-data {
+      display: flex;
+      align-items: center;
+      font: 24px/1.48em var(--ob);
+      letter-spacing: 0.005em;
+      color: var(--green-color-8);
+      padding-left: 44px;
+      margin-top: 41px;
+      @include wid(600) {
+        font-size: 14px;
+        padding-left: 30px;
+        margin-top: 30px;
+        margin-bottom: 8px !important;
+      }
+      &::before {
+        @extend %bef-aft;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../img/workshop/calendar-days.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        @include wid(600) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .info-time {
+      display: flex;
+      align-items: flex-start;
+      font: 24px/1.48em var(--ob);
+      letter-spacing: 0.005em;
+      color: var(--green-color-8);
+      padding-left: 44px;
+      @include wid(600) {
+        font-size: 14px;
+        padding-left: 30px;
+      }
+      span {
+        display: block;
+        font: 14px/1.48em var(--o);
+        @include wid(600) {
+          font-size: 10px;
+        }
+      }
+      &::before {
+        @extend %bef-aft;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: url(../img/workshop/clock-circle.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        @include wid(600) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+    .check-time {
+      font: 18px/1.65em var(--ob);
+      padding: 12px 18px 12px 60px;
+      background: var(--orange-color-3);
+      border-radius: 31px;
+      display: inline-flex;
+      align-items: center;
+      color: var(--white-color-1);
+      @include wid(600) {
+        font: 14px/1.65em var(--ob);
+        padding: 8px 10px 8px 40px;
+      }
+      &::before {
+        @extend %bef-aft;
+        width: 32px;
+        height: 32px;
+        position: absolute;
+        left: 18px;
+        top: 12px;
+        background: url(../img/workshop/earth.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        @include wid(600) {
+          font: 14px/1.65em var(--ob);
+          width: 20px;
+          height: 20px;
+          top: 10px;
+          left: 10px;
+        }
+      }
+    }
+    .virtual-workshop {
+      font: 24px/1.65em var(--ob);
+      display: inline-flex;
+      letter-spacing: 0.005em;
+      color: var(--green-color-5);
+      padding: 0 17px;
+      background: var(--green-color-1);
+      border-radius: 31px;
+      @include wid(600) {
+        font: 14px/1.48em var(--ob);
+        padding: 3px 10px;
+      }
+    }
+    .description {
+      background: var(--white-color-1);
+    }
+    .card-footer {
+      background: var(--green-color-5);
+      color: var(--white-color-1);
+      font: 20px/1.65em var(--o);
+      letter-spacing: 0.005em;
+      padding: 39px 12px;
+      text-align: center;
+      @include wid(601-991) {
+        font: 16px/1.65em var(--o);
+        padding: 27px 15px;
+      }
+      @include wid(600) {
+        font: 12px/1.65em var(--o);
+        padding: 15px;
+      }
+    }
+  }
+  .col:nth-child(2) {
+    margin-bottom: 180px;
+    display: flex;
+    @include wid(1500) {
+      column-gap: 52px;
+    }
+    @include wid(992) {
+      column-gap: 15px;
+    }
+    @include wid(601-991) {
+      margin-bottom: 150px;
+      column-gap: 15px;
+    }
+    @include wid(600) {
+      margin-bottom: 120px;
+      row-gap: 30px;
+      flex-direction: column-reverse;
+    }
+    .text {
+      @include wid(601-991) {
+        width: 65%;
+      }
+    }
+    .title {
+      margin-bottom: 30px;
+      line-height: 0.94em;
+      @include wid(601-991) {
+        font: 32px/1.2em var(--p);
+      }
+      @include wid(600) {
+        font: 28px/1.36em var(--p);
+      }
+    }
+    p {
+      font: 18px/1.65em var(--o);
+      letter-spacing: 0.005em;
+      @include wid(601-991) {
+        font: 16px/1.65em var(--o);
+      }
+      @include wid(600) {
+        font: 14px/1.65em var(--o);
+      }
+      &:not(:last-child) {
+        color: var(--green-color-5);
+        margin-bottom: 25px;
+        @include wid(600) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .img {
+      max-width: 376px;
+      width: 100%;
+      @include wid(601-991) {
+        max-width: 35%;
+      }
+      @include wid(600) {
+        max-width: unset;
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        width: 100%;
+        border-radius: 34px;
+        @include wid(600) {
+          width: auto;
+        }
+      }
+    }
+  }
+  .col:nth-child(3) {
+    .title {
+      margin-bottom: 60px;
+      color: var(--green-color-5);
+      @include wid(601-991) {
+        margin-bottom: 30px;
+        font: 36px/1.65em var(--p);
+      }
+      @include wid(600) {
+        margin-bottom: 30px;
+        font: 28px/1.36em var(--p);
+      }
+    }
+    .teacher {
+      display: flex;
+      column-gap: 58px;
+      @include wid(1500) {
+        column-gap: 58px;
+      }
+      @include wid(992) {
+        column-gap: 20px;
+      }
+      @include wid(991) {
+        column-gap: 15px;
+      }
+      @include wid(600) {
+        align-items: center;
+      }
+    }
+    .text {
+      max-width: 675px;
+      width: 100%;
+    }
+    .heading {
+      padding-left: 39px;
+      position: relative;
+      color: var(--green-color-5);
+      font: 36px/1.65em var(--p);
+      margin-bottom: 20px;
+      @include wid(1500) {
+        font: 36px/1.65em var(--p);
+      }
+      @include wid(1200) {
+        font: 28px/1.65em var(--p);
+      }
+      @include wid(601-991) {
+        font: 26px/1.38em var(--p);
+      }
+      @include wid(600) {
+        font: 16px/1.12em var(--p);
+        padding-left: 0px;
+      }
+      &::before {
+        @extend %bef-aft;
+        position: absolute;
+        left: 0;
+        top: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        background: url(../img/workshop/mark.svg);
+        max-width: 23px;
+        width: 100%;
+        height: 54px;
+        @include wid(600) {
+          display: none;
+        }
+      }
+    }
+    ul.skills {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 55px;
+      @include wid(601-991) {
+        margin-bottom: 25px;
+        gap: 8px;
+      }
+      @include wid(600) {
+        margin-bottom: 15px;
+        gap: 8px;
+      }
+      li {
+        padding: 9px 21px;
+        background: var(--green-color-2);
+        border-radius: 31px;
+        color: var(--green-color-7);
+        font: 18px/1.65em var(--o);
+        letter-spacing: 0.005em;
+        @include wid(601-991) {
+          font: 14px/1.65em var(--o);
+          padding: 7px 18px;
+        }
+        @include wid(600) {
+          font: 10px/1.65em var(--o);
+          padding: 4px 14px;
+        }
+      }
+    }
+    p {
+      font: 18px/1.65em var(--o);
+      letter-spacing: 0.005em;
+      color: var(--green-color-7);
+      @include wid(601-991) {
+        font: 14px/1.65em var(--o);
+      }
+      @include wid(600) {
+        display: none;
+      }
+    }
+    .img {
+      max-width: 486px;
+      width: 100%;
+      img {
+        width: 100%;
+        border-radius: 34px;
+        @include wid(600) {
+          border-radius: 17px;
+        }
+      }
+    }
+  }
+}
+
+section.workshop__3 {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/workshop/section-3-bg.jpg);
+  padding-top: 172px;
+  @include wid(601-991) {
+    padding-top: 120px;
+  }
+  @include wid(600) {
+    padding-top: 67px;
+  }
+  .row:nth-child(1) {
+    .col {
+      position: relative;
+      display: flex;
+      align-items: flex-start;
+      @include wid(1500) {
+        padding: 0 25px 0 3px;
+        column-gap: 52px;
+      }
+      @include wid(992) {
+        column-gap: 20px;
+      }
+      @include wid(991) {
+        display: block;
+      }
+      @include wid(600) {
+        padding: 0 30px;
+      }
+    }
+    .iphone-banner {
+      max-width: 491px;
+      width: 100%;
+      height: 488px;
+      background: url(../img/workshop/inphone-bg.png);
+      background-size: cover;
+      border-radius: 34px;
+      border-style: solid;
+      border-color: #fff;
+      border-width: 2px 1px 1px 1px;
+      position: relative;
+      @media (max-width: 1500) {
+      }
+      @include wid(991) {
+        display: none;
+      }
+    }
+    .iphone-13 {
+      position: absolute;
+      max-width: 556px;
+      width: 100%;
+      height: 547px;
+      top: 50px;
+      left: 90px;
+      @media (max-width: 1500px) {
+        left: 0px;
+      }
+      @include wid(991) {
+        display: none;
+      }
+    }
+    .join-now-wrapper {
+      padding-top: 109px;
+      @media (min-width: 992px) and (max-width: 1500px) {
+        padding-top: 50px;
+      }
+      @include wid(991) {
+        padding-top: 0;
+      }
+    }
+    .join-now {
+      border: 2px dashed #f1efe8;
+      border-radius: 17px;
+      padding: 32px;
+      @include wid(601-991) {
+        padding: 23px;
+      }
+      @include wid(600) {
+        padding: 15px;
+      }
+    }
+    .heading {
+      font: 36px/1.53em var(--p);
+      color: #fff;
+      margin-bottom: 25px;
+      @include wid(601-991) {
+        font: 26px/1.49em var(--p);
+      }
+      @include wid(600) {
+        font: 16px/1.44em var(--p);
+      }
+    }
+    .bundle {
+      max-width: 236px;
+      @include wid(600) {
+        max-width: 285px;
+      }
+    }
+    .join-now-arrow {
+      background: url(../img/workshop/arrow.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      width: 294px;
+      height: 378px;
+      margin-left: 160px;
+      @media (min-width: 992px) and (max-width: 1500px) {
+        margin-left: 0px;
+      }
+      @include wid(991) {
+        background: url(../img/workshop/section-3-mobile-arrow.svg);
+        background-repeat: no-repeat;
+        width: 132px;
+        height: 110px;
+        margin: 0 auto 15px;
+      }
+    }
+  }
+  .row:nth-child(2) {
+    .col {
+      @include wid(600) {
+        padding: 0 30px;
+      }
+    }
+    .trial {
+      max-width: 1215px;
+      width: 100%;
+      border-width: 2px 1px 0 1px;
+      border-color: #fff;
+      border-style: solid;
+      padding: 54px 98px;
+      background: #f1efe8;
+      box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.25),
+        inset 5px 6px 14px rgba(0, 0, 0, 0.12);
+      border-radius: 34px;
+      margin-bottom: -75px;
+      position: relative;
+      @media (min-width: 992px) and (max-width: 1400px) {
+        padding: 40px 50px;
+      }
+      @include wid(601-991) {
+        padding: 37px;
+      }
+      @include wid(600) {
+        padding: 26px 35px;
+      }
+      &::before {
+        @extend %bef-aft;
+        position: absolute;
+        bottom: 69px;
+        right: 159px;
+        background: url(../img/workshop/InnerCamp_logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        width: 315px;
+        height: 546px;
+        @media (min-width: 1400px) and (max-width: 1600px) {
+          right: 20px;
+          bottom: 20px;
+        }
+        @media (min-width: 1200px) and (max-width: 1400px) {
+          width: 253px;
+          height: 440px;
+          right: 0;
+          bottom: 60px;
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+          bottom: 20px;
+          right: 50px;
+        }
+        @include wid(991) {
+          width: 154px;
+          height: 268px;
+          right: auto;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -265px;
+        }
+      }
+      &::after {
+        @extend %bef-aft;
+        position: absolute;
+        width: 812px;
+        height: 512px;
+        background: url(../img/workshop/iphone-12-pro.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        right: -82px;
+        bottom: -96px;
+        @media (min-width: 1400px) and (max-width: 1700px) {
+          width: 600px;
+          height: 500px;
+        }
+        @media (min-width: 1200px) and (max-width: 1400px) {
+          right: 0;
+          bottom: 20px;
+          width: 400px;
+          height: 400px;
+        }
+        @media (min-width: 992px) and (max-width: 1200px) {
+          right: -60px;
+          width: 600px;
+          height: 389px;
+          bottom: 141px;
+        }
+        @include wid(991) {
+          width: 353px;
+          height: 223px;
+          right: auto;
+          left: 50%;
+          transform: translateX(-50%);
+          bottom: -320px;
+        }
+      }
+    }
+    .heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--orange-color-3);
+      letter-spacing: 0.005em;
+      margin-bottom: 34px;
+      @include wid(601-991) {
+        margin-bottom: 24px;
+      }
+      @include wid(600) {
+        padding: 0 30px;
+        margin-bottom: 15px;
+        align-items: flex-start;
+      }
+      span {
+        font: 64px/1.65em var(--ob);
+        @media (min-width: 992px) and (max-width: 1700px) {
+          font: 50px/1.65em var(--ob);
+        }
+        @include wid(601-991) {
+          font: 37px/1.45em var(--ob);
+        }
+        @include wid(600) {
+          font: 24px/1.25em var(--ob);
+        }
+      }
+      strong {
+        color: var(--green-color-5);
+        font-family: var(--ob);
+      }
+
+      &::before {
+        @extend %bef-aft;
+        background: url(../img/workshop/7-days.svg);
+        background-size: contain;
+        background-position: center center;
+        background-repeat: no-repeat;
+        max-width: 106px;
+        width: 100%;
+        height: 106px;
+        margin-right: 30px;
+        @include wid(601-991) {
+          max-width: 60px;
+          height: 60px;
+          margin-right: 20px;
+        }
+        @include wid(600) {
+          max-width: 30px;
+          height: 30px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .trial-box {
+      padding: 70px;
+      background: #ffffff;
+      border-radius: 17px;
+      max-width: 491px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      @include wid(991) {
+        max-width: 100%;
+      }
+      @include wid(601-991) {
+        padding: 42px;
+      }
+      @include wid(600) {
+        padding: 15px;
+      }
+    }
+    .text {
+      margin-bottom: 38px;
+      @include wid(600) {
+        margin-bottom: 38px;
+      }
+      p {
+        font: 36px/1.65em var(--ob);
+        letter-spacing: 0.005em;
+        color: var(--green-color-5);
+        text-align: center;
+        @include wid(601-991) {
+          font: 27px/1.65em var(--ob);
+        }
+        @include wid(600) {
+          font: 18px/1.65em var(--ob);
+        }
+        strong {
+          color: var(--orange-color-3);
+          font-family: var(--ob);
+        }
+        &:not(:last-child) {
+          margin-bottom: 24px;
+          @include wid(601-991) {
+            margin-bottom: 12px;
+          }
+          @include wid(600) {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+    .bundle {
+      max-width: 236px;
+    }
+  }
+}
+
+section.workshop__4 {
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  z-index: 1;
+  background: url('../img/workshop/bg.svg') repeat;
+  .container {
+    min-height: 316px;
+    position: relative;
+    background: url(../img/workshop/section-5-bg.svg);
+    background-repeat: no-repeat;
+    background-position: 300px -600px;
+    @media (min-width: 992px) and (max-width: 1500px) {
+      background-position: 0 -600px;
+    }
+    @include wid(991) {
+      min-height: 492px;
+      background-size: 365px 365px;
+      background-position: 0 -200px;
+    }
+    &:before {
+      @extend %bef-aft;
+      position: absolute;
+      top: 40px;
+      left: 140px;
+      background: url(../img/workshop/section-5-arrow.svg);
+      background-size: contain !important;
+      background-repeat: no-repeat !important;
+      width: 811px;
+      height: 569px;
+      z-index: 0;
+      @include wid(601-991) {
+        background: url(../img/workshop/section-5-mobile-arrow.svg);
+        width: 300px;
+        top: auto;
+        height: 262px;
+        bottom: -125px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+      @include wid(600) {
+        background: url(../img/workshop/section-5-mobile-arrow.svg);
+        width: 300px;
+        top: auto;
+        height: 262px;
+        bottom: -67px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}
+
+section.workshop__5 {
+  //      background: var(--white-color-3) url(../img/ekzorcizm.svg) repeat center;
+  //      background: var(--white-color-3) url(../img/app__3_back.png) no-repeat center bottom 79px /cover;
+
+  position: relative;
+  overflow: hidden;
+
+  @include wid(992) {
+    padding: 65px 0 75px 0;
+
+    background: rgb(66, 79, 68);
+    background: linear-gradient(
+      90deg,
+      rgba(66, 79, 68, 1) 37%,
+      rgba(0, 0, 0, 0) 100%
+    );
+  }
+  @include wid(601-991) {
+    background: rgb(66, 79, 68);
+    background: linear-gradient(
+      180deg,
+      rgba(66, 79, 68, 1) 240px,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    padding-top: 50px;
+    padding-bottom: 0;
+  }
+  @include wid(600) {
+    background: rgb(66, 79, 68);
+    background: linear-gradient(
+      180deg,
+      rgba(66, 79, 68, 1) 170px,
+      rgba(0, 0, 0, 0) 100%
+    );
+
+    padding-top: 20px;
+    padding-bottom: 0;
+  }
+
+  & > .container > .row:nth-child(1) {
+    @include wid(992) {
+      padding-bottom: 80px;
+    }
+    @include wid(601-991) {
+      padding-bottom: 60px;
+    }
+    @include wid(600) {
+      padding-bottom: 40px;
+    }
+  }
+
+  & > .container {
+    z-index: 2;
+  }
+
+  & > .container {
+    &:before {
+      @extend %bef-aft;
+
+      @include wid(992) {
+        background: url(../img/app__4_line_bottom.svg) no-repeat left/cover;
+
+        max-width: 931px;
+        width: 100%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+      }
+
+      @include wid(991) {
+        background: url(../img/footer-line.svg) no-repeat center;
+        background-size: cover;
+
+        width: calc(100% - 40px);
+        height: 2px;
+        position: absolute;
+
+        left: 20px;
+
+        bottom: 0;
+      }
+    }
+  }
+
+  & > .container > .row {
+    position: relative;
+    &:before {
+      @extend %bef-aft;
+
+      @include wid(992) {
+        background: url(../img/app__4_line_left.svg) no-repeat center/cover;
+
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        left: 0;
+      }
+
+      @include wid(991) {
+        background: url(../img/app__4_line_left.svg) no-repeat center/contain;
+
+        width: 2px;
+        height: 100%;
+        position: absolute;
+        left: 20px;
+      }
+    }
+  }
+
+  video {
+    z-index: -1;
+
+    @include wid(992) {
+      width: 70%;
+      min-width: 70%;
+      right: 0;
+      margin-left: auto;
+    }
+    //    @include wid(991)      {   top: 250px !important;
+    //
+    //
+    //          width: 100%;
+    //    min-width:  100%;
+    //    right: 0;
+    //      left: 0;
+    //
+    //    }
+    @include wid(601-991) {
+      //      top: 250px !important;
+
+      position: relative;
+      width: 100%;
+      min-width: 100%;
+      right: 0;
+      left: 0;
+      min-height: inherit;
+    }
+
+    @include wid(600) {
+      //      top: 200px !important;
+      position: relative;
+      min-height: inherit;
+      width: 100%;
+      min-width: 100%;
+      right: 0;
+      left: 0;
+    }
+
+    //@include wid(991)      {
+    //
+    //  top: 50%;
+    //    width: 100%;
+    //    min-width: 100%;
+    //    right: 0;
+    //    margin-left: auto;
+    //
+    //}
+  }
+
+  .title {
+    color: #fff;
+    padding-left: 45px;
+
+    @include wid(992) {
+      margin-top: 55px;
+      margin-bottom: 18px;
+    }
+    @include wid(601-991) {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    @include wid(600) {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+
+  .bot__ {
+    @include wid(992) {
+      margin-left: 400px;
+    }
+
+    .bord-bundle {
+      padding: 0 30px;
+
+      @include wid(991) {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+  }
+}
+
+//done (absolute line)
+section.workshop__6 {
+  padding: 180px 0;
+  background: url('../img/workshop/bg.svg') repeat;
+  @include wid(601-991) {
+    padding: 150px 0 135px;
+  }
+  @include wid(600) {
+    padding: 120px 0 90px;
+  }
+  .col {
+    @include wid(1500) {
+      padding: 0;
+    }
+    @include wid(600) {
+      padding: 0 30px;
+    }
+  }
+  .title {
+    margin-bottom: 60px;
+    color: var(--green-color-5);
+    @include wid(601-991) {
+      margin-bottom: 45px;
+    }
+    @include wid(600) {
+      margin-bottom: 30px;
+    }
+  }
+  .list-and-photo {
+    display: flex;
+    row-gap: 30px;
+    @include wid(1500) {
+      column-gap: 50px;
+    }
+    @include wid(992) {
+      column-gap: 15px;
+    }
+    @include wid(991) {
+      flex-direction: column;
+    }
+  }
+  .list {
+    border: 2px dashed var(--green-color-5);
+    padding: 33px 41px;
+    position: relative;
+    border-radius: 34px;
+    max-width: 677px;
+    width: 100%;
+    @include wid(991) {
+      max-width: unset;
+      border-radius: 17px;
+    }
+    @include wid(601-991) {
+      padding: 24px 28px;
+    }
+    @include wid(600) {
+      padding: 15px;
+    }
+  }
+  .list-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    letter-spacing: 0.005em;
+    font: 18px/1.65em var(--o);
+    @include wid(601-991) {
+      font: 16px/1.65em var(--o);
+    }
+    @include wid(600) {
+      font: 14px/1.65em var(--o);
+    }
+    &::before {
+      @extend %bef-aft;
+      max-width: 34px;
+      width: 100%;
+      height: 34px;
+      margin-right: 13px;
+      background: url(../img/workshop/check-circle-2.svg);
+      background-size: contain;
+      @include wid(601-991) {
+        max-width: 32px;
+        height: 32px;
+      }
+      @include wid(600) {
+        max-width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+    &:not(:last-child) {
+      padding-bottom: 25px;
+      &::after {
+        @extend %bef-aft;
+        position: absolute;
+        left: 16px;
+        top: 30px;
+        width: 2px;
+        height: 100%;
+        background: var(--orange-color-3);
+        @include wid(601-991) {
+          top: 28px;
+          left: 15px;
+        }
+        @include wid(600) {
+          top: 25px;
+          left: 14px;
+        }
+      }
+    }
+  }
+  .img {
+    max-width: 490px;
+    width: 100%;
+    @include wid(991) {
+      max-width: unset;
+      display: flex;
+      justify-content: center;
+    }
+    img {
+      width: 100%;
+      border-radius: 34px;
+      @include wid(991) {
+        width: auto;
+      }
+    }
+  }
+}
+//done
+section.workshop__7 {
+  padding: 46px 0;
+  background: var(--green-color-5);
+  @include wid(601-991) {
+    padding: 38px 0;
+  }
+  @include wid(600) {
+    padding: 30px 0;
+  }
+  .col {
+    @include wid(600) {
+      padding: 0 30px;
+    }
+  }
+  .title {
+    margin-bottom: 14px;
+    text-align: center;
+    @extend %flex;
+    color: var(--white-color-3);
+    @include wid(600) {
+      font: 28px/1.36em var(--p);
+      justify-content: flex-start;
+    }
+    &::before {
+      @extend %bef-aft;
+      background: url(../img/workshop/help-circle.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-width: 69px;
+      width: 100%;
+      height: 69px;
+      margin-right: 15px;
+      @include wid(601-991) {
+        max-width: 50px;
+        height: 50px;
+        margin-right: 13px;
+      }
+      @include wid(600) {
+        max-width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+  p {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--white-color-3);
+    font: 18px/1.65em var(--o);
+    letter-spacing: 0.005em;
+    @include wid(601-991) {
+      font: 16px/1.65em var(--o);
+    }
+    @include wid(600) {
+      font: 14px/1.65em var(--o);
+      text-align: left;
+    }
+  }
+  .bundle {
+    margin: 0 auto;
+    max-width: 287px;
+
+    @include wid(600) {
+      max-width: 315px;
+      margin: 0 auto 0 0;
+    }
+  }
+  //  @include wid(601-991)   {   }
+  //  @include wid(600)       {   }
+}
+//done
+section.workshop__8 {
+  padding: 180px 0;
+  background: url('../img/workshop/bg.svg') repeat;
+  @include wid(601-991) {
+    padding: 135px 0 150px;
+  }
+  @include wid(600) {
+    padding: 90px 0 120px;
+  }
+  .col {
+    @include wid(1500) {
+      padding: 0;
+    }
+    @include wid(600) {
+      padding: 0 30px;
+    }
+  }
+  .col:nth-child(1) {
+    margin-bottom: 180px;
+    @include wid(601-991) {
+      margin-bottom: 150px;
+    }
+    @include wid(600) {
+      margin-bottom: 120px;
+    }
+  }
+  .heading {
+    font: 36px/1.54em var(--p);
+    margin-bottom: 30px;
+    color: var(--green-color-5);
+    @include wid(601-991) {
+      font: 26px/1.59em var(--p);
+    }
+    @include wid(600) {
+      font: 700 16px/1.44em var(--p);
+    }
+  }
+  .agreement-list {
+    padding: 41px 33px;
+    border-radius: 34px;
+    border: 2px dashed var(--green-color-5);
+    @include wid(991) {
+      border-radius: 17px;
+    }
+    @include wid(601-991) {
+      padding: 28px 24px;
+    }
+    @include wid(600) {
+      padding: 15px;
+    }
+  }
+  .agreement-item {
+    padding-left: 47px;
+    position: relative;
+
+    @include wid(600) {
+      padding-left: 40px;
+    }
+    &::before {
+      @extend %bef-aft;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 34px;
+      height: 34px;
+      background: url(../img/workshop/error-circle.svg);
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: contain;
+      @include wid(601-991) {
+        width: 32px;
+        height: 32px;
+      }
+      @include wid(600) {
+        width: 30px;
+        height: 30px;
+      }
+    }
+    &:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+  .agreement-text {
+    font: 18px/1.65em var(--o);
+    letter-spacing: 0.005em;
+    @include wid(601-991) {
+      font: 16px/1.65em var(--o);
+    }
+    @include wid(600) {
+      font: 14px/1.65em var(--o);
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 8;
+      -webkit-box-orient: vertical;
+    }
+  }
+  .agreement-readmore {
+    color: var(--orange-color-3);
+    font: 14px/1.63em var(--ob);
+    display: none;
+    align-items: center;
+    padding: 10px 0 0 0;
+    @include wid(600) {
+      display: flex;
+    }
+    &::after {
+      @extend %bef-aft;
+      background: url(../img/workshop/read-more-bottom.svg);
+      width: 12px;
+      height: 7px;
+      margin-left: 13px;
+      transition: all var(--standart-transition-time)
+        var(--standart-transition-style);
+    }
+  }
+  .agreement-item.active {
+    .agreement-text {
+      display: inline;
+      -webkit-line-clamp: unset;
+    }
+    .agreement-readmore {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+  .title {
+    margin-bottom: 60px;
+    color: var(--green-color-5);
+
+    @include wid(601-991) {
+      margin-bottom: 45px;
+    }
+    @include wid(600) {
+      margin-bottom: 30px;
+      line-height: 1.36em;
+    }
+  }
+  .dropdown {
+    padding: 27px 51px;
+    background: var(--white-color-1);
+    border-radius: 55px;
+    @include wid(601-991) {
+      border-radius: 35px;
+      padding: 21px 33px;
+    }
+    @include wid(600) {
+      border-radius: 14px;
+      padding: 15px;
+    }
+    &:not(:last-child) {
+      margin-bottom: 36px;
+      @include wid(601-991) {
+        margin-bottom: 30px;
+      }
+      @include wid(600) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  .drop-button {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0;
+    background: transparent;
+    color: var(--green-color-5);
+    letter-spacing: 0.005em;
+    font: 24px/1.65em var(--ob);
+    @include wid(601-991) {
+      font: 19px/1.61em var(--ob);
+    }
+    @include wid(600) {
+      font: 14px/1.57em var(--ob);
+    }
+    &::after {
+      @extend %bef-aft;
+      @extend %flex;
+      background: url(../img/workshop/drop-arrow.svg);
+      background-size: 12px 8px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      max-width: 66px;
+      width: 100%;
+      height: 66px;
+      border: 1px solid var(--green-color-5);
+      border-radius: 17px;
+      transition: var(--standart-transition-style)
+        var(--standart-transition-time);
+      @include wid(601-991) {
+        border-radius: 13px;
+        max-width: 52px;
+        height: 52px;
+      }
+      @include wid(600) {
+        max-width: 38px;
+        height: 38px;
+        border-radius: 10px;
+      }
+    }
+  }
+  .drop-text {
+    color: var(--green-color-5);
+    font: 18px/1.65em var(--o);
+    opacity: 0;
+    visibility: hidden;
+    max-height: 0;
+    transition: var(--standart-transition-style) var(--standart-transition-time);
+    @include wid(601-991) {
+      font: 16px/1.65em var(--o);
+    }
+    @include wid(600) {
+      font: 14px/1.65em var(--o);
+    }
+  }
+  .dropdown.active {
+    .drop-text {
+      opacity: 1;
+      visibility: visible;
+      max-height: 1000px;
+      padding: 20px 0 15px;
+      @include wid(601-991) {
+        padding: 15px 0 7px;
+      }
+      @include wid(600) {
+        padding: 10px 0 0;
+      }
+    }
+    .drop-button {
+      &::after {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}

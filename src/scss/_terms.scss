@@ -1,0 +1,151 @@
+// Terms page
+.single-page-content {
+  padding: 201px 0 180px;
+  background: var(--white-color-3) url(../img/ekzorcizm.svg) repeat center;
+  position: relative;
+
+  @include wid(600) {
+    padding: 127px 0 120px;
+  }
+
+  .container {
+    max-width: 1650px;
+    @include wid(600) {
+      padding: 0 30px;
+    }
+  }
+
+  h1.title {
+    font: 400 96px/68px var(--p);
+    color: #424F44;
+    margin-bottom: 60px;
+    position: relative;
+    @include wid(600) {
+      font: 400 36px/38px var(--p);
+    }
+  }
+
+  &.with-divider {
+    h1.title {
+      padding-bottom: 39px;
+
+      &::after {
+        position: absolute;
+        background: url(../img/legal/subtitle-line-mobile.svg);
+        width: 100%;
+        height: 2px;
+        bottom: -20px;
+        left: 0;
+        content: '';
+        background-size: cover;
+
+        @include wid(600) {
+          bottom: 0;
+        }
+      }
+    }
+
+    ul{
+      margin-bottom: 12px;
+      li {
+        position: relative;
+        font: 400 18px/30px var(--o);
+        letter-spacing: 0.005em;
+        padding-left: 15px;
+
+        @include wid(600) {
+          font: 400 14px/22px var(--o);
+        }
+
+        strong {
+          font:700 18px/30px var(--o);
+
+          @include wid(600) {
+            font: 700 14px/22px var(--o);
+          }
+        }
+
+
+        &::before {
+          position: absolute;
+          content: '·';
+          width: 100%;
+          height: 100%;
+          font-size: 30px;
+          font-weight: 700;
+          color: #424F44;
+          left: 0;
+          top: 0;
+        }
+      }
+    }
+  }
+
+  h2 {
+    font: 400 64px/68px var(--p);
+    color: #424F44;
+    @include wid(600) {
+      font: 400 30px/38px var(--p);
+    }
+  }
+
+  h3 {
+    font: 600 36px/68px var(--o);
+    color: #424F44;
+    margin-top: 40px;
+    margin-bottom: 12px;
+    @include wid(600) {
+      font: 400 24px/30px var(--o);
+      margin-top: 60px;
+    }
+  }
+
+  p {
+    font: 400 18px/30px var(--o);
+    margin-bottom: 12px;
+    letter-spacing: 0.005em;
+
+    @include wid(600) {
+      font: 400 14px/22px var(--o);
+    }
+
+    a {
+      font: 700 18px/30px var(--o);
+      text-decoration: underline;
+      color: #B68742;
+      letter-spacing: 0.005em;
+      @include wid(600) {
+        font: 700 14px/22px var(--o);
+      }
+    }
+  }
+
+  ol {
+    li {
+      position: relative;
+      font: 400 18px/30px var(--o);
+      letter-spacing: 0.005em;
+      counter-increment: myMarker;
+      padding-left: 30px;
+
+      @include wid(600) {
+        font: 400 14px/22px var(--o);
+      }
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        content: counter(myMarker)".";
+        font: 400 18px/30px var(--o);
+        letter-spacing: 0.005em;
+
+        @include wid(600) {
+          font: 400 14px/22px var(--o);
+        }
+      }
+    }
+  }
+}

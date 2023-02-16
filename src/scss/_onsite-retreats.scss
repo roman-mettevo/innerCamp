@@ -1,0 +1,500 @@
+.retreats__1 {
+  position: relative;
+  width: 100%;
+  padding: 170px 0 177px;
+
+  @include wid(600) {
+    padding: 182px 0 207px;
+  }
+
+  &::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: url("../img/testimonials/subtitle-white-line.svg");
+    background-size: cover;
+    top: 86.5%;
+    z-index: 2;
+
+    @include wid(600) {
+      top: 68.5%;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .container {
+    @include wid(600) {
+      padding: 0 26px;
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    color: #fff;
+    max-width: 1079px;
+    text-align: center;
+    font: 400 64px/94px var(--p);
+    letter-spacing: -0.035em;
+    margin-bottom: 21px;
+
+    strong {
+      font-weight: 700;
+    }
+
+    @include wid(600) {
+      font: 400 36px/38px var(--p);
+    }
+  }
+}
+
+.retreats__1-description {
+  max-width: 747px;
+  width: 100%;
+
+  p {
+    font: 700 18px/30px var(--ob);
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    text-align: center;
+
+    @include wid(600) {
+      font: 400 14px/23px var(--ob);
+    }
+  }
+}
+
+.mobile-experience-filter-nav {
+  display: none;
+}
+
+.retreats__2 {
+  padding: 59px 0 180px;
+  background: var(--white-color-3) url(../img/ekzorcizm.svg) repeat center;
+  position: relative;
+
+  @include wid(600) {
+    padding: 46px 0 120px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    &::after {
+      display: none;
+    }
+  }
+}
+
+.experience-content {
+  max-width: 1320px;
+  width: 80%;
+  margin-right: 4px;
+}
+
+.experience-content-title {
+  font: 700 36px/59px var(--ob);
+  letter-spacing: 0.005em;
+  color: #424F44;
+  margin-bottom: 20px;
+}
+
+.experience-item {
+  background: #FFFFFF;
+  border-radius: 34px;
+  display: flex;
+  position: relative;
+
+  .experience-item-content {
+    position: relative;
+  }
+
+  &.retreats {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+
+    @include  wid(992-1199) {
+      flex-direction: column;
+      width: 49%;
+    }
+
+    @include  wid(601-991) {
+      flex-direction: column;
+      width: 49%;
+    }
+
+    @include  wid(600) {
+      flex-direction: column;
+      width: 100%;
+      height: 100%;
+      border-radius: 17px;
+      margin-bottom: 60px;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+
+      @include  wid(992-1199) {
+        margin-bottom: 20px;
+      }
+
+      @include  wid(601-991) {
+        margin-bottom: 20px;
+      }
+
+      @include  wid(600) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.13), inset 5px 6px 14px rgba(0, 0, 0, 0.21);
+      border-radius: 34px;
+
+      @include wid(600) {
+        border-radius: 17px;
+      }
+    }
+
+    img {
+      max-width: 498px;
+      border-radius: 34px 0 0 34px;
+      object-fit: cover;
+      width: 38%;
+
+      @include  wid(992-1199) {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 34px 34px 0 0;
+      }
+
+      @include  wid(601-991) {
+        max-width: 100%;
+        width: 100%;
+        border-radius: 17px 17px 0 0;
+      }
+
+      @media(min-width: 401px) and (max-width: 600px) {
+        max-width: 100%;
+        border-radius: 17px 17px 0 0;
+        position: relative;
+        width: 100%;
+        object-fit: cover;
+        object-position: top center;
+      }
+
+      @media(max-width: 400px) {
+        max-width: 100%;
+        border-radius: 17px 17px 0 0;
+        position: relative;
+        width: 100%;
+        height: 113px;
+        object-fit: cover;
+        object-position: top center;
+      }
+    }
+
+    .category-list-mobile {
+      display: none;
+
+      @include  wid(992-1199) {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        content: '';
+        top: 10px;
+        left: 10px;
+        width: 100%;
+        height: auto;
+
+        .element {
+          width: fit-content;
+          font: 600 10px/17px var(--o);
+          padding: 3px 10px;
+
+          &::before {
+            height: 16px;
+            width: 22px;
+          }
+        }
+        .level {
+          width: fit-content;
+          font: 600 8px/14px var(--o);
+          padding: 3px 10px;
+          margin-bottom: 4px;
+        }
+      }
+
+      @include  wid(601-991) {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        content: '';
+        top: 10px;
+        left: 10px;
+        width: 100%;
+        height: auto;
+        width: 49%;
+
+        .element {
+          width: fit-content;
+          font: 600 10px/17px var(--o);
+          padding: 3px 10px;
+
+          &::before {
+            height: 16px;
+            width: 22px;
+          }
+        }
+        .level {
+          width: fit-content;
+          font: 600 8px/14px var(--o);
+          padding: 3px 10px;
+          margin-bottom: 4px;
+        }
+      }
+
+      @include  wid(600) {
+        flex-direction: column;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        z-index: 2;
+        content: '';
+        top: 10px;
+        left: 10px;
+        width: 100%;
+        height: auto;
+
+        .element {
+          width: fit-content;
+          font: 600 10px/17px var(--o);
+          padding: 3px 10px;
+
+          &::before {
+            height: 16px;
+            width: 22px;
+          }
+        }
+        .level {
+          width: fit-content;
+          font: 600 8px/14px var(--o);
+          padding: 3px 10px;
+          margin-bottom: 4px;
+        }
+      }
+    }
+
+    .box__content {
+      padding: 31px 40px 27px 0;
+      width: 63%;
+
+      @include wid(1200-1499) {
+        padding: 21px 25px;
+        border-radius: 0 34px 34px 0;
+      }
+
+      @include  wid(992-1199) {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 21px 25px;
+        border-radius: 0 0 34px 34px;
+      }
+
+      @include  wid(601-991) {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 21px 25px;
+        border-radius: 0 0 34px 34px;
+      }
+
+      @include  wid(600) {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 21px 25px 14px 22px;
+        border-radius: 0 0 17px 17px;
+      }
+
+      &::before {
+        position: absolute;
+        content: '';
+        height: 100%;
+        width: 65px;
+        background: url("../img/experience/left-wave.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 0;
+        left: -64px;
+
+        @include  wid(992-1199) {
+          background: url("../img/voln.svg");
+          left: 0;
+          width: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          top: -45px;
+        }
+
+        @media(min-width: 700px) and (max-width: 991px) {
+          background: url("../img/voln.svg");
+          left: 0;
+          width: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          top: -39px;
+        }
+
+        @media(min-width: 601px) and (max-width: 700px) {
+          background: url("../img/voln.svg");
+          left: 0;
+          width: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          top: -34px;
+        }
+
+        @media(min-width: 401px) and (max-width: 600px) {
+          background: url("../img/voln.svg");
+          left: 0;
+          width: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          top: -41px;
+        }
+
+        @media(max-width: 400px) {
+          background: url("../img/voln.svg");
+          left: 0;
+          width: 100%;
+          background-size: contain;
+          background-repeat: no-repeat;
+          top: -28px;
+        }
+      }
+
+      .category-list {
+
+        @include  wid(992-1199) {
+          display: none;
+        }
+
+        @include  wid(601-991) {
+          display: none;
+        }
+
+        @include  wid(600) {
+          display: none;
+        }
+      }
+
+      .left-side {
+        margin-left: -3px;
+
+        @media(max-width: 1700px) {
+          padding-right: 20px;
+        }
+
+        .event-content {
+          padding: 16px 25px 15px 23px;
+
+          @include  wid(992-1199) {
+            border: none;
+            flex-direction: column;
+            padding: 0;
+          }
+
+          @include  wid(601-991) {
+            border: none;
+            flex-direction: column;
+            padding: 0;
+          }
+
+          @include  wid(600) {
+            border: none;
+            flex-direction: column;
+            padding: 0;
+            margin-bottom: 28px;
+          }
+        }
+      }
+      .right-side {
+        @include wid(600) {
+          margin-top: -5px;
+        }
+        .training-price {
+          margin-bottom: 0;
+
+          span {
+            margin-bottom: 19px;
+
+            @include wid(600) {
+              margin-bottom: 14px;
+            }
+          }
+        }
+        .bundle {
+          margin-bottom: 11px;
+          width: 242px;
+          height: 71px;
+
+          @include wid(600) {
+            height: 57px;
+            width: 272px;
+          }
+          @media(max-width: 360px) {
+            width: 90%;
+          }
+        }
+      }
+    }
+
+    .man {
+      font: 400 20px/1.2em var(--t);
+      letter-spacing: 0.1em;
+      color: rgba(66, 79, 68, 0.5);
+      margin-bottom: 5px;
+    }
+
+    .item-title {
+      font: 400 36px/38px var(--p);
+      color: #424F44;
+      margin-bottom: 18px;
+
+      @media(min-width: 600px) and (max-width: 991px) {
+        font: 400 24px/26px var(--p);
+      }
+
+      @include wid(600) {
+        font: 400 18px/26px var(--p);
+        margin-bottom: 16px;
+      }
+    }
+
+    .category-list {
+      margin-bottom: 8px;
+    }
+  }
+}

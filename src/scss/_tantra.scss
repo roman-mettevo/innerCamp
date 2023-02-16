@@ -1,0 +1,2917 @@
+.tantra__1 {
+  position: relative;
+  width: 100%;
+  padding: 192px 0 197px;
+  z-index: 3;
+
+  @include wid(601-991) {
+    padding: 151px 0 182px;
+  }
+
+  @include wid(600) {
+    padding: 167px 0 59px;
+  }
+
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .container {
+
+    @include wid(601-991) {
+      padding: 32px 30px;
+    }
+
+    @include wid(600) {
+      padding: 32px 27px;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      top: 0;
+      left: 0;
+      width: 2px;
+      height: 100%;
+      background: url("../img/testimonials/vertical-line.svg");
+      background-size: cover;
+
+      @include wid(601-991) {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        background: url("../img/testimonials/subtitle-white-line.svg");
+        width: 100%;
+        height: 2px;
+        background-size: cover;
+      }
+
+      @include wid(600) {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 0;
+        background: url("../img/testimonials/subtitle-white-line.svg");
+        width: 100%;
+        height: 2px;
+        background-size: cover;
+      }
+    }
+
+    &::after {
+      position: absolute;
+      content: "";
+      top: 0;
+      right: 0;
+      width: 2px;
+      height: 100%;
+      background: url("../img/testimonials/vertical-line.svg");
+      background-size: cover;
+
+      @include wid(601-991) {
+        display: none;
+      }
+
+      @include wid(600) {
+        display: none;
+      }
+    }
+  }
+
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .box__content {
+      display: flex;
+      flex-wrap: wrap;
+      //max-width: 961px;
+      width: 100%;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 31px;
+      position: relative;
+
+      @include wid(992-1199) {
+        justify-content: space-around;
+      }
+
+      @include wid(600) {
+        margin-bottom: 15px;
+      }
+
+      .breathwork,
+      .level,
+      .location,
+      .date {
+        background: #fff;
+        backdrop-filter: blur(2.5px);
+        border-radius: 32px;
+        font: 600 18px/30px var(--o);
+        letter-spacing: 0.005em;
+        color: #444F43;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        padding: 8px 21px;
+
+        @include wid(992-1199) {
+          margin-bottom: 15px;
+        }
+
+        @include wid(601-991) {
+          margin-bottom: 15px;
+        }
+
+        @include wid(600) {
+          margin-bottom: 15px;
+          height: 37px;
+          font: 600 14px/21px var(--o);
+          letter-spacing: 0.005em;
+          margin-right: 8px;
+        }
+      }
+
+      .breathwork::before {
+        background: url("../img/404/icon2.svg") no-repeat;
+        width: 55px;
+        height: 32px;
+        margin-right: 11px;
+        position: relative;
+        content: '';
+        display: block;
+        background-size: contain;
+
+        @include wid(600) {
+          width: 20px;
+          height: 21px;
+          background-size: contain;
+        }
+      }
+
+      .level::before {
+        background: url("../img/breathwork-teacher/levels.svg") no-repeat;
+        width: 32px;
+        height: 32px;
+        margin-right: 11px;
+        position: relative;
+        content: '';
+        display: block;
+
+        @include wid(600) {
+          width: 20px;
+          height: 21px;
+          background-size: contain;
+        }
+      }
+
+      .location::before {
+        background: url("../img/experience/map-pin.svg") no-repeat;
+        width: 32px;
+        height: 32px;
+        margin-right: 11px;
+        position: relative;
+        content: '';
+        display: block;
+
+        @include wid(600) {
+          width: 20px;
+          height: 21px;
+          background-size: contain;
+        }
+      }
+
+      .date {
+        &::before {
+          background: url("../img/calendar.svg") no-repeat;
+          width: 32px;
+          height: 32px;
+          margin-right: 11px;
+          position: relative;
+          content: '';
+          display: block;
+          background-size: cover;
+
+          @include wid(600) {
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            margin-right: 7px;
+          }
+        }
+      }
+
+      .status {
+        background: #fff;
+        backdrop-filter: blur(2.5px);
+        border-radius: 32px;
+        font: 600 18px/30px var(--o);
+        letter-spacing: 0.005em;
+        color: #444F43;
+        display: flex;
+        align-items: center;
+        margin-right: 15px;
+        padding: 8px 21px;
+
+        @include wid(600) {
+          margin-bottom: 15px;
+          height: 37px;
+          font: 600 14px/21px var(--o);
+          letter-spacing: 0.005em;
+          margin-right: 8px;
+        }
+
+        &::before {
+          background: url("../img/tantra/check-circle2.svg") no-repeat;
+          width: 32px;
+          height: 32px;
+          margin-right: 11px;
+          position: relative;
+          content: '';
+          display: block;
+          background-size: cover;
+
+          @include wid(600) {
+            width: 20px;
+            height: 20px;
+            background-size: contain;
+            margin-right: 7px;
+          }
+        }
+      }
+    }
+  }
+
+  .sub {
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-bottom: 15px;
+    font: 400 20px/1.2em var(--t);
+    word-spacing: 7px;
+
+    @include wid(600) {
+      margin-bottom: 2px;
+      font: 400 14px/1.2em var(--t);
+    }
+  }
+
+  .title {
+    color: #fff;
+    max-width: 1431px;
+    text-align: center;
+    font: 400 64px/58px var(--p);
+    letter-spacing: -0.035em;
+    margin: 0 20px 28px;
+
+    @include wid(601-991) {
+      position: relative;
+      padding-bottom: 28px;
+    }
+
+    @include wid(600) {
+      font: 400 36px/38px var(--p);
+      margin: 0 0 30px;
+      position: relative;
+      border-bottom: 2px solid #fff;
+      padding-bottom: 28px;
+    }
+
+    &::after {
+      display: none;
+
+      @include wid(601-991) {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        background: url("../img/testimonials/vertical-line.svg");
+        width: 100%;
+        height: 2px;
+        background-size: contain;
+      }
+
+      @include wid(600) {
+        display: block;
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 0;
+        background: url("../img/testimonials/vertical-line.svg");
+        width: 100%;
+        height: 2px;
+        background-size: cover;
+      }
+    }
+  }
+  .tantra-description {
+    margin-bottom: 30px;
+    max-width: 845px;
+
+    p {
+      font: 700 18px/30px var(--ob);
+      color: #fff;
+
+      @media(max-width: 600px) {
+        font: 700 14px/23px var(--ob);
+        text-align: center;
+      }
+    }
+
+    @include wid(600) {
+      margin-bottom: 24px;
+    }
+  }
+
+  .bundle {
+    max-width: 248px;
+    height: 70px;
+
+    @include wid(600) {
+      height: 57px;
+      max-width: 316px;
+      padding: 17px 104px;
+    }
+  }
+}
+
+//  Section 2 
+.tantra__2 {
+  padding: 90px 0 180px;
+  background: var(--white-color-3) url(../img/ekzorcizm.svg) repeat center;
+  position: relative;
+
+  @media(max-width: 600px) {
+    padding: 81px 0 180px;
+  }
+
+  .row {
+    .col.offset-xl3 {
+      padding: 0;
+    }
+  }
+}
+
+//  Basic course article
+.tantra__2-1 {
+  @media(max-width: 992px) {
+    padding: 0 31px;
+  }
+
+  .course-basics {
+    display: flex;
+    flex-direction: column;
+
+    @media(max-width: 600px) {
+      margin-bottom: 91px;
+    }
+
+    .basics-content {
+      padding: 48px 60px 31px 69px;
+
+      @media(max-width: 600px) {
+        padding: 31px 22px 30px;
+      }
+
+      .bottom-row {
+        .date {
+          margin-bottom: 23px;
+
+          @media(max-width: 600px) {
+            margin-bottom: 7px;
+          }
+        }
+
+        .status {
+          width: fit-content;
+          padding: 6px 17px;
+
+          @media(max-width: 600px) {
+            height: 27px;
+            padding: 3px 10px;
+          }
+        }
+      }
+    }
+
+    .top-content {
+      display: flex;
+
+      @media(max-width: 756px) {
+        flex-direction: column;
+      }
+
+      .basics-img {
+        img {
+          border-radius: 34px 0 0 0;
+
+          @media(max-width: 756px) {
+            border-radius: 34px 34px 0 0;
+          }
+
+          @media(max-width: 600px) {
+            height: 187px;
+            width: 100%;
+            max-width: 100%;
+          }
+        }
+      }
+    }
+
+    .bottom-content {
+      background: #424F44;
+      border-radius: 0px 0px 34px 34px;
+      padding: 38px 12px;
+
+      @media(max-width: 600px) {
+        padding: 15px;
+      }
+    }
+
+    .bottom-content-descriptions {
+      p {
+        font: 400 20px/33px  var(--o);
+        color: #fff;
+        text-align: center;
+
+        @media(max-width: 600px) {
+          font: 400 12px/20px var(--o);
+        }
+
+        strong {
+          font: 700 20px/33px  var(--ob);
+          color: #fff;
+
+          @media(max-width: 600px) {
+            font: 700 12px/20px var(--ob);
+          }
+        }
+
+        a {
+          font: 700 20px/33px  var(--ob);
+          letter-spacing: 0.005em;
+          color: #B68742;
+
+          @media(max-width: 600px) {
+            font: 700 12px/20px var(--ob);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Accreditations 
+.tantra__2-2 {
+  article.accreditations {
+    margin-bottom: 178px;
+
+    @media(max-width: 768px) {
+      margin-bottom: 91px;
+    }    
+
+    .sub {
+      margin-bottom: 14px;
+
+      @media(max-width: 600px) {
+        margin-bottom: 0;
+      }
+    }
+    
+    @media(max-width: 992px) {
+      flex-direction: column;
+  
+      .list_img {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        
+        li {
+          margin-right: 23px;
+
+          img {
+            height: 46px;
+          }
+        }
+      }
+    }
+
+    @media(max-width: 600px) {
+      padding: 30px 36px 23px 31px;
+    }
+  } 
+
+  .accreditations-content  {
+    max-width: 884px;
+
+    p {
+      @media(max-width: 600px) {
+        margin-bottom: 21px;
+      }
+    }
+  }  
+}
+
+.tantra__2-3 {
+  .title {
+    margin-left: 30px;
+    margin-bottom: 56px;
+
+    @media(max-width: 600px) {
+      width: 70%;
+      font: 400 28px/38px var(--p);
+      margin-bottom: 28px;
+    }
+  }
+
+  .benefits-content {
+    max-width: 525px;
+
+    @media(max-width: 768px) {
+      max-width: 100%;
+
+    }
+  }
+
+  .benefits-img {
+    max-width: 640px;
+
+    @media(max-width: 1800px) {
+      width: 50%;
+    }
+
+    @media(max-width: 768px) {
+      width: 100%!important;
+      height: 309px;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+        height: 309px;
+        object-fit: cover;
+      }
+    }
+  }
+}
+
+// About course article
+.tantra__2-4 {
+
+  .title {
+    @media(max-width: 600px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  .about-wrap {
+    .about-content {
+      border: none;
+      padding: 0;
+  
+      @media(max-width: 600px) {
+        padding: 0;
+      }
+  
+      p {
+        font: 400 14px/23px var(--o);
+        letter-spacing: 0.005em;
+        color: #424F44;
+  
+        strong {
+          font: 700 14px/23px var(--ob);
+        }
+      }
+  
+      .bundle-download {
+        margin-top: 24px;
+      }
+    }
+  }
+  
+}
+
+// About program
+.tantra__2-5 {
+  padding-bottom: 186px;
+
+  @media(max-width: 768px) {
+    padding-bottom: 66px;
+  }
+
+  .top-row {
+    display: flex;
+    justify-content: space-between;
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+    }
+
+    @media(max-width: 600px) {
+      padding: 0 31px;
+    }
+
+    &::after {
+      display: none;
+    }
+
+    .tantra-about-program-content {
+      max-width: 538px;
+    
+      @media(max-width: 1800px) {
+        margin-right: 30px;
+      }
+    
+      @media(max-width: 1500px) {
+        width: 49%;
+      }
+    
+      @media(max-width: 768px) {
+        width: 100%!important;
+        max-width: 100%!important;
+      }
+    
+      .title {
+        background: #FFFFFF;
+        border-radius: 54px;
+        padding: 14px 21px;
+        font: 600 36px/47px var(--p);
+        max-width: 473px;
+        width: fit-content;
+        margin-bottom: 30px;
+    
+        @include wid(600) {
+          font: 600 16px/27px var(--p);
+          height: 42px;
+          padding: 8px 21px;
+          margin-bottom: 16px;
+        }
+      }
+    
+      p {
+        font: 400 18px/30px var(--o);
+        margin-bottom: 30px;
+        letter-spacing: 0.005em;
+        color: #424F44;
+    
+        @include wid(600) {
+          font: 400 14px/23px var(--o);
+        }
+      }
+    
+      .tantra-about-program-post {
+        padding-bottom: 30px;
+        position: relative;  
+        
+        @media(max-width: 768px) {
+          padding-bottom: 1px;
+
+          &:last-child {
+            padding-bottom: 0;
+          }
+          
+        }
+    
+        &::after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          content: '';
+          width: 100%;
+          height: 2px;
+          background: url("../img/legal/subtitle-line-mobile.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+    
+        &:last-child {
+          padding-top: 60px;
+    
+          @media(max-width: 768px) {
+            padding-top: 30px;
+          }
+    
+          &::after {
+            display: none;
+          }
+    
+          .title {
+            padding: 8px 21px;
+          }
+        }
+      }
+    }
+    
+    .tantra-about-program-img {
+      max-width: 640px;
+    
+      @media(max-width: 1500px) {
+        width: 49%;
+      }
+    
+      @media(max-width: 768px) {
+        width: 100%!important;
+        height: 309px;
+        margin-top: -2px;
+        margin-bottom: 30px;
+      }
+    
+      img {
+        border-radius: 34px;
+
+        @media(max-width: 768px) {
+          height: 309px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+    }
+  }
+
+  .full-width-row {
+
+    @media(max-width: 600px) {
+      padding: 0 31px;
+    }
+
+    p {
+      font: 400 18px/30px var(--o);
+      color: #424F44;
+
+      @media(max-width: 768px) {
+        font: 400 14px/23px var(--o);
+      }
+    }
+  }
+
+  .bottom-row {
+    padding-top: 125px;
+    padding-left: 22px;
+
+    @media(max-width: 768px) {
+      padding-top: 61px;
+    }
+
+    @media(max-width: 600px) {
+      padding: 61px 31px 22px;
+    }
+
+    .title {
+      color: #424F44;
+      font: 400 64px/70px var(--p);
+      margin-bottom: 60px; 
+
+      @media(max-width: 768px) {
+        font: 400 28px/38px var(--p);
+        margin-bottom: 29px;
+      }
+    }
+    .list {
+      border: 1px dashed #424F44;
+      border-radius: 34px;
+      padding: 33px 41px;
+
+      @media(max-width: 768px) {
+        border-radius: 17px;
+        padding: 15px 15px 23px;
+      }
+
+      li {
+        margin-bottom: 28px;
+        font: 400 18px/30px var(--o);
+        letter-spacing: 0.005em;
+        position: relative;
+        padding-left: 47px;
+        color: #424F44;
+  
+        @include wid(600) {
+          margin-bottom: 25px;
+          font: 400 14px/23px var(--o);
+          padding-left: 38px;
+        }
+  
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 34px;
+          height: 34px;
+          content: '';
+          background: url("../img/tantra/red-circle.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+  
+          @include wid(600) {
+            width: 30px;
+            height: 30px;
+          }
+        }
+  
+        &:last-child {
+          margin-bottom: 0;
+          margin-top: -3px;
+        }
+      }
+    }
+  }
+}
+
+// Program
+.tantra__2-6 {
+  background: #424F44;
+
+  article.program {
+    @media(max-width: 768px) {
+      padding: 33px 21px 15px 31px;
+    }
+  }
+}
+
+.tantra__2-7 {
+  article.facilitators {
+    padding: 184px 0;
+
+    @media(max-width: 768px) {
+      padding: 90px 0;
+    }
+
+    .title {
+      margin-left: -10px;
+
+      @media(max-width: 1800px) {
+        margin-left: -3px;
+      }
+    }
+
+    .facilitators-slider {
+      margin-top: 40px;
+
+      @media(max-width: 768px) {
+        margin-top: 30px;
+      }
+    }
+  }
+}
+
+.tantra__2-8 {
+  @media(max-width: 600px) {
+    padding: 0 31px;
+  }
+
+  article.certificate {
+    margin-bottom: 185px;  
+    
+    @media(max-width: 576px) {
+      padding: 34px 29px 27px 27px;
+      margin-bottom: 123px;
+    }
+
+    .certificate-photo {
+      img {
+        max-width: 392px;
+        width: 100%;
+      }      
+    }
+
+    .certificate-content {
+      max-width: 725px;
+      padding-right: 52px;
+
+      @media(max-width: 768px) {
+        padding-right: 0;
+      }
+
+      &::before {
+        right: 15px;
+
+        @media(max-width: 768px) {
+          right: 40%;
+        }
+      }
+
+      h2 {
+        @media(max-width: 576px) {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+// Optional retreat
+.tantra-optional-retreat {
+  margin-left: 21px;
+  margin-bottom: 175px;
+
+  @media(max-width: 1800px) {
+    margin-left: 0; 
+  }
+
+  @media(max-width: 768px) {
+    margin-bottom: 121px;
+  }
+
+  @media(max-width: 600px) {
+    padding: 0 31px;
+  }
+
+  .title {
+    margin-bottom: 56px;
+
+    @media(max-width: 768px) {
+      font: 400 28px/38px var(--p);
+      margin-bottom: 30px;
+    }
+  }
+
+  .tantra-optional-post {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+
+    @media(max-width: 768px) {
+      flex-direction: column;
+      margin-bottom: 30px;
+    }
+
+    .tantra-optional-post-img {
+      max-width: 526px;
+      margin-right: 30px;
+
+
+      @media(max-width: 768px) {
+        margin-bottom: 27px;
+        margin-right: 0;
+        max-width: 100%;
+      }
+
+      img {
+        border-radius: 34px;
+      }
+    }
+
+    .tantra-optional-post-content {
+      max-width: 639px;
+      border: 1px dashed #424F44;
+      border-radius: 17px;
+      padding: 32px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @media(max-width: 768px) {
+        max-width: 100%;
+        padding: 25px 15px;
+      }
+
+      .location {
+        font: 700 24px/36px var(--ob);
+        letter-spacing: 0.005em;
+        color: #444F43;
+        position: relative;
+        display: flex;
+        margin-bottom: 24px;
+
+        @media(max-width: 768px) {
+          font: 700 14px/21px var(--ob);
+          margin-bottom: 12px;
+        }
+
+        &::before {
+          background: url("../img/experience/map-pin.svg") no-repeat;
+          width: 32px;
+          height: 32px;
+          margin-right: 12px;
+          position: relative;
+          content: "";
+          display: block;
+          background-size: contain;
+
+          @media(max-width: 768px) {
+            top: -2px;
+            width: 18px;
+            height: 22px;      
+          }
+        }
+      }
+
+      p {
+        font: 400 18px/30px var(--o);
+        letter-spacing: 0.005em;
+        color: #424F44;
+        margin-bottom: 25px;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+      .description {
+        margin-bottom: 25px;
+
+        p {
+          font: 700 18px/32px var(--p);
+          color: #424F44;
+          margin-bottom: 0;
+
+          @media(max-width: 768px) {
+            font: 700 16px/23px var(--p);
+          }
+        }
+      }
+
+      .bundle-download {
+        color: #fff;
+        font: 700 20px/33px var(--ob);
+        background: #B68742;
+        border-radius: 35px;
+        position: relative;
+        display: flex;
+        padding: 8px 12px 8px 21px;
+        width: fit-content;
+        align-items: center;
+
+        @media(max-width: 1300px) {
+          white-space: nowrap;
+        }
+
+        @media(max-width: 880px) {
+          font: 700 14px/23px var(--ob);
+          padding: 5px 13px;
+        }
+
+        &::after {
+          background: url("../img/breathwork-teacher/download-white.svg") no-repeat;
+          width: 24px;
+          height: 24px;
+          position: relative;
+          content: '';
+          display: block;
+          background-size: contain;
+          margin-left: 12px;
+
+          @media(max-width: 880px) {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+
+    &:nth-child(even) {
+      flex-direction: row-reverse;
+
+      @media(max-width: 768px) {
+        flex-direction: column;
+      }
+
+      .tantra-optional-post-img {
+        max-width: 640px;
+        margin-left: 30px;
+        margin-right: 0;
+
+        @media(max-width: 768px) {
+          margin-left: 0;
+          max-width: 100%;
+        }
+
+        @media(max-width: 576px) {
+          height: 192px;
+
+          img {
+            height: 192px;
+            width: 100%;
+            object-fit: cover;
+          }
+        }
+      }
+
+      .tantra-optional-post-content {
+        max-width: 525px;
+
+        @media(max-width: 768px) {
+          max-width: 100%;
+          padding: 16px 15px;
+
+          p {
+            font: 400 14px/23px var(--o);
+          }
+        }
+      }
+    }
+  }
+}
+
+// Live session
+.tantra__2-10 {
+  .session-wrap {
+    margin-left: 21px;
+    margin-bottom: 180px;
+
+    @media(max-width: 1800px) {
+      margin-left: 0;
+    }
+
+    @media(max-width: 992px) {
+      margin-bottom: 89px;
+    }
+
+    @media(max-width: 600px) {
+      padding: 0 31px;
+    }
+
+    .title {
+      margin-bottom: 54px;
+
+      @media(max-width: 768px) {
+        margin-bottom: 31px;
+      }
+    }
+  }
+  
+  .session {
+    .top-row {
+      padding-bottom: 0;
+      display: flex;
+      justify-content: space-between;
+      background: #fff;
+      border-radius: 34px 34px 0 0;
+      box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.14), inset 5px 6px 14px rgba(0, 0, 0, 0.13);
+
+      @media(max-width: 992px) {
+        flex-direction: column-reverse;
+      }
+
+      &::after {
+        display: none;
+      }
+
+      .session-content-wrap {
+        padding: 36px 28px 36px 69px;
+        max-width: 636px;
+        width: 100%;
+
+        @media(max-width: 1366px) {
+          padding: 36px 28px;
+        }
+
+        @media(max-width: 992px) {
+          max-width: 100%;
+          padding: 30px 22px!important;
+        }
+
+        .session-schedule {
+          margin-bottom: 37px;
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          column-count: 2;
+          height: 252px;
+
+          @media(max-width: 576px) {
+            height: auto;
+            margin-bottom: 30px;
+          }
+
+          span {
+            margin-left: 45px;
+
+            @media(max-width: 1366px) {
+              font: 400 10px/15px var(--o);
+              letter-spacing: 0.005em;
+              color: #444F43;
+            }       
+            
+            @media(max-width: 576px) {
+              order: 2;
+              margin-left: 32px;
+            }
+          }
+
+          .schedule-date {
+            @media(max-width: 576px) {
+              order: 4;
+              height: 105px;
+              padding-left: 32px;
+              margin-bottom: 30px;
+            }
+          }
+
+          .year {
+            font: 700 14px/21px var(--ob);
+            color: #444F43;
+
+            @media(max-width: 576px) {
+              font: 700 10px/15px var(--ob);
+            }
+          }
+
+          .month {
+            @media(max-width: 576px) {
+              column-count: 2;
+            }
+            li {
+              color: #444F43;
+              font: 400 14px/21px var(--o);
+
+              @media(max-width: 576px) {
+                font: 400 10px/15px var(--o);
+              }
+            }
+          }
+        }
+
+        .clock {
+          font: 700 24px/36px var(--ob);
+          letter-spacing: 0.005em;
+          color: #444F43;
+          display: flex;
+          align-items: center;
+
+          @media(max-width: 1600px) {
+            font: 700 18px/36px var(--ob);
+          }
+
+          @media(max-width: 768px) {
+            font: 700 14px/21px var(--ob)!important;
+          }
+
+          @media(max-width: 576px) {
+            order: 1;
+            margin-bottom: 2px;
+          }
+
+          &::before {
+            background: url("../img/clock.svg") no-repeat;
+            width: 32px;
+            height: 32px;
+            margin-right: 11px;
+            position: relative;
+            content: '';
+            display: block;
+            background-size: contain;
+            top: 4px;
+
+            @media(max-width: 576px) {
+              width: 20px;
+              height: 20px;
+              top: 0;
+            }
+          }
+        }
+
+        .calen {
+          font: 700 24px/36px var(--ob);
+          letter-spacing: 0.005em;
+          color: #444F43;
+          display: flex;
+          align-items: center;  
+          margin-top: 20px;
+          margin-bottom: 36px;
+
+          @media(max-width: 1600px) {
+            font: 700 18px/36px var(--ob);
+          }
+
+          @media(max-width: 768px) {
+            font: 700 14px/21px var(--ob)!important;
+          }
+
+          @media(max-width: 576px) {
+            order: 3; 
+            margin-top: 8px;
+            margin-bottom: 2px;
+          }
+        
+          &::before {
+            background: url(../img/calendar.svg) no-repeat;
+            width: 32px;
+            height: 32px;
+            margin-right: 11px;
+            position: relative;
+            content: '';
+            display: block;
+            background-size: contain;
+  
+            @media(max-width: 1300px) {
+              width: 25px;
+              height: 25px;
+            }
+
+            @media(max-width: 576px) {
+              width: 20px!important;
+              height: 20px!important;
+              background-size: contain;
+            }
+          }
+
+        }
+
+        .bundle-check {
+          color: #fff;
+          font: 700 18px/30px var(--ob);
+          background: #B68742;
+          border-radius: 35px;
+          position: relative;
+          display: flex;
+          padding: 12px 18px 12px 7px;
+          width: fit-content;
+          align-items: center;
+
+          @media(max-width: 1366px) {
+            font: 700 14px/23px var(--ob);
+          }
+
+          @media(max-width: 992px) {
+            padding: 7px 10px;
+            height: 37px;
+          }
+
+          @media(max-width: 576px) {
+            order: 5;
+          }
+
+          &::before {
+            background: url("../img/tantra/globe.svg") no-repeat;
+            width: 32px;
+            height: 32px;
+            margin-right: 11px;
+            position: relative;
+            content: '';
+            display: block;
+            background-size: contain;
+            margin-left: 12px;
+
+            @media(max-width: 1366px) {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+
+        .session-benefit {
+          border: 1px dashed #424F44;
+          border-radius: 17px;
+          padding: 22px;
+          width: 100%;
+          max-width: 539px;
+
+          @media(max-width: 992px) {
+            max-width: 100%;
+          }
+
+          @media(max-width: 768px) {
+            padding: 17px;
+          }
+
+          li {
+            font: 700 18px/30px var(--ob);
+            letter-spacing: 0.005em;
+            color: #424F44;
+            margin-bottom: 27px;
+            position: relative;
+            padding-left: 47px;
+
+            @media(max-width: 768px) {
+              font: 400 14px/23px var(--ob);
+              margin-bottom: 32px;
+            }
+
+            &:last-child {
+              margin-bottom: 5px;
+
+              @media(max-width: 768px) {
+                margin-bottom: -3px;
+              }
+            }
+
+            &::before {
+              position: absolute;
+              top: 0;
+              left: 0;
+              width: 34px;
+              height: 34px;
+              content: '';
+              background: url("../img/breathwork-teacher/check-circle-2.svg");
+              background-size: cover;
+              background-repeat: no-repeat;
+
+              @media(max-width: 768px) {
+                width: 30px;
+                height: 30px;
+                top: -3px;
+                left: -3px;
+              }
+            }
+          }
+        }
+      }
+      .session-img {
+        position: relative;
+        max-width: 581px;
+        width: 47%;
+
+        @media(max-width: 992px) {
+          width: 100%!important;
+          max-width: 100%;
+        }
+
+        @media(max-width: 400px) {
+          height: 189px;
+        }
+        
+        &::after {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          content: '';
+          background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.0677083) 63.02%, #000000 100%);
+        }
+
+        img {
+          border-radius: 0 34px 0 0;
+          position: relative;
+          object-fit: cover;
+          height: 100%;
+
+          @media(max-width: 992px) {
+            border-radius: 34px 34px 0 0;
+          }
+
+          @media(max-width: 400px) {
+            height: 189px;
+            width: 100%;
+          }
+        }
+
+        .bundle-download {
+          position: absolute;
+          left: 24px;
+          bottom: 33px;
+          color: #fff;
+          font: 700 20px/33px var(--ob);
+          background: #B68742;
+          border-radius: 35px;
+          display: flex;
+          padding: 8px 12px 8px 21px;
+          width: fit-content;
+          align-items: center;
+          z-index: 5;
+
+          @media(max-width: 1500px) {
+            font: 700 14px/23px var(--ob);
+            left: 22px;
+            bottom: 18px;
+            padding: 5px 13px;
+          }
+
+          &::after {
+            background: url("../img/breathwork-teacher/download-white.svg") no-repeat;
+            width: 24px;
+            height: 24px;
+            position: relative;
+            content: '';
+            display: block;
+            background-size: contain;
+            margin-left: 12px;
+
+            @media(max-width: 1500px) {
+              width: 20px;
+              height: 20px;
+            }
+          }
+        }
+      }
+    }
+
+    .bottom-row {
+      background: #424F44;
+      border-radius: 0px 0px 34px 34px;
+      padding: 39px 0;
+      display: flex;
+      justify-content: center;
+
+      @media(max-width: 768px) {
+        padding: 15px 23px;
+      }
+      
+      p {
+        color: #fff;
+        font: 400 20px/33px var(--o);
+        letter-spacing: 0.005em;
+        max-width: 949px;
+        text-align: center;
+
+        @media(max-width: 768px) {
+          font: 400 12px/20px var(--o);
+          text-align: left;
+        }
+
+        a, 
+        strong {
+          font: 700 20px/33px var(--ob);
+          letter-spacing: 0.005em;
+          color: #fff;
+
+          @media(max-width: 768px) {
+            font: 700 12px/20px var(--ob);
+          }
+        }
+      }
+    }
+  }
+}
+
+.tantra__2-11 {
+  padding: 40px 0 42px;
+  background: #424F44;
+
+  @media(max-width: 600px) {
+    padding: 32px 0 30px;
+  }
+
+  .book-call {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media(max-width: 768px) {
+      align-items: flex-start;
+    }
+
+    @media(max-width: 600px) {
+      padding: 0 31px;
+    }
+
+    .title {
+      color: #fff;
+      margin-bottom: 14px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 100px;
+
+      @media(max-width: 768px) {
+        font: 400 28px/38px var(--p);
+        align-items: flex-start;
+        padding-left: 40px;
+      }
+
+      &::before {
+        position: absolute;
+        width: 69px;
+        height: 69px;
+        background: url("../img/breathwork-teacher/help-circle.svg");
+        background-position: contain;
+        background-repeat: no-repeat;
+        content: "";
+        display: block;
+        top: 7px;
+        left: 16px;
+
+        @media(max-width: 1200px) {
+          width: 50px;
+          height: 50px;
+          background-size: contain;
+        }
+
+        @media(max-width: 768px) {
+          width: 30px!important;
+          height: 30px!important;
+          top: 3px;
+          left: 0;
+        }
+      }
+    }
+
+    .subtitle {
+      margin-bottom: 30px;
+      padding-left: 9px;
+
+      @media(max-width: 768px) {
+        padding-left: 0;
+      }
+
+      p {
+        color: #fff;
+        strong {
+          font: 700 18px/30px var(--ob);
+        }
+
+        @media(max-width: 768px) {
+          font: 400 14px/23px var(--o);
+          
+          strong {
+            font: 700 14px/23px var(--ob);
+          }
+        }
+      }
+    }
+
+    .bundle {
+      height: 71px;
+      color: rgba(255, 255, 255, 0.95);
+      font: 700 20px/33px var(--ob);
+      padding: 19px 39px;
+      max-width: 287px;
+
+      @media(max-width: 768px) {
+        height: 57px;
+        font: 700 14px/23px var(--ob);
+        max-width: 315px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+.tantra__2-12 {
+  padding-top: 198px;
+  margin-left: 26px;
+  padding-bottom: 190px;
+  overflow: hidden;
+
+  @media(max-width: 1800px) {
+    margin-left: 0;
+  }
+
+  @media(max-width: 992px) {
+    padding-top: 90px;
+    padding-bottom: 149px;
+  }
+
+  .row {
+    .col.offset-xl3 {
+      @include wid(600) {
+        padding: 0 30px;
+      }
+    }
+  }
+
+  .testimonials-item {
+    width: 549px;
+    @include wid(600) {
+      max-width: 549px;
+      width: 100%;
+    }
+    &:not(:last-child) {
+      @include wid(600) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+  .testimonials-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+    @include wid(601-991) {
+      margin-bottom: 45px;
+    }
+    @include wid(600) {
+      margin-bottom: 30px;
+    }
+    .arrows {
+      @include wid(600) {
+        display: none;
+      }
+    }
+  }
+  .testimonials-slider {
+    .splide__track {
+      overflow: visible !important;
+    }
+    .splide__arrows {
+      display: none;
+    }
+    .splide__pagination {
+      padding-top: 60px;
+      @include wid(601-991) {
+        padding-top: 30px;
+      }
+      @include wid(600) {
+        padding-top: 30px;
+      }
+    }
+    .splide__list {
+      @include wid(600) {
+      }
+    }
+  }
+  .testimonials-link {
+    width: 100%;
+    display: block;
+    position: relative;
+    img {
+      width: 100%;
+      border-radius: 34px;
+      border: solid var(--white-color-1);
+      border-width: 2px 1px 0 1px;
+      box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.25),
+        inset 5px 6px 14px rgba(0, 0, 0, 0.12);
+      @include wid(600) {
+        border-radius: 17px;
+      }
+    }
+    &::before {
+      @extend %bef-aft;
+      pointer-events: none;
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 133px;
+      height: 133px;
+      background: center / contain no-repeat
+        url(../img/bodywork-1/play-circle-yt.svg);
+      @include wid(601-991) {
+        width: 96px;
+        height: 96px;
+      }
+      @include wid(600) {
+        width: 59px;
+        height: 59px;
+      }
+    }
+  }
+}
+
+.tantra__2-13 {
+  background: #424F44;
+
+  .why-us {
+    padding: 60px 0 30px;
+    margin-left: 21px;
+
+    @media(max-width: 1800px) {
+      margin-left: 0;
+    }
+
+    @media(max-width: 600px) {
+      padding: 32px 31px 30px;
+    }
+
+    .title {
+      color: #fff;
+      margin-bottom: 54px;
+      font: 400 64px/70px var(--p);
+
+      @media(max-width: 768px) {
+        font: 400 28px/38px var(--p);
+        margin-bottom: 29px;
+      }
+    }
+
+    .feature-list {
+      border: 1px dashed #FFFFFF;
+      border-radius: 34px;
+      display: flex;
+      justify-content: space-between;
+      padding: 33px 41px;
+      margin-bottom: 60px;
+
+      @media(max-width: 768px) {
+        border-radius: 17px;
+        flex-direction: column;
+        padding: 17px 15px 15px;
+        margin-bottom: 29px;
+      }
+
+      .left-list {
+        max-width: 512px;
+
+        @media(max-width: 768px) {
+          margin-bottom: 30px;
+        }
+      }
+
+      .right-list {
+        max-width: 542px;
+        width: 100%;
+
+        @media(max-width: 992px) {
+          display: none;
+
+          &.open {
+            display: block;
+          }
+        }
+      }
+
+      li {
+        font: 400 18px/30px var(--o);
+        color: #fff;
+        margin-bottom: 29px;
+        padding-left: 47px;
+        position: relative;
+
+        @media(max-width: 400px) {
+          font: 400 14px/23px var(--o);
+          margin-bottom: 29px;
+          padding-left: 39px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 34px;
+          height: 34px;
+          content: '';
+          background: url("../img/breathwork-teacher/check-circle-2.svg");
+          background-size: cover;
+          background-repeat: no-repeat;
+
+          @media(max-width: 400px) {
+            width: 28px;
+            height: 28px;
+            padding-left: 39px;
+            background-size: contain;
+          }
+        }
+      }
+
+    }
+
+    .read-more {
+      display: none;
+
+      @media(max-width: 768px) {
+        display: inline-block;
+        width: fit-content;
+        color: #B68742;
+        font: 700 14px/23px var(--ob);
+        position: relative;
+
+        &::after {
+          position: absolute;
+          right: -27px;
+          top: 2px;
+          content: '';
+          width: 18px;
+          height: 18px;
+          background: url("../img/chevron-down-brown.svg");
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+      }
+    }
+  }
+  .why-us-content-wrap {
+    display: flex;
+    justify-content: space-between;
+
+    .why-us-content {
+      max-width: 669px;
+      padding-left: 3px;
+
+      @media(max-width: 1800px) {
+        padding-left: 0;
+      }
+
+      @media(max-width: 1500px) {
+        width: 60%;
+      }
+
+      @media(max-width: 768px) {
+        width: 100%!important;
+        max-width: 100%;
+      }
+
+      h3 {
+        color: #fff;
+        font: 400 36px/50px var(--p);
+        margin-bottom: 32px;
+        padding-left: 2px;
+
+        @media(max-width: 768px) {
+          font: 400 16px/23px var(--p);
+        }
+      }
+
+      p {
+        font: 400 18px/30px var(--o);
+        letter-spacing: 0.005em;
+        color: #fff;
+        margin-bottom: 30px;
+
+        @media(max-width: 768px) {
+          font: 400 14px/23px var(--o);
+        }
+
+        strong {
+          font: 700 18px/30px var(--ob);
+
+          @media(max-width: 768px) {
+            font: 700 14px/23px var(--ob);
+          }
+        }
+      }
+
+      .why-us-bottom-content {
+        @media(max-width: 768px) {
+          display: none;
+
+          &.open {
+            display: block;
+          }
+        }
+      }
+    }
+
+    .why-us-img {
+      max-width: 495px;
+      max-height: 600px;
+
+      @media(max-width: 768px) {
+        display: none;
+      }
+
+      img {
+        border-radius: 34px;
+        height: 100%;
+        object-fit: cover;
+        max-height: 600px;
+      }
+    }
+  }
+}
+
+.tantra__2-14 {
+  padding-top: 180px;
+
+  @media(max-width: 768px) {
+    padding-top: 89px;
+  }
+
+  .exposition-top-row {
+    margin-bottom: 60px;
+    margin-left: 22px;
+
+    @media(max-width: 1800px) {
+      margin-left: 0;
+    }
+    @media(max-width: 768px) {
+      margin-bottom: 28px;
+    }
+
+    @media(max-width: 600px) {
+      padding: 0 31px;
+    }
+
+    .title {
+      margin-bottom: 30px;
+      font: 400 64px/70px var(--p);
+      color: #424F44;
+
+      @media(max-width: 992px) {
+        margin-bottom: 15px;
+      }
+
+      @media(max-width: 768px) {
+        font: 400 28px/38px var(--p);
+      }
+    }
+
+    .calen {
+      font: 600 18px/30px var(--osb);
+      letter-spacing: 0.005em;
+      color: #444F43;
+      display: flex;
+      align-items: center;
+      height: 48px;
+      background: #FFFFFF;
+      border-radius: 23px; 
+      padding: 8px 21px;
+      width: fit-content;
+
+      @media(max-width: 768px) {
+        font: 600 14px/21px var(--osb);
+        height: 37px;
+      }
+      
+      &::before {
+        background: url(../img/calendar.svg) no-repeat;
+        width: 32px;
+        height: 32px;
+        margin-right: 11px;
+        position: relative;
+        content: '';
+        display: block;
+        background-size: contain;
+        margin-left: 25px;
+
+        @media(max-width: 768px) {
+          width: 20px;
+          height: 20px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+
+  .exposition-list {
+    background: #fff;
+    border-radius: 34px;
+    box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.14), inset 5px 6px 14px rgba(0, 0, 0, 0.08);
+    
+    
+    @media(max-width: 600px) {
+      border-radius: 0;
+      box-shadow: none;
+      padding: 0 30px;
+    }
+    .header-item {
+      display: flex;
+      justify-content: flex-end;
+
+      @media(max-width: 768px) {
+        justify-content: flex-start;
+        padding-left: 20px;
+      }
+      
+      .level-item {
+        border: 2px solid #F1EFE8;
+        border-radius: 34px 34px 0px 0px;
+        max-width: 304px;
+        padding: 15px 67px;
+        border-bottom: transparent;
+
+        @media(max-width: 1070px) {
+          border: none;
+        }
+
+        @media(max-width: 768px) {
+          padding: 32px 0 13px;
+          width: 50%;
+        }
+
+        h3 {
+          font: 600 24px/40px var(--p);
+          letter-spacing: 0.005em;
+          color: #444F43;
+          text-align: center;
+          margin-bottom: 5px;
+
+          @media(max-width: 768px) {
+            font: 600 16px/26px var(--p);
+            text-align: left;
+            margin-bottom: 11px;
+          }
+        }
+        .list-description {
+          p {
+            font: 700 14px/23px var(--p);
+            text-align: center;
+            letter-spacing: 0.005em;
+            color: #424F44;
+
+            @media(max-width: 768px) {
+              font: 700 10px/17px var(--ob);
+              text-align: left;
+            }
+          }
+        }
+
+        &.full-program {
+          max-width: 306px;
+          padding: 15px 39px;
+          border: 2px solid #F1EFE8;
+          border-radius: 34px 34px 0px 0px;
+          border-bottom: transparent;
+
+          @media(max-width: 1070px) {
+            border: none;
+          }
+
+          @media(max-width: 768px) {
+            border: none;
+            padding: 32px 0 13px;
+            width: 50%;
+          }
+
+          h3 {
+            color: #B68742;
+
+            @media(max-width: 768px) {
+              font: 600 16px/26px var(--p);
+              text-align: left;
+              margin-bottom: 11px;
+            }
+          }
+
+          .list-description {
+            p {
+              color: #B68742;
+
+              @media(max-width: 768px) {
+                font: 700 10px/16px var(--ob);
+                text-align-last: left;
+              }
+            }
+          }
+        }
+      }      
+    }
+
+    .exposition-item-row {
+      display: flex;
+      justify-content: flex-end;
+      border-top: 2px solid #F1EFE8;
+      align-items: center;
+
+      @media(max-width: 768px) {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        padding: 20px;
+      }
+      
+      .first-item {
+        width: 100%;
+        position: relative;
+        font: 600 18px/30px var(--osb);
+        padding-left: 35px;
+        padding-left: 67px;
+
+        @media(max-width: 768px) {
+          flex-grow: 2;
+          width: 100%;
+          font: 700 14px/23px var(--ob);
+          padding: 0;
+          margin-bottom: 17px;
+        }
+
+        &::before {
+          position: absolute;
+          top: 0;
+          left: 33px;
+          content: '';
+          background: url("../img/breathwork-teacher/logo-brown.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 19px;
+          height: 33px;
+
+          @media(max-width: 768px) {
+            display: none;
+          }
+        }
+      }
+
+      .level-item {
+        max-width: 304px;
+        width: 100%;
+        border-left: 2px solid #F1EFE8;
+        height: 62px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        letter-spacing: 0.005em;
+        color: #424F44;
+        font: 700 18px/30px var(--ob);
+
+        @media(max-width: 768px) {
+          flex-grow: 1;
+          width: 50%;
+          border-left: none;
+          font: 600 12px/20px var(--osb);
+          height: auto;
+          justify-content: flex-start;
+        }
+
+        span {
+          display: none;
+
+          @media(max-width: 768px) {
+            display: inline-block;
+            margin-left: 12px;
+          }
+        }
+
+        img {
+          width: 34px;
+          height: 34px;
+
+          @media(max-width: 768px) {
+            width: 20px;
+            height: 20px;
+          }
+        }
+
+        &.full-program {
+          max-width: 306px;
+          width: 100%;
+
+          @media(max-width: 768px) {
+            flex-grow: 1;
+            width: 50%;
+            font: 600 12px/20px var(--osb);
+            height: auto;
+            justify-content: flex-start;
+          }
+        }
+      }
+    }
+  }
+}
+
+.tantra__2-15 {
+  padding-top: 180px;
+
+  @media(max-width: 768px) {
+    padding-top: 91px;
+  }
+
+  .book-training {
+    background: #F1EFE8;
+    box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.25), inset 5px 6px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 34px;
+    padding: 34px 46px 34px 33px;
+    margin-left: 21px;
+
+    @media(max-width: 1800px) {
+      margin-left: 0;
+    }
+
+    @media(max-width: 600px) {
+      border: none;
+      box-shadow: none;
+      padding: 0 30px;
+    }
+  }
+
+  .title {
+    font: 400 36px/40px var(--p);
+    letter-spacing: -0.035em;
+    color: #424F44;
+    margin-bottom: 30px;
+
+    @media(max-width: 768px) {
+      font: 400 28px/38px var(--p);
+    }
+  }
+
+  .book-training-wrap {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    @media(max-width: 1750px) {
+      justify-content: space-evenly;
+    }
+
+    @media(max-width: 992px) {
+      flex-direction: column;
+      align-items: center;
+    }
+
+  }
+
+  .left-small-block {
+    max-width: 363px;
+    background: #fff;
+    border-radius: 17px;
+    position: relative;
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @media(max-width: 992px) {
+      max-width: 550px;
+      width: 100%;
+    }
+
+    @media(max-width: 600px) {
+      padding: 25px 27px;
+    }
+
+    h3 {
+      color: #424F44;
+      font: 700 18px/35px var(--ob);
+
+      @media(max-width: 600px) {
+        font: 700 18px/25px var(--ob);
+        margin-bottom: 15px;
+      }
+
+      strong {
+        font: 700 24px/46px var(--ob);
+
+        @media(max-width: 600px) {
+          font: 700 24px/33px var(--ob);
+        }
+      }
+    }
+
+    .top-row {
+      display: flex;
+      padding-bottom: 27px;
+      justify-content: space-between;
+
+      li {
+        font: 700 14px/23px var(--ob);
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.005em;
+        color: #424F44;
+        position: relative;
+        margin-bottom: 3px;
+
+        &::before {
+          display: block;
+          position: relative;
+          content: '';
+          background: url("../img/breathwork-teacher/check-brown.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+    }
+
+    .choose-price {
+      display: flex;
+      background: #F1EFE8;
+      border-radius: 17px;
+      width: fit-content;
+      margin-top: 30px;
+      margin-bottom: 50px;
+
+      @media(max-width: 400px) {
+        margin-bottom: 31px;
+      }
+
+      .price-item {
+        padding: 12px 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        @media(max-width: 400px) {
+          padding: 10px;
+        }
+
+        span {
+          color: #424F44;
+        }
+
+        .price {
+          font: 700 24px/39px var(--ob);
+
+          @media(max-width: 400px) {
+            font: 700 20px/33px var(--ob);
+          }
+        }
+        .price-type {
+          font: 700 10px/16px var(--ob);
+        }
+
+        &.active {
+          border-radius: 17px;          
+          background: #556558;
+          box-shadow: 9px 21px 29px rgba(0, 0, 0, 0.19), inset 1px 2px 9px rgba(0, 0, 0, 0.19);
+
+          span {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+
+  .middle-small-block {
+    max-width: 374px;
+    background: #424F44;
+    border-radius: 17px;
+    position: relative;
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+
+    @media(max-width: 992px) {
+      margin: 0 0 30px;
+      max-width: 550px;
+      width: 100%;
+    }
+
+    @media(max-width: 600px) {
+      padding: 25px 27px;
+    }
+
+    h3 {
+      color: #F1EFE8;
+      font: 700 18px/35px var(--ob);
+
+      @media(max-width: 600px) {
+        font: 700 18px/25px var(--ob);
+        margin-bottom: 15px;
+      }
+
+      strong {
+        font: 700 24px/46px var(--ob);
+        @media(max-width: 600px) {
+          font: 700 24px/33px var(--ob);
+        }
+      }
+    }
+
+    .top-row {
+      display: flex;
+      padding-bottom: 27px;
+      justify-content: space-between;
+
+      li {
+        font: 700 14px/23px var(--ob);
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.005em;
+        color: #F1EFE8;
+        position: relative;
+        margin-bottom: 3px;
+
+        &::before {
+          display: block;
+          position: relative;
+          content: '';
+          background: url("../img/breathwork-teacher/check-brown.svg");
+          background-size: contain;
+          background-repeat: no-repeat;
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+    }
+
+    .choose-price {
+      display: flex;
+      background: #556558;
+      border-radius: 17px;
+      width: fit-content;
+      margin-top: 30px;
+      margin-bottom: 50px;
+
+      @media(max-width: 400px) {
+        margin-bottom: 31px;
+      }
+
+      .price-item {
+        padding: 12px 13px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        cursor: pointer;
+
+        @media(max-width: 400px) {
+          padding: 10px;
+        }
+
+        span {
+          color: #F1EFE8;
+        }
+
+        .price {
+          font: 700 24px/39px var(--ob);
+
+          @media(max-width: 400px) {
+            font: 700 20px/33px var(--ob);
+          }
+        }
+        .price-type {
+          font: 700 10px/16px var(--ob);
+        }
+
+        &.active {
+          border-radius: 17px;
+          background: #F1EFE8;
+          box-shadow: 9px 21px 29px rgba(0, 0, 0, 0.19), inset 1px 2px 9px rgba(0, 0, 0, 0.19);
+
+          span {
+            color: #424F44;
+          }
+        }
+      }
+    }
+  }
+
+  .right-small-block {
+    max-width: 343px;
+    border-radius: 17px;
+    position: relative;
+    padding: 35px 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 479px;
+    margin-bottom: 30px;
+
+    @media(max-width: 992px) {
+      max-width: 550px;
+      width: 100%;
+    }
+    
+    @media(max-width: 600px) {
+      padding: 25px 27px;
+    }
+
+    @media(max-width: 400px) {
+      min-height: 350px;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+      border-radius: 17px;
+    }
+
+    .top-block {
+      position: relative;
+      z-index: 1;
+
+      h3 {
+        font: 700 24px/32px var(--ob);
+        color: #F1EFE8;
+        margin-bottom: 25px;
+
+        @media(max-width: 600px) {
+          font: 700 24px/33px var(--ob);
+        }
+      }
+
+      .calen {
+        background: #fff;
+        border-radius: 23px;
+        font: 600 14px/24px var(--osb);
+        display: flex;
+        align-items: center;
+        letter-spacing: 0.005em;
+        color: #444F43;
+        position: relative;
+        letter-spacing: 0.005em;
+        padding: 8px 21px;
+        margin-bottom: 25px;
+
+        &::before {
+            background: url("../img/calendar.svg") no-repeat;
+            width: 20px;
+            height: 20px;
+            margin-right: 11px;
+            position: relative;
+            content: '';
+            display: block;
+            background-size: cover;
+        }
+      }
+
+      .add-feature {
+        p {
+          position: relative;
+          font: 700 14px/23px var(--ob);
+          letter-spacing: 0.005em;
+          color: #F1EFE8;
+          display: flex;
+          align-items: flex-start;
+
+          &::before {
+            position: relative;
+            content: '';
+            width: 20px;
+            height: 20px;
+            display: block;
+            background: url("../img/breathwork-teacher/check-brown.svg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            margin-right: 2px;
+          }
+        }
+      }
+    }
+
+    .upgrade {
+      position: relative;
+      z-index: 1;
+      font: 700 20px/33px var(--ob);
+      color: #FFFFFF;
+      text-align: center;
+    }
+  }
+}
+
+.tantra__2-16 {
+  padding-top: 180px;
+
+  @media(max-width: 768px) {
+    padding-top: 92px;
+  }
+
+  .breathwork-faq {
+    margin-left: 21px;
+  
+    @media(max-width: 1800px) {
+      margin-left: 0;
+    }
+  
+    @media(max-width: 600px) {
+      padding: 0 31px;
+    }
+  
+    .title {
+      margin-bottom: 55px;
+
+      @media(max-width: 768px) {
+        margin-bottom: 30px;
+        font: 400 28px/38px var(--p);
+      }
+    }
+  
+    .faq-item {
+      margin-bottom: 36px;
+      padding: 40px 48px;
+  
+      @media(max-width: 600px) {
+        padding: 21px 15px;
+        margin-bottom: 25px;
+      }
+    }
+  
+    .faq-questions {
+      padding-right: 140px;
+  
+  
+      @media(max-width: 768px) {
+        padding-right: 50px;
+      }
+  
+      &::after {
+        right: 0;
+      }
+    }
+  }
+}
+
+.modal-wrap {
+  display: none;
+
+  &.active {
+    z-index: 10;
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: .2s ease;
+    opacity: 1;
+    background: rgba(0, 0, 0, 0.5);
+}
+  .modal-upgrade-block {
+    background: #F1EFE8;
+    box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.25), inset 5px 6px 14px rgba(0, 0, 0, 0.12);
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 60px 54px;
+    max-width: 1317px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transition: .5s ease;
+    transform: translate(-50%,-50%);
+  }
+  
+
+  .upgrade-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    content: '';
+    width: 62px;
+    height: 62px;
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+  }
+
+  .upgrade-top-row {
+    display: flex;
+    margin-bottom: 60px;
+    align-items: center;
+
+    .title {
+      font: 400 36px/94px var(--p);
+      letter-spacing: -0.035em;
+      color: #424F44;
+    }
+
+    .calen {
+      background: #fff;
+      border-radius: 23px;
+      font: 600 18px/30px var(--osb);
+      display: flex;
+      align-items: center;
+      letter-spacing: 0.005em;
+      color: #444F43;
+      position: relative;
+      letter-spacing: 0.005em;
+      padding: 8px 21px;
+      height: 48px;
+      margin-left: 25px;
+
+      &::before {
+          background: url("../img/calendar.svg") no-repeat;
+          width: 32px;
+          height: 32px;
+          margin-right: 11px;
+          position: relative;
+          content: '';
+          display: block;
+          background-size: cover;
+      }
+    }
+  }
+
+  .modal-upgrade-content {
+    display: flex;
+
+    .left-side {
+      padding-right: 30px;
+    }
+
+    .right-side {
+      padding-left: 30px;
+    }
+  }
+
+  .block-title {
+    font: 700 24px/40px var(--ob);
+    letter-spacing: 0.005em;
+    color: #424F44;
+    margin-bottom: 30px;
+  }
+
+  .choose-calen {
+    background: #fff;
+    border-radius: 76px;
+    font: 400 18px/30px var(--o);
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.005em;
+    color: #424F44;
+    position: relative;
+    padding: 16px 25px;
+    height: 62px;
+
+    &::before {
+        background: url("../img/breathwork-teacher/circle-brown.svg") no-repeat;
+        width: 27px;
+        height: 27px;
+        margin-right: 20px;
+        position: relative;
+        content: '';
+        display: block;
+        background-size: cover;
+    }
+  }
+
+  .apartments-list {
+    display: flex;
+    margin-bottom: 30px;
+    justify-content: space-between;
+  }
+
+  .apartment-item {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-radius: 17px;
+    padding: 20px;
+    width: 30%;
+    max-width: 256px;
+    justify-content: space-between;
+
+    .img-list {
+      display: flex;
+      margin-bottom: 10px;
+
+      li {
+        margin-right: 10px;
+      }
+    }
+
+    h3 {
+      font: 700 24px/22px var(--ob);
+      color: #424F44;
+      margin-bottom: 25px;
+    }
+
+    .apartment-item-bottom-row {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 25px;
+      height: 64px;
+      position: relative;
+
+      &::before {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: url("../img/legal/subtitle-line-mobile.svg");
+        background-size: contain;
+        background-repeat: no-repeat;
+        content: '';
+      }
+
+      .actual {
+        background: #DDEDDF;
+        border-radius: 31px;
+        padding: 4px 17px;
+        display: flex;
+        align-items: center;
+        position: relative;
+        font: 400 14px/23px var(--o);
+        letter-spacing: 0.005em;
+        color: #424F44;
+        margin-right: 23px;
+
+        &::before {
+          background: url("../img/breathwork-teacher/check-green.svg") no-repeat;
+          width: 20px;
+          height: 20px;
+          margin-right: 10px;
+          position: relative;
+          content: '';
+          display: block;
+          background-size: cover;
+        }
+      }
+
+      .price {
+        font: 700 24px/39px var(--ob);
+        color: #424F44;
+      }
+    }
+  }
+
+  .modal-bottom-row {
+    display: flex;
+    align-items: center;
+
+    .bundle {
+      height: 71px;
+      max-width: 464px;
+      font: 700 20px/33px var(--ob);
+      margin-right: 77px;
+    }
+
+    .disclaimer {
+      color: #ADADAD;
+      font: 700 20px/33px var(--ob);
+      white-space: nowrap;
+      
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+}
+

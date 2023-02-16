@@ -1,0 +1,428 @@
+.workshops__1 {
+  position: relative;
+  width: 100%;
+  padding: 170px 0 177px;
+
+  @include wid(600) {
+    padding: 208px 0 207px;
+  }
+
+  &::before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: url("../img/testimonials/subtitle-white-line.svg");
+    background-size: cover;
+    top: 86.5%;
+    z-index: 2;
+
+    @include wid(600) {
+      top: 68.5%;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  }
+
+  .container {
+    @include wid(600) {
+      padding: 0 26px;
+    }
+  }
+  .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .title {
+    color: #fff;
+    max-width: 1079px;
+    text-align: center;
+    font: 400 64px/94px var(--p);
+    letter-spacing: -0.035em;
+    margin-bottom: 21px;
+
+    strong {
+      font-weight: 700;
+    }
+
+    @include wid(600) {
+      font: 400 36px/38px var(--p);
+      margin-bottom: 19px;
+    }
+  }
+}
+
+.workshops__1-description {
+  max-width: 525px;
+  width: 100%;
+
+  @include wid(600) {
+    max-width: 300px;
+  }
+
+  p {
+    font: 700 18px/30px var(--ob);
+    letter-spacing: 0.005em;
+    color: #FFFFFF;
+    text-align: center;
+
+    @include wid(600) {
+      font: 400 14px/23px var(--p);
+    }
+  }
+}
+
+.mobile-experience-filter-nav {
+  display: none;
+}
+
+.workshops__2 {
+  padding: 59px 0 180px;
+  background: var(--white-color-3) url(../img/ekzorcizm.svg) repeat center;
+  position: relative;
+
+  @include wid(600) {
+    padding: 45px 0 120px;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+    &::after {
+      display: none;
+    }
+  }
+
+  .experience-list {
+    @media(max-width: 992px) {
+      justify-content: center;
+    }
+  }
+}
+
+.experience-content {
+  max-width: 1320px;
+  width: 80%;
+  margin-right: 4px;
+}
+
+.experience-content-title {
+  font: 700 36px/59px var(--ob);
+  letter-spacing: 0.005em;
+  color: #424F44;
+  margin-bottom: 20px;
+}
+
+.experience-item {
+  background: #FFFFFF;
+  border-radius: 34px;
+  display: flex;
+  position: relative;
+
+  .experience-item-content {
+    position: relative;
+  }
+
+  &.v-workshops {
+    margin-bottom: 34px;
+    display: flex;
+    justify-content: space-between;
+
+    @include wid(992-1199) {
+      font: 600 14px/15px var(--o);
+    }
+
+    @include wid(601-991) {
+      width: 100%;
+      max-width: 550px;
+    }
+
+    @include wid(600) {
+      margin-bottom: 60px;
+      width: 100%;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    &::after {
+      position: absolute;
+      content: '';
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.13), inset 5px 6px 14px rgba(0, 0, 0, 0.21);
+      border-radius: 34px;
+
+      @include wid(600) {
+        border-radius: 17px;
+      }
+    }
+
+    .box__content {
+      padding: 32px 40px ;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+
+      @include wid(1200-1499) {
+        padding: 21px 25px;
+      }
+
+      @include wid(601-991){
+        flex-direction: column;
+      }
+
+      @include  wid(600) {
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        padding: 21px 25px 21px 22px;
+        border-radius: 0 0 17px 17px;
+      }
+
+      .left-side {
+
+        @media(min-width: 1200px) and (max-width: 1600px) {
+          width: 80%;
+        }
+
+        @include wid(600) {
+          padding-top: 0;
+          margin-bottom: 30px;
+        }
+
+        .event-time {
+          @include wid(600) {
+            display: none;
+          }
+        }
+
+        .video {
+          @include wid(600) {
+            border: none;
+            font: 600 10px/17px var(--o);
+            padding: 0;
+            order: 1;
+
+            &::before {
+              width: 20px;
+              height: 20px;
+              background-size: contain;
+            }
+          }
+        }
+
+        .calen {
+          @include wid(601-991) {
+            font: 600 14px/15px var(--o);
+          }
+
+          @include wid(600) {
+            order: 2;
+            padding: 3px 10px;
+            font: 600 10px/15px var(--o);
+            margin-right: 0;
+            height: 26px;
+
+            &::before {
+              width: 20px;
+              height: 20px;
+              background-size: contain;
+            }
+          }
+        }
+      }
+
+      .category-list {
+        margin-bottom: 23px;
+
+        @include wid(601-991) {
+          font: 600 14px/15px var(--o);
+          flex-wrap: wrap;
+        }
+
+        @include wid(600) {
+          font: 600 10px/17px var(--o);
+          flex-wrap: wrap;
+          align-items: center;
+          margin-bottom: 0;
+
+          .element {
+            padding: 3px 10px;
+            margin-bottom: 16px;
+            font: 600 10px/17px var(--o);
+            letter-spacing: 0.005em;
+            background: #D0B184;
+            backdrop-filter: blur(1.64242px);
+            border-radius: 21px;
+
+            @include wid(600) {
+              margin-bottom: 6px;
+            }
+
+            &::before {
+              width: 22px;
+              height: 16px;
+            }
+          }
+
+        }
+      }
+
+      .item-title {
+        font: 400 36px/38px var(--p);
+        color: #424F44;
+        max-width: 827px;
+        margin-bottom: 21px;
+
+        @media(min-width: 1200px) and (max-width: 1366px) {
+          font: 400 24px/28px var(--p);
+        }
+
+        @include wid(600) {
+          font: 400 18px/26px var(--p);
+          margin-bottom: 16px;
+        }
+      }
+      .item-excerpt {
+        font: 400 18px/30px var(--o);
+        letter-spacing: 0.005em;
+        color: #404F42;
+        margin-bottom: 29px;
+
+        @include wid(600) {
+          font: 400 14px/22px var(--o);
+        }
+      }
+      .author-info {
+        display: flex;
+        align-items: center;
+      }
+      .author-photo {
+        width: 49px;
+        height: 49px;
+        border-radius: 50%;
+        margin-right: 12px;
+
+        @include wid(600) {
+          width: 28px;
+          height: 28px;
+          margin-right: 10px;
+        }
+      }
+
+      .author-name {
+        font: 600 18px/20px var(--ob);
+        letter-spacing: 0.005em;
+        color: #404F42;
+
+        @include wid(600) {
+          font: 400 10px/12px var(--o);
+        }
+      }
+
+      .download {
+        font: 700 32px/52px var(--ob);
+        color: #B68742;
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-bottom: 18px;
+        white-space: nowrap;
+
+        @include wid(1200 - 1499) {
+          font: 700 14px/23px var(--ob);
+        }
+
+        @include wid(992 - 1199) {
+          font: 700 21px/52px var(--ob);
+        }
+
+        @include wid(601 - 991) {
+          font: 700 24px/52px var(--ob);
+        }
+
+        &::before {
+          background: url(../img/experience/download.svg) no-repeat;
+          width: 33px;
+          height: 33px;
+          margin-right: 16px;
+          position: relative;
+          content: '';
+          display: block;
+          background-size: contain;
+
+          @include wid(1200 - 1499) {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+          }
+        }
+
+        @include wid(600) {
+          font: 700 14px/23px var(--o);
+          &::before {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+            background-size: contain;
+          }
+        }
+      }
+
+      .right-side {
+        padding-left: 68px;
+
+
+        @media(min-width: 1500px) and (max-width: 1600px) {
+          padding-left: 20px;
+        }
+
+        @media(min-width: 1200px) and (max-width: 1500px) {
+          padding-left: 0;
+        }
+
+        @include wid(600){
+          padding-left: 0;
+        }
+      }
+
+      .bundle {
+        height: 71px;
+
+        @media(min-width: 1200px) and (max-width:1800px) {
+          padding: 15px;
+          font: 700 14px/23px var(--ob);
+          height: auto;
+        }
+
+        @include wid(600) {
+          height: 57px;
+          padding: 17px 80px;
+          font: 700 14px/23px var(--ob);
+          white-space: nowrap;
+        }
+
+        &::after {
+          @media(min-width: 1200px) and (max-width:1800px) {
+            width: 30px;
+          }
+        }
+      }
+    }
+
+
+
+  }
+}

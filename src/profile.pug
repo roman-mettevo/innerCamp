@@ -1,0 +1,223 @@
+doctype
+
+html(lang='en')
+  head
+    
+    - var title = "Innercamp Profile Pages"
+    - var keywords = "Keywords var keywords"
+    - var description = "Description var description"
+    title= title
+
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+
+    link(rel='icon', type='static/ico', href='static/favicon.ico?v=13')
+
+    meta(property='og:url', content='https:')
+    meta(property='og:image', content='img/logo.png?v=1.3')
+    meta(property='og:image:width', content='300')
+    meta(property='og:image:height', content='300')
+
+    meta(property='og:title', content='')
+    meta(property='og:site_name', content='')
+    meta(property='og:description', content='')
+    meta(property='og:type', conten= '' + keywords + ''  )
+    meta(name='description', conten= '' + description + '' )
+    meta(name='keywords'  conten= '' + keywords + '' )
+    script(src='https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js')
+
+  body(data-img='img/123.png')
+     
+    .bar-long
+    
+    .scroll__menu.none
+      .container
+
+    
+    .right__menu
+      .bock__top
+        a.close(href='javascript:;')
+          img.logo__img(src='img/close.svg', alt='logo_black')
+      ul.menu__
+        li
+          a(href='javascript:;') Recently Added
+        li
+          a(href='javascript:;') Masterclass Sessions
+        li
+          a(href='javascript:;') Summit Home
+        li
+          a(href='javascript:;') RTT
+        li
+          a(href='javascript:;') Human Longevity
+    
+
+
+
+
+    header(main).b_green__
+      .container
+        .row
+          .col.m12.s12.l12.xl12
+            .box__logo
+              a.logo(href='javascript:;')
+                img(src='img/logo.svg' alt='logo')
+
+            .menu__
+              ul#menu-header.menu
+                li#menu-item-5.menu-item.menu-item-type-custom.menu-item-object-custom.current-menu-item.current_page_item.menu-item-home.menu-item-has-children.menu-item-5
+                  a(href='javascript:;') Experiences
+                  ul.sub-menu
+                    li
+                      a(href='#') Experiences 2
+                    li
+                      a(href='#') Experiences 2
+                li
+                  a(href='javascript:;') Get Certified
+
+                li
+                  a(href='javascript:;') Testimonials
+                li
+                  a(href='javascript:;') About us
+                li
+                  a(href='javascript:;') Download the APP
+
+            .naviget__
+              a.user(href='javascript:;')
+              a.cart(href='javascript:;')
+                span 2
+              a.open__(href='javascript:;') 
+              
+
+
+    section.profile__1.none
+      .container
+        .row
+          .col.m12.s12.l3.xl2
+            .menu__
+              ul 
+                li 
+                  a.order(href='#') Orders
+                li 
+                  a.profile(href='#') Profile
+                li 
+                  a.affilate(href='#') Affilate
+          
+
+          .col.m12.s12.l9.xl10
+            h1.title Account information
+            
+            .box__forma
+
+              form(method='POST', action='javascript:void(null);')
+                // Hidden Required Fields
+
+                .form_input
+                  span.field
+                    input(type='text', name='name', required='', value='', placeholder='Your name')
+
+                .form_input
+                  span.field
+                    input.email(type='email', name='email', required='', value='', placeholder='Your email')
+
+                button.bundle(type='submit', name='send') Save
+
+
+                .bottom__
+                  a(href='javascript:;') Сhange password
+                  a(href='javascript:;') Reset password
+
+
+
+
+
+    section.profile__1.none
+      .container
+        .row
+          .col.m12.s12.l3.xl2
+            .menu__
+              ul 
+                li 
+                  a.order(href='#') Orders
+                li 
+                  a.profile(href='#') Profile
+                li 
+                  a.affilate(href='#') Affilate
+          
+
+          .col.m12.s12.l9.xl10
+            h1.title Orders
+            
+            ul.orderli
+              li 
+                .box__img
+                  img(src='img/orders_ava.svg' alt='#')
+                .box__content
+                  p.title__ Cacao Ceremony Facilitator Training
+                  a.price(href='javascript:;') 1950€
+              li 
+                .box__img
+                  img(src='img/orders_ava.svg' alt='#')
+                .box__content
+                  p.title__ Cacao Ceremony Facilitator Training
+                  a.price(href='javascript:;') 1950€
+              li 
+                .box__img
+                  img(src='img/orders_ava.svg' alt='#')
+                .box__content
+                  p.title__ Cacao Ceremony Facilitator Training
+                  a.price(href='javascript:;') 1950€
+              li 
+                .box__img
+                  img(src='img/orders_ava.svg' alt='#')
+                .box__content
+                  p.title__ Cacao Ceremony Facilitator Training
+                  a.price(href='javascript:;') 1950€
+
+
+
+    section.profile__1.none
+      .container
+        .row
+          .col.m12.s12.l3.xl2
+            .menu__
+              ul 
+                li 
+                  a.order(href='#') Orders
+                li 
+                  a.profile(href='#') Profile
+                li 
+                  a.affilate(href='#') Affilate
+          
+
+          .col.m12.s12.l9.xl10
+            h1.title Orders
+            
+            .box__see
+              img.images(src='img/orderspack_ava.svg' alt='')
+              p.strong  There are no orders
+              p There are no orders in your account 
+              a.next(href='javascript:;') Find something for yourself 
+              
+                  
+                  
+
+    section.reset__1
+      .container
+        .row
+          .col.m12.s12.l12.xl12
+            form.woocommerce-ResetPassword.lost_reset_password(method='post')
+              p
+                | Lost your password? Please enter your username or email address. You will receive a link to create a new password via email.
+              p.woocommerce-form-row.woocommerce-form-row--first.form-row.form-row-first
+                label(for='user_login') Username or email
+                input#user_login.woocommerce-Input.woocommerce-Input--text.input-text(type='text', name='user_login', autocomplete='username')
+              .clear
+              p.woocommerce-form-row.form-row
+                input(type='hidden', name='wc_reset_password', value='true')
+                button.woocommerce-Button.button.wp-element-button(type='submit', value='Reset password') Reset password
+              input#woocommerce-lost-password-nonce(type='hidden', name='woocommerce-lost-password-nonce', value='c45754158c')
+              input(type='hidden', name='_wp_http_referer', value='/my-account/lost-password/')
+
+            
+
+                

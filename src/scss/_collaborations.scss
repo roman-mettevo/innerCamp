@@ -1,0 +1,238 @@
+/*-----Collaborations Section 1-----*/
+section.collaborations__1 {
+  background: #283229 url(../img/collaborations/top-banner.jpg) no-repeat
+    top/cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+
+  overflow: hidden;
+
+  min-height: 754px;
+  
+@media (max-width: 768px) {  min-height: 617px; }
+  
+  .row {
+    padding-top: 15px;
+  }
+  .sub {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 8px;
+  }
+  .title {
+    color: #fff;
+    text-align: center;
+    max-width: 1080px;
+    margin: 0 auto 8px;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    max-width: 822px;
+    font: 18px/1.65em var(--ob);
+    margin: 0 auto 30px;
+  }
+  .bundle {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 600px) {
+  section.collaborations__1 {
+    padding: 0 27px;
+    .row {
+      padding-top: 0px;
+    }
+    .sub {
+      margin: 0;
+      line-height: 1.4em;
+    }
+    .title {
+      font: 36px/1.05em var(--p);
+      margin-bottom: 30px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.7em;
+    }
+  }
+}
+/*-----Collaborations Section 2-----*/
+.collaborations__2 {
+  background: var(--green-color-5) url('../img/collaborations/bg.svg') repeat
+    center;
+  padding: 180px 0;
+  .row {
+    display: flex;
+    align-items: center;
+    &:not(:last-child) {
+      margin-bottom: 180px;
+    }
+  }
+  .col:nth-child(1) {
+    padding: 0 45px 0 0;
+  }
+  .col:nth-child(2) {
+    padding: 0 0 0 35px;
+  }
+  .sub {
+    color: #fff;
+  }
+  .title {
+    color: #fff;
+    margin-bottom: 48px;
+    line-height: 1.1em;
+  }
+  img {
+    border-radius: 34px;
+    border-width: 2px 1px 0;
+    border-color: #fff;
+    border-style: solid;
+    box-shadow: inset 5px 6px 14px rgba(0, 0, 0, 0.12);
+    filter: drop-shadow(18px 41px 71px rgba(0, 0, 0, 0.25));
+  }
+  .description {
+    color: #fff;
+    font: 18px/1.65em var(--o);
+  }
+  .description:not(:last-child) {
+    margin-bottom: 30px;
+  }
+  .professions-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    row-gap: 20px;
+  }
+  .professions {
+    background: var(--white-color-3);
+    padding: 9px 21px 9px 48px;
+    position: relative;
+    border-radius: 31px;
+    letter-spacing: 0.005em;
+    color: var(--green-color-7);
+    white-space: nowrap;
+    font: 18px/1.65em var(--o);
+    &::before {
+      @extend %bef-aft;
+      background: url('../img/collaborations/mark.svg');
+      background-size: cover;
+      width: 17px;
+      height: 30px;
+      position: absolute;
+      left: 21px;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+
+@media (max-width: 1400px) {
+  .collaborations__2 {
+    .col:nth-child(1) {
+      padding: 0 15px 0 0;
+    }
+    .col:nth-child(2) {
+      padding: 0 0 0 15px;
+    }
+  }
+}
+@media (max-width: 992px) {
+  .collaborations__2 {
+    padding: 80px 0 120px;
+    .professions {
+      white-space: normal;
+    }
+    .row {
+      flex-direction: column;
+      row-gap: 0px;
+      &:not(:last-child) {
+        margin-bottom: 120px;
+      }
+      &:nth-child(1) {
+        flex-direction: column-reverse;
+        .col:nth-child(2) {
+          margin-bottom: 30px;
+        }
+      }
+      &:nth-child(2) {
+        .col:nth-child(1) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .col {
+      padding: 0;
+    }
+    .title {
+      margin-bottom: 30px;
+    }
+    .description:not(:last-child) {
+      margin-bottom: 25px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .collaborations__2 {
+    .col {
+      padding: 0 30px !important;
+    }
+    .sub {
+      margin-bottom: 8px;
+    }
+    .title {
+      margin-bottom: 35px !important;
+    }
+    .description {
+      font-size: 14px;
+      line-height: 1.58em;
+      padding-right: 5px;
+    }
+    img {
+      object-fit: cover;
+      height: 223px;
+    }
+    .professions-list {
+      align-items: inherit;
+      row-gap: 15px;
+    }
+    .professions {
+      padding: 5px 14px 5px 35px;
+      color: var(--green-color-7);
+      font: 14px/1.65em var(--o);
+      &::before {
+        width: 12px;
+        height: 24px;
+        left: 14px;
+      }
+    }
+  }
+}
+/*-----Collaborations Section 3-----*/
+.collaborations__3 {
+  background: var(--white-color-3) url('../img/collaborations/bg.svg') repeat
+    center;
+  padding: 64px 0;
+  .sub {
+    margin-bottom: 8px;
+    text-align: center;
+  }
+  .title {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .bundle {
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .collaborations__3 {
+    padding: 85px 0;
+  }
+}
