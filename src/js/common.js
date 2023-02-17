@@ -42,13 +42,48 @@ scrollToAnyPoint('[data-scroll] ul li a');
 
   
   
+  // 2.3 Breathwork Levels 1+2*
   
+      $('.subitem-list .read-more').on('click', function() {
+        $(this).toggleClass('active');
+        $('.bottom-block').toggleClass('open');
+      } );
+  
+  
+// bodywork-first__5
 
-  
-  
-  
-  
-  
+    if (document.querySelector('.bodywork-first__5 .tab-nav')) {
+        let bodyworkSection5__tabs = [].slice.call($('.bodywork-first__5 .col .tab-nav-item'));
+        let bodyworkSection5__content = [].slice.call($('.bodywork-first__5 .col .tab-content'));
+        $('.bodywork-first__5 .col .tab-nav-item').on('click', function () {
+            clearAllTab();
+            this.classList.toggle('active');
+
+            openTab(this);
+        });
+        function clearAllTab() {
+            bodyworkSection5__tabs.forEach(element => {
+                element.classList.remove('active');
+            });
+            bodyworkSection5__content.forEach(element => {
+                element.classList.remove('active');
+            });
+        }
+        function openTab(item) {
+            let index = bodyworkSection5__tabs.indexOf(item);
+            bodyworkSection5__content[index].classList.add('active');
+        }
+    }
+    if ($('.bodywork-first__10 .column-price-nav-item')) {
+        let priceNavItems = [].slice.call($('.bodywork-first__10 .column-price-nav-item'));
+        $('.bodywork-first__10 .column-price-nav-item').on('click', function () {
+            priceNavItems.forEach(item => {
+                item.classList.remove('active')
+            })
+            this.classList.add('active');
+        })
+    }
+
   
   
 $('.password__').click(function(e) {

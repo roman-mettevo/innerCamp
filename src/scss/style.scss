@@ -3059,15 +3059,16 @@ border-radius: 34px;
            
            text-transform: uppercase;
            
-           @include wid(1500)     {  font: 400 64px/1.2em var(--p); text-align: center; }
-@include wid(1200-1499){  font: 400 54px/1.2em var(--p); text-align: center; }
+           @media screen and ( min-width: 1750px){ font: 400 64px/1.2em var(--p); text-align: center;  }
+           @include wid(1500)     {  font: 400 54px/1.2em var(--p); text-align: center; }
+           @include wid(1200-1499){  font: 400 50px/1.2em var(--p); text-align: center; }
 
            
             @include wid(1200)      {    }            
-            @include wid(992-1199)      {    font: 400 50px/1.2em var(--p); text-align: left; }       
+            @include wid(992-1199)      {    font: 400 50px/1.2em var(--p); text-align: center; }       
 
-        @include wid(601-991)  {  font: 400 30px/1.2em var(--p); text-align: left; }
-        @include wid(600)      {  font: 400 24px/1.2em var(--p); text-align: left; }
+        @include wid(601-991)  {  font: 400 30px/1.2em var(--p); text-align: center; margin-bottom: 0; }
+        @include wid(600)      {  font: 400 24px/1.2em var(--p); text-align: center; margin-bottom: 0; }
          
            
           

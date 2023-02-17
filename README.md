@@ -1,6 +1,4 @@
-### Source code Fobiya
-
-[![npm](https://badgen.net/npm/v/@babel/core)](https://github.com/Fobiya/coursecode_old)
+### Source code
 
 https://nodejs.org/download/release/v14.16.0/
 
@@ -40,8 +38,6 @@ https://devhints.io/
 #### DELETE Plugins
 * Slick-carousel  [Open link](https://github.com/kenwheeler/slick/)
 * Flickity [Open link](https://flickity.metafizzy.co/)
-
-
 
 
 

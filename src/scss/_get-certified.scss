@@ -237,6 +237,10 @@
       display: none;
     }
   }
+  
+  .pagination__{
+    margin-top: 50px;
+  }
 }
 
 .experience-nav {
@@ -764,6 +768,30 @@
       font: 400 36px/38px var(--p);
       color: #424F44;
       margin-bottom: 18px;
+      
+      
+      a{
+        color: #424F44;
+        font-family: var(--p);
+        
+        &:hover{
+          color: #b68742;
+        }
+        
+          @media(min-width: 1200px) and (max-width: 1366px) {
+            font: 400 24px/28px var(--p);
+          }
+
+          @media(min-width: 600px) and (max-width: 991px) {
+            font: 400 24px/26px var(--p);
+          }
+
+          @include wid(600) {
+            font: 400 18px/26px var(--p);
+            margin-bottom: 16px;
+          }
+        
+      }
 
       @media(min-width: 1200px) and (max-width: 1366px) {
         font: 400 24px/28px var(--p);

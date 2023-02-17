@@ -254,6 +254,10 @@
   border-radius: 34px;
   padding: 43px 47px 43px 40px;
 
+      min-height: 420px;
+    display: flex;
+    flex-direction: column;
+
   .block__ {
     margin-bottom: 40px;
 
@@ -569,6 +573,36 @@
     }
   }
 }
+
+
+
+.retreats-testimony-item .user, .training-testimony-item .user {
+  margin-bottom: 117px;
+  padding-top: 223px;
+  display: flex;
+  margin-top: 30px;
+  position: absolute;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+.training-testimony-item .user {
+  margin-bottom: 117px;
+  padding-top: 223px;
+  display: flex;
+  margin-top: 30px;
+  position: absolute;
+  -webkit-box-pack: start;
+  -webkit-justify-content: flex-start;
+  -moz-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+
+
 
 .testimonial__5 {
   position: relative;
