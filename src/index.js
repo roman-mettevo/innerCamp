@@ -1263,11 +1263,11 @@ if(document.getElementById('video-testimonials-slider-1')){
     var sliderMore = new Splide('#video-testimonials-slider-1',{
         easing: 'ease-in-out',
         focus: 'center',
-        perPage  : 3,
-        type: 'loop',
+//        perPage  : 3,
+//        type: 'loop',
         pagination: false,
         arrows: false,
-        padding: '30%',
+//        padding: '30%',
 
         breakpoints: {
             '3500': {
@@ -1278,7 +1278,7 @@ if(document.getElementById('video-testimonials-slider-1')){
             },
             '2100': {
                 perPage  : 3,
-                fixedWidth: 583,
+//                fixedWidth: 583,
             },
             '1800': {
                 perPage  : 3,
@@ -1287,8 +1287,14 @@ if(document.getElementById('video-testimonials-slider-1')){
                 perPage  : 3,
             },
             '992': {
-               destroy: true,
+                perPage  : 2,
             },
+            '600': {
+               perPage  : 1,
+            },
+            '400': {
+               perPage  : 1,
+            }
 
         },
     }).mount();
@@ -1296,28 +1302,28 @@ if(document.getElementById('video-testimonials-slider-1')){
     // Go to the previous slide when the Previous button is activated
     if(sliderMorePrev){
         sliderMorePrev.addEventListener('click', function(e) {
-            sliderRetreats.go('<');
+            sliderMore.go('<');
         });
     }
 
     // Go to the next slide when the Next button is activated
     if(sliderMoreNext) {
         sliderMoreNext.addEventListener('click', function(e) {
-            sliderRetreats.go('>');
+            sliderMore.go('>');
         });
     }
 
     // Go to the previous slide when the Previous button is activated
     if( sliderMorePrevR) {
         sliderMorePrevR.addEventListener('click', function(e) {
-            sliderRetreats.go('<');
+            sliderMore.go('<');
         });
     }
 
     // Go to the next slide when the Next button is activated
     if (sliderMoreNextR) {
         sliderMoreNextR.addEventListener('click', function(e) {
-            sliderRetreats.go('>');
+            sliderMore.go('>');
         });
     }
 }
@@ -1340,10 +1346,10 @@ if(document.getElementById('video-testimonials-slider-2')){
     var sliderMore = new Splide('#video-testimonials-slider-2',{
         easing: 'ease-in-out',
         focus: 'center',
-        perPage  : 3,
-        type: 'loop',
+//        perPage  : 3,
+//        type: 'loop',
         arrows: false,
-        padding: '30%',
+//        padding: '30%',
 
         breakpoints: {
             '3500': {
@@ -1354,7 +1360,7 @@ if(document.getElementById('video-testimonials-slider-2')){
             },
             '2100': {
                 perPage  : 3,
-                fixedWidth: 583,
+//                fixedWidth: 583,
             },
             '1800': {
                 perPage  : 3,
@@ -1363,7 +1369,13 @@ if(document.getElementById('video-testimonials-slider-2')){
                 perPage  : 3,
             },
             '992': {
-                destroy: true,
+                perPage  : 2,
+            },
+            '600': {
+               perPage  : 1,
+            },
+            '400': {
+               perPage  : 1,
             }
         },
     }).mount();
@@ -1371,28 +1383,28 @@ if(document.getElementById('video-testimonials-slider-2')){
     // Go to the previous slide when the Previous button is activated
     if(sliderMorePrev){
         sliderMorePrev.addEventListener('click', function(e) {
-            sliderRetreats.go('<');
+            sliderMore.go('<');
         });
     }
 
     // Go to the next slide when the Next button is activated
     if(sliderMoreNext) {
         sliderMoreNext.addEventListener('click', function(e) {
-            sliderRetreats.go('>');
+            sliderMore.go('>');
         });
     }
 
     // Go to the previous slide when the Previous button is activated
     if( sliderMorePrevR) {
         sliderMorePrevR.addEventListener('click', function(e) {
-            sliderRetreats.go('<');
+            sliderMore.go('<');
         });
     }
 
     // Go to the next slide when the Next button is activated
     if (sliderMoreNextR) {
         sliderMoreNextR.addEventListener('click', function(e) {
-            sliderRetreats.go('>');
+            sliderMore.go('>');
         });
     }
 
