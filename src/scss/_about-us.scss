@@ -1,0 +1,633 @@
+
+
+section.about-us__1 {
+   
+   z-index: 1;
+    
+//       background: #424F44 url(../img/ekzorcizm.svg) repeat center;
+       background: #424F44 url(../img/about__back.png) repeat center;
+
+   
+   min-height: 140vh;
+   
+   &.one__{
+@include wid(992)      {    padding-top: 190px; }
+@include wid(601-991)  {    padding-top: 150px; }
+@include wid(600)      {    padding-top: 130px; }
+   }
+
+  &.last{
+@include wid(992)      {    padding-bottom: 180px; }
+@include wid(601-991)  {    padding-bottom: 150px; }
+@include wid(600)      {    padding-bottom: 120px; }
+   }
+   
+   
+   video{
+    z-index: -1;
+   }
+   
+   
+   &.back{
+
+       &:after{
+        @extend %bef-aft;
+
+        background: rgba(0, 0, 0, 0.45) !important;
+
+         width: 100% !important;
+         height: 100% !important;
+         z-index: 1 !important;
+         
+         position: absolute;
+         
+         top: 0;
+         left: 0;
+         right: 0;
+         bottom: 0;
+      }
+   }
+   
+@include wid(992)      {    padding-top: 100px; padding-bottom: 100px; }
+@include wid(601-991)  {    padding-top: 85px; padding-bottom: 85px; }
+@include wid(600)      {    padding-top: 70px; padding-bottom: 70px; }
+   
+   
+   
+    &>.container>.row:nth-child(1)>div:nth-child(1){
+      
+    @include wid(1200)      {    
+          max-width: 1035px;
+          padding-left: 45px;
+          min-height: 140vh;
+      }  
+      
+   }
+   
+   
+   
+   
+   box-shadow: inset 0px -16px 20px 5px rgba(0,0,0,.42);
+        position: relative;
+
+.sub{
+       color: #fff;
+  margin-bottom: 5px;
+     @include wid(992)      { text-align: center; }
+@include wid(601-991)  { text-align: center; }
+@include wid(600)      { text-align: left; }
+  
+   }
+   .title{
+     color: #fff;
+     
+     @include wid(992)      { text-align: center;  margin-bottom: 40px; }
+@include wid(601-991)  { text-align: center;  margin-bottom: 35px; }
+@include wid(600)      { text-align: left;  margin-bottom: 30px; }
+   }
+
+   h3{
+     
+     
+        color: #fff;
+     @include wid(992)      {  font: 600 36px/1.2em var(--p);  margin-bottom: 20px; text-align: center; }
+@include wid(601-991)  {  font: 600 30px/1.2em var(--p);  margin-bottom: 18px; text-align: center; }
+@include wid(600)      {  font: 600 24px/1.2em var(--p);  margin-bottom: 15px; text-align: left; }
+   }
+   
+   
+   p{
+     
+     color: #fff;
+    
+@include wid(992)      {  font: 600 22px/1.5em var(--o);  margin-bottom: 30px; }
+@include wid(601-991)  {  font: 400 18px/1.5em var(--o);  margin-bottom: 25px;}
+@include wid(600)      {  font: 400 14px/1.5em var(--o);  margin-bottom: 20px; }
+   }
+   
+   img{
+     border-radius: 34px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.21); 
+   }
+   
+   .bloc__img{
+      @include wid(992)      { text-align: center;  margin-bottom: 40px; }
+      @include wid(601-991)  { text-align: center;  margin-bottom: 35px; }
+      @include wid(600)      { text-align: left;  margin-bottom: 30px; }
+   }
+   
+   article{
+      @include wid(992)      {  margin-bottom: 180px; }
+      @include wid(601-991)  {  margin-bottom: 150px; }
+      @include wid(600)      { margin-bottom: 120px;  }
+   }
+   
+   
+   
+   
+   
+   .title_and_button{
+
+      /* Note: backdrop-filter has minimal browser support */
+
+
+      @include wid(992)      {  padding: 50px 55px; border-radius: 34px;       background: rgba(66, 79, 68, 0.52); backdrop-filter: blur(8.5px); }
+      @include wid(601-991)  {  padding: 20px 25px; border-radius: 17px;        background: rgba(66, 79, 68, 0.52); backdrop-filter: blur(8.5px);}
+      @include wid(600)      {  padding: 0; border-radius: 0px; }
+     
+     
+     h4{
+       color: #fff;
+
+      @include wid(992)      {   font: 400 36px/1.2em var(--o);  margin-bottom: 37px; text-align: center;  }
+      @include wid(601-991)  {   font: 400 30px/1.2em var(--o);  margin-bottom: 30px; text-align: center;  }
+      @include wid(600)      {   font: 400 24px/1.2em var(--o);  margin-bottom: 30px; text-align: left;  }
+       
+     }
+     
+     .bundle{
+       margin-left: auto;
+       margin-right: auto;
+       @include wid(600)      { margin-left: 0; }
+     }
+   }
+   
+   ul.list__brand{
+     
+     @extend %flex;
+     
+     gap: 40px;
+     
+      @include wid(992)      { text-align: center;  margin-bottom: 40px; }
+      @include wid(601-991)  { text-align: center;  margin-bottom: 35px; }
+      @include wid(600)      { text-align: left;  margin-bottom: 30px; }
+     
+     li{
+          
+            @extend %flex;
+       
+             @include wid(992){ 
+               
+           gap: 0 40px;
+                  
+       }
+       img{
+        
+         height: 100%;
+         width: 100%;
+         
+      @include wid(992)      {  max-height: 100px; }
+      @include wid(601-991)  {  max-height: 70px; }
+      @include wid(600)      {  max-height: 50px; }
+         
+     border-radius: 0px;
+     box-shadow: 0 0 10px transparent; 
+       }
+       
+       
+       &:nth-child(2n+1){
+        &:after{
+
+          @extend %bef-aft;
+          
+         @include wid(992){ 
+           
+          background: url(../img/about__logo.svg) no-repeat;
+
+          width: 59px;
+          height: 119px;
+          min-width: 59px;
+              
+          }
+        }
+         
+       }
+       
+
+
+       
+     }
+   }
+   
+   
+   .mark{
+     
+     position: relative;
+     
+     p{
+       margin-bottom: 0;
+     }
+     
+     @include wid(992)      {  margin-bottom: 30px;   padding: 32px 45px 32px 111px; border-radius: 55px; }
+
+     
+      @include wid(601-991)  {   margin-bottom: 25px; padding:  30px; border-radius: 25px;  }
+      @include wid(600)      {  margin-bottom: 25px; padding: 20px; border-radius: 17px;  }
+     
+       &:before{
+        @extend %bef-aft;
+     @include wid(992)      { 
+        background: url(../img/about_mark.svg) no-repeat;
+
+        width: 30px;
+        height: 70px;
+        left: 45px;
+         top: 32px;
+         position: absolute;
+       
+         }
+         
+      }
+     
+ background: rgba(66, 79, 68, 0.52);
+backdrop-filter: blur(8.5px);
+/* Note: backdrop-filter has minimal browser support */
+
+
+     
+     
+   }
+   
+   .about__gallery{
+     width: 100%;
+     
+     
+     
+     
+     @include wid(992)      {    display: flex;  } 
+     
+     .splide__list{
+       
+       width: 100%;
+
+    @include wid(601-991)      {      
+
+        display: grid !important;
+        align-content: start;
+        justify-content: start;
+        grid-template-columns: auto auto;
+      //  grid-template-rows: 90px 100px;
+        gap: 30px;
+
+      //  max-inline-size: 600px;
+      //  block-size: 520px;
+
+
+
+             &>li:nth-child(1) {
+              grid-row: 1 / 3;
+              grid-column: 1;
+            }
+
+            &>li:nth-child(3) {
+              grid-row: 2;
+              grid-column: 2 / -2;
+            }
+
+      
+   }
+
+    @include wid(992)      {      
+
+        display: grid !important;
+        align-content: start;
+        justify-content: start;
+        grid-template-columns: auto auto;
+      //  grid-template-rows: 90px 100px;
+        gap: 30px;
+
+      //  max-inline-size: 600px;
+      //  block-size: 520px;
+
+
+
+             &>li:nth-child(1) {
+              grid-row: 1 / 3;
+              grid-column: 1;
+            }
+
+            &>li:nth-child(3) {
+              grid-row: 2;
+              grid-column: 2 / -2;
+            }
+
+      
+   }
+       
+       
+       @include wid(600)      { 
+       
+         &>li{
+           img{
+//             max-width: 100%;
+
+//             max-height: 300px;
+//             display: flex;
+//             margin-left: auto;
+//             margin-right: auto;
+           }
+         }
+       
+       
+       }
+
+       
+       
+     }
+   }
+   
+   
+   .splide__pagination{
+     margin-top: 30px;
+   }
+   
+   
+   
+   .splide__slide {
+    @include wid(600)      { 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+       border-radius: 34px;
+      overflow: hidden;
+      
+      &>img{
+        position: absolute;
+        
+          border-radius: 34px;
+      }
+      
+     }
+}
+   
+   .box__images__content{
+     display: flex;
+     
+
+     
+
+@include wid(991)  { flex-direction: column; }
+
+
+     
+     .content{
+       
+
+      }
+     
+     .img__{
+       border-radius: 34px;
+       
+@include wid(1500)     { margin-bottom: 40px;   width: 30%;  min-width: 266px;  gap: 0 88px; }
+@include wid(1200-1499){ margin-bottom: 40px;   width: 30%;  min-width: 266px;  gap: 0 70px; }
+@include wid(992-1199) { margin-bottom: 40px;   width: 30%;  min-width: 266px;  gap: 0 50px; }
+
+      @include wid(601-991)  {   margin-bottom: 35px; }
+      @include wid(600)      {  margin-bottom: 30px; }
+       
+     
+       img{
+         width: 100%;
+         
+//         @include wid(991)  {   max-width: 70%; }
+         
+      @include wid(601-991)  {   max-width: 70%; }
+      @include wid(600)      {  max-width: 55%; }
+         
+       }
+     }
+
+   }
+   
+   .founder{
+     
+     .name{
+       
+       @extend %flex;
+       
+       font: 700 36px/1.2em var(--p);
+       color: #fff;
+       
+      @include wid(992)  {   padding: 15px 45px; border-radius: 55px; }
+
+     
+      @include wid(601-991)  {  padding: 15px  30px; border-radius: 25px;  }
+      @include wid(600)      {   padding: 15px 20px; border-radius: 17px;  }
+     
+       &:before{
+        @extend %bef-aft;
+     @include wid(992)      { 
+        background: url(../img/about_mark.svg) no-repeat;
+
+        width: 30px;
+        height: 70px;
+         margin-right: 15px;
+       
+       
+         }
+         
+      }
+     
+ background: rgba(66, 79, 68, 0.52);
+backdrop-filter: blur(8.5px);
+/* Note: backdrop-filter has minimal browser support */
+
+       margin-bottom: 15px;
+     }
+     
+     .autor{
+       max-width: 317px;
+       width: 100%;
+       height: auto;
+     
+@include wid(992)      {   margin-right: 45px;  margin-bottom: 45px;  float: left; }
+@include wid(601-991)  {   margin-right: 45px;  margin-bottom: 37px;  float: left; }
+@include wid(600)      {   margin-right: 0;  margin-bottom: 30px;  }
+       
+       
+     }
+     
+     
+   }
+   
+   
+   .media__list{
+     
+     display: flex;
+     
+     
+     flex-wrap: wrap;
+          width: 100%;
+     
+ @include wid(992)      { gap: 50px; }
+@include wid(601-991)  { gap: 50px 40px; }
+@include wid(600)      {  gap: 50px 18px; }
+     
+     
+     li{
+      display: flex;
+       
+       flex-direction: column;
+       
+@include wid(992)      {  width: 28.5%; }
+@include wid(601-991)  {  width: calc(50% - 20px); }
+@include wid(600)      {  width: calc(50% - 9px); }
+       
+       
+      
+       
+       
+       
+       .box__img{
+         width: 100%;
+         height: auto;
+         
+@include wid(601-991)  { margin-bottom: 20px; }
+@include wid(600)      { margin-bottom: 15px; }
+ 
+         
+         img{
+              width: 100%;
+         height: auto;
+                border-radius: 5px;
+                     border-radius: 5px;
+       
+       box-shadow: 0 0 11px rgba(0, 0, 0, 0.29);
+         }
+         
+       }
+       
+       .navigat{
+         @extend %flex;
+         justify-content: space-between;
+         
+                
+         
+         @include wid(992)  {      margin-top: -68px; margin-bottom: 25px;   padding: 14px 13px; }
+         
+@include wid(601-991)  { margin-bottom: 20px; }
+@include wid(600)      { margin-bottom: 15px; }
+         
+         z-index: 12;
+         
+         
+         gap: 0 15px;
+         
+
+         width: 100%;
+         
+         .tag{
+         
+           
+           @extend %flex;
+           
+                background: rgba(182, 135, 66, 0.5);
+              backdrop-filter: blur(2.5px);
+              /* Note: backdrop-filter has minimal browser support */
+
+              border-radius: 32px;
+
+           @include wid(992)  {   height: 40px;   padding: 0 15px;    font: 200 14px/1.2em var(--o); }
+           
+ @include wid(601-991)   {   height: 40px; padding: 0 15px;    font: 200 12px/1.2em var(--o); }
+@include wid(600)       {   height: 30px; padding: 0 15px;     font: 200 10px/1.2em var(--o); }
+           
+           
+           color: #fff;
+        
+           
+         }
+         
+         .download{
+           margin-left: auto;
+           &:hover{
+             background: var(--green-color-6);
+           }
+           
+             
+           
+           @extend %flex;
+           
+           @include wid(992)  {   height: 40px; padding: 0 21px; border-radius: 35px;       background: #424F44; }
+           
+ @include wid(601-991)   {   height: 40px; padding: 0 21px; border-radius: 35px; background: #B68742; }
+@include wid(600)       {   height: 30px; padding: 0 21px; border-radius: 35px;  background: #B68742;}
+           
+
+  &:before{
+    @extend %bef-aft;
+
+
+    
+@include wid(992)      { 
+
+      background: url(../img/download.svg) no-repeat center;
+
+    width: 25px;
+    height: 25px;
+    
+    
+}
+@include wid(601-991)  { 
+    
+    background: url(../img/download.svg) no-repeat center;
+
+    width: 21px;
+    height: 21px;
+    
+}
+@include wid(600)      { 
+    
+    background: url(../img/download.svg) no-repeat center;
+
+    width: 17px;
+    height: 17px;
+    
+    
+}
+    
+    
+    
+  }
+
+
+         }
+         
+  
+         
+         
+
+       }
+       
+       
+              a,.title__{
+          color: #F1EFE8;
+          
+           text-align: center;
+                margin-bottom: 0;
+                
+@include wid(992)      {  font: 400 20px/1.2em var(--o); }
+@include wid(601-991)  {  font: 400 20px/1.2em var(--o); }
+@include wid(600)      {  font: 400 14px/1.2em var(--o); }
+                
+                a{
+                   color: #F1EFE8;
+             @include wid(992)      {  font: 400 20px/1.2em var(--o); }
+@include wid(601-991)  {  font: 400 20px/1.2em var(--o); }
+@include wid(600)      {  font: 400 14px/1.2em var(--o); }
+                }
+           
+         }
+       
+     }
+     
+     
+   }
+   
+   
+   
+   
+}
+
+

@@ -917,6 +917,7 @@ body>header,body>header[main]{
          
    
            .box_menu__{
+                 box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
              margin-top: 10px;
                display: none;
                flex-direction: column;
@@ -2945,6 +2946,38 @@ html body{
   
 }
 
+.woocommerce-pagination{
+  
+  margin-top: 50px;
+      @extend %flex;
+    gap: 0 10px;
+  
+        a,span{
+        @extend %flex;
+        
+//        height: 48px;
+//        width: 48px;
+        
+        border-radius: 50%;
+        
+        color: #2b342c;
+        
+          font: 200 18px/1.2em var(--o);
+        
+        
+        &.active,&.current,&:hover{
+          color: #b68742;
+//          background: #B68742;
+          font: 100 18px/1.2em var(--ob);
+
+        }
+        
+        
+      }
+      
+  
+}
+
 
 .category__{
   background: #424F44;
@@ -2974,6 +3007,31 @@ html body{
     height: 21px;
   }
   
+}
+
+.woocommerce-MyAccount-content{
+  
+  .woocommerce-EditAccountForm{
+    display: flex;
+    flex-wrap: wrap;
+    
+    gap: 10px 30px;
+    
+    .woocommerce-form-row{
+      
+      @include wid(1200)  { 
+        width: calc(50% - 15px);
+      }
+      
+        width: 100%; 
+    }
+    
+    .woocommerce-Button__{
+      width: 100%;
+    }
+    
+  }
+
 }
 
 
@@ -4337,11 +4395,9 @@ background: #F1EFE8;
 //
 
 
-
-
-
 @import "home";
 @import "app";
+@import "about-us";
 
 @import "404";
 @import "faq";
