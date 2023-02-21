@@ -6,6 +6,28 @@ section.workshop__1 {
   background-position: center center;
   background-size: cover;
   min-height: 754px;
+  
+  overflow: hidden;
+  position: relative;
+  
+  &:before{
+    @extend %bef-aft;
+
+    background:  rgba(0, 0, 0, 0.55);
+    top:0;
+    left:0;
+
+    width: 150%;
+    height: 150%;
+     position: absolute;
+    z-index: 1;
+  }
+  *>div{
+    z-index: 2;
+  }
+  
+  
+  
   @include wid(600) {
     min-height: 812px;
   }

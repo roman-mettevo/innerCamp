@@ -1,369 +1,370 @@
-const path = require('path');
-const webpack = require('webpack');
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const CopyWebpackPlugin = require('copy-webpack-plugin');
-const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path')
+const webpack = require('webpack')
+const MiniCssExtractPlugin = require('mini-css-extract-plugin')
+const CopyWebpackPlugin = require('copy-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin')
 //const { VueLoaderPlugin } = require('vue-loader')
+
+
 
 const PATHS = {
   src: path.join(__dirname, '../src'),
   dist: path.join(__dirname, '../dist'),
-  assets: '',
-};
+  assets: ''
+}
 
 module.exports = {
   // BASE config
   externals: {
-    paths: PATHS,
+    paths: PATHS
   },
   entry: {
-    app: PATHS.src,
+    app: PATHS.src
   },
   output: {
     filename: `${PATHS.assets}js/main.min.js?v=[hash]`,
     path: PATHS.dist,
-    publicPath: '',
+    publicPath: ''
   },
   module: {
+
     rules: [
-      {
-        test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: '/node_modules/',
-      },
-      //    {
-      //      test: /\.vue$/,
-      //      loader: 'vue-loader',
-      //      options: {
-      //        loader: {
-      //          scss: 'vue-style-loader!css-loader!sass-loader'
-      //        }
-      //      }
-      //    },
 
       {
-        test: /\.(png|jp(e*)g)$/,
-        use: [
-          {
+      test: /\.js$/,
+      loader: 'babel-loader',
+      exclude: '/node_modules/'
+    }, 
+//    {
+//      test: /\.vue$/,
+//      loader: 'vue-loader',
+//      options: {
+//        loader: {
+//          scss: 'vue-style-loader!css-loader!sass-loader'
+//        }
+//      }
+//    }, 
+            
+     {
+        test: /\.(png|jp(e*)g)$/,  
+        use: [{
             loader: 'url-loader',
             loader: 'file-loader',
-            options: {
-              limit: 13192, // Convert images < 8kb to base64 strings
-              //                name: 'img/[hash].[ext]'
-
-              //             filename: `${PATHS.assets}img/[name].webp`,
-              name: 'img/[name].webp',
-              publicPath: '../',
-              outputPath: '',
-              useRelativePath: true,
-            },
-          },
-          {
-            loader: 'image-webpack-loader',
-            options: {
-              mozjpeg: {
-                progressive: true,
-                quality: 80,
-              },
-              // optipng.enabled: false will disable optipng
-              optipng: {
-                enabled: false,
-              },
-              pngquant: {
-                quality: [0.8, 0.9],
-                speed: 4,
-              },
-              gifsicle: {
-                interlaced: false,
-              },
-            },
-          },
-        ],
+            options: { 
+                limit: 13192, // Convert images < 8kb to base64 strings
+//                name: 'img/[hash].[ext]'
+              
+//             filename: `${PATHS.assets}img/[name].webp`,
+                name: 'img/[name].webp',
+             publicPath: '../',
+          outputPath:'',
+          useRelativePath: true
+            } 
+        },
+         {
+          loader: 'image-webpack-loader',
+              options: {
+                mozjpeg: {
+                  progressive: true,
+                  quality: 80
+                },
+                // optipng.enabled: false will disable optipng
+                optipng: {
+                  enabled: false,
+                },
+                pngquant: {
+                  quality: [0.80, 0.90],
+                  speed: 4
+                },
+                gifsicle: {
+                  interlaced: false,
+                }
+          }
+         }]
       },
       //File loader used to load fonts
-
+            
       {
-        test: /\.(svg)$/,
-        use: [
-          {
-            loader: 'url-loader',
-            //           loader: 'svg-url-loader',
-            //          loader: 'file-loader',
+        test: /\.(svg)$/,  
+        use: [{
+          
+                      loader: 'url-loader',
+//           loader: 'svg-url-loader',
+//          loader: 'file-loader',
 
-            options: {
+            options: { 
               limit: 8192,
+              
+////             filename: `${PATHS.assets}img/[name].[ext]`,
+//             name: 'img/[name].[ext]',
+//             publicPath: '../',
+//                fallback: "file-loader",
+//                          iesafe: true,
+//                encoding: "base64",
+//              esModule: false,
+              
+             filename: `${PATHS.assets}img/[name].[ext]`,
+             name: "img/[name].[ext]",
+             publicPath: '../',
+          outputPath:'',
+          useRelativePath: true
+              
+              
+            } 
+        }]
+      },    
 
-              ////             filename: `${PATHS.assets}img/[name].[ext]`,
-              //             name: 'img/[name].[ext]',
-              //             publicPath: '../',
-              //                fallback: "file-loader",
-              //                          iesafe: true,
-              //                encoding: "base64",
-              //              esModule: false,
-
-              filename: `${PATHS.assets}img/[name].[ext]`,
-              name: 'img/[name].[ext]',
-              publicPath: '../',
-              outputPath: '',
-              useRelativePath: true,
-            },
-          },
-        ],
-      },
-
-      {
-        // Match woff2 in addition to patterns like .woff?v=1.1.1.
-        test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
-        use: {
-          loader: 'url-loader',
-          //        loader: "file-loader",
-          options: {
-            // Limit at 50k. Above that it emits separate files
-            limit: 8192,
-
-            // url-loader sets mimetype if it's passed.
-            // Without this it derives it from the file extension
-            //          mimetype: "application/font-woff",
-
-            // Output below fonts directory
-
-            //          name: "[name].[ext]",
-            //            publicPath: "../fonts/[name]/[name].[ext]", // Take the directory into account
-            filename: `${PATHS.assets}fonts/[name]/[name].[ext]`,
-            name: 'fonts/[name]/[name].[ext]',
-            publicPath: '../',
-            outputPath: '',
-            useRelativePath: true,
-          },
-        },
-      },
-      {
-        test: /\.pug$/,
-
-        loader: 'pug-loader',
+    {
+      // Match woff2 in addition to patterns like .woff?v=1.1.1.
+      test: /\.(woff(2)?|ttf|eot)(\?v=\d+\.\d+\.\d+)?$/,
+      use: {
+        loader: "url-loader",
+//        loader: "file-loader",
         options: {
-          pretty: true,
-          self: true,
-        },
+          // Limit at 50k. Above that it emits separate files
+          limit: 8192,
+
+          // url-loader sets mimetype if it's passed.
+          // Without this it derives it from the file extension
+//          mimetype: "application/font-woff",
+
+          // Output below fonts directory
+            
+//          name: "[name].[ext]",
+//            publicPath: "../fonts/[name]/[name].[ext]", // Take the directory into account
+             filename: `${PATHS.assets}fonts/[name]/[name].[ext]`,
+             name: "fonts/[name]/[name].[ext]",
+             publicPath: '../',
+          outputPath:'',
+          useRelativePath: true
+
+        }
+      },
+    },{
+        test: /\.pug$/,
+     
+          loader: 'pug-loader',
+          options: {
+            pretty: true,
+            self: true,
+          },
+    
       },
 
-      {
-        test: /\.s[ac]ss$/i,
-        use: [
-          'style-loader',
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: { sourceMap: true /* , url: false  */ },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              config: { path: `${PATHS.src}/js/postcss.config.js` },
-            },
-          },
-          {
-            loader: 'sass-loader',
-            options: {
-              sourceMap: true,
-              config: { path: `${PATHS.src}/js/postcss.config.js` },
-            },
-          },
-        ],
-      },
-      {
-        test: /\.css$/,
-        use: [
-          'style-loader',
-          MiniCssExtractPlugin.loader,
-          {
-            loader: 'css-loader',
-            options: { sourceMap: true /* , url: false  */ },
-          },
-          {
-            loader: 'postcss-loader',
-            options: {
-              sourceMap: true,
-              config: { path: `${PATHS.src}/js/postcss.config.js` },
-            },
-          },
-        ],
-      },
-    ],
+    {
+      test: /\.s[ac]ss$/i,
+      use: [
+        'style-loader',
+        MiniCssExtractPlugin.loader,
+        {
+          loader: 'css-loader',
+          options: { sourceMap: true  /* , url: false  */ }
+        }, {
+          loader: 'postcss-loader',
+          options: { sourceMap: true, config: { path: `${PATHS.src}/js/postcss.config.js` } }
+        }, {
+          loader: 'sass-loader',
+          options: { sourceMap: true, config: { path: `${PATHS.src}/js/postcss.config.js` }  }
+        }
+      ]
+    }, {
+      test: /\.css$/,
+      use: [
+        'style-loader',
+        MiniCssExtractPlugin.loader,
+        {
+          loader: 'css-loader',
+          options: { sourceMap: true /* , url: false  */ }
+        }, {
+          loader: 'postcss-loader',
+          options: { sourceMap: true, config: { path: `${PATHS.src}/js/postcss.config.js` } }
+        }
+      ]
+    }]
   },
-  //  resolve: {
-  //    alias: {
-  //      'vue$': 'vue/dist/vue.js'
-  //    }
-  //  },
+//  resolve: {
+//    alias: {
+//      'vue$': 'vue/dist/vue.js'
+//    }
+//  },
   plugins: [
-    //    new VueLoaderPlugin(),
+//    new VueLoaderPlugin(),
     new MiniCssExtractPlugin({
-      filename: `${PATHS.assets}css/min.css?v=[hash]`,
 
-      publicPath: '../',
+    filename: `${PATHS.assets}css/min.css?v=[hash]`,
+
+    publicPath: '../'
     }),
-    //    new MiniCssExtractPlugin({
-    //      filename: `${PATHS.src}/css/fonts.css`,
-    //    }),
+//    new MiniCssExtractPlugin({
+//      filename: `${PATHS.src}/css/fonts.css`,
+//    }),
     // Copy HtmlWebpackPlugin and change index.html for another html page
     new HtmlWebpackPlugin({
-      //      hash: false,
+
+//      hash: false,
       template: `${PATHS.src}/index.pug`,
       filename: './index.html',
-    }),
+    
+    }),    
+    
+    
+   new HtmlWebpackPlugin({
+     hash: false,
+     template: `${PATHS.src}/404.pug`,
+     filename: './404.html'
+   }),
 
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: `${PATHS.src}/404.pug`,
-      filename: './404.html',
-    }),
+      new HtmlWebpackPlugin({
+          hash: false,
+          template: `${PATHS.src}/faq.pug`,
+          filename: './faq.html'
+      }),
 
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: `${PATHS.src}/faq.pug`,
-      filename: './faq.html',
-    }),
+      new HtmlWebpackPlugin({
+          hash: false,
+          template: `${PATHS.src}/app.pug`,
+          filename: './app.html'
+      }),
 
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: `${PATHS.src}/app.pug`,
-      filename: './app.html',
-    }),
-
-    new HtmlWebpackPlugin({
-      hash: false,
-      template: `${PATHS.src}/about-us.pug`,
-      filename: './about-us.html',
-    }),
+      new HtmlWebpackPlugin({
+          hash: false,
+          template: `${PATHS.src}/about-us.pug`,
+          filename: './about-us.html'
+      }),
 
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/profile.pug`,
-      filename: './profile.html',
+      filename: './profile.html'
     }),
 
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/blog-single.pug`,
-      filename: './blog-single.html',
+      filename: './blog-single.html'
     }),
 
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/blog.pug`,
-      filename: './blog.html',
+      filename: './blog.html'
     }),
 
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/checkout.pug`,
-      filename: './checkout.html',
+      filename: './checkout.html'
     }),
-
+    
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/retreat.pug`,
-      filename: './retreat.html',
+      filename: './retreat.html'
     }),
+
+
 
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/collaborations.pug`,
-      filename: './collaborations.html',
-    }),
+      filename: './collaborations.html'
+    }),   
 
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/breathwork.pug`,
-      filename: './breathwork.html',
+      filename: './breathwork.html'
     }),
+   
 
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/corporate.pug`,
-      filename: './corporate.html',
-    }),
+      filename: './corporate.html'
+    }),   
 
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/careers.pug`,
-      filename: './careers.html',
-    }),
+      filename: './careers.html'
+    }),   
 
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/cacao.pug`,
-      filename: './cacao.html',
-    }),
+      filename: './cacao.html'
+    }),  
 
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/breathwork-levels-one-two.pug`,
-      filename: './breathwork-levels-one-two.html',
+      filename: './breathwork-levels-one-two.html'
     }),
-
+    
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/tantra.pug`,
-      filename: './tantra.html',
+      filename: './tantra.html'
     }),
 
+    
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/affiliate-program.pug`,
-      filename: './affiliate-program.html',
+      filename: './affiliate-program.html'
     }),
 
+    
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/workshop.pug`,
-      filename: './workshop.html',
+      filename: './workshop.html'
     }),
-
+    
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/tantra-l3.pug`,
-      filename: './tantra-l3.html',
+      filename: './tantra-l3.html'
     }),
-
+    
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/short-courses.pug`,
-      filename: './short-courses.html',
+      filename: './short-courses.html'
     }),
-
+    
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/bodywork-level-1.pug`,
-      filename: './bodywork-level-1.html',
+      filename: './bodywork-level-1.html'
     }),
 
+    
     new HtmlWebpackPlugin({
       hash: false,
       template: `${PATHS.src}/find-your-coach.pug`,
-      filename: './find-your-coach.html',
+      filename: './find-your-coach.html'
     }),
-
+    
     new HtmlWebpackPlugin({
       hash: false,
-      template: `${PATHS.src}/affiliate.html`,
+      template: `${PATHS.src}/affiliate.pug`,
       filename: './affiliate.html',
     }),
-
+    
     new HtmlWebpackPlugin({
       hash: false,
-      template: `${PATHS.src}/testimonials.html`,
+      template: `${PATHS.src}/testimonials.pug`,
       filename: './testimonials.html',
     }),
+
 
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
       { from: `${PATHS.src}/static`, to: '' },
       { from: `${PATHS.src}/video`, to: 'video' },
-      //      { from: `${PATHS.src}/css`, to: 'css' }
-      //      { from: `${PATHS.src}/fonts`, to: 'fonts' }
-    ]),
+//      { from: `${PATHS.src}/css`, to: 'css' }
+//      { from: `${PATHS.src}/fonts`, to: 'fonts' }        
+    ])
   ],
 };

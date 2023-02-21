@@ -66,6 +66,48 @@ html(lang='en')
       a.academy(href='javascript:;') InnerCamp Academy
       a.profile(href='javascript:;') Profile
       
+      
+      
+    .user__menu.open
+      .bock__top
+        a.close__(href='javascript:;')
+      .box__user
+        .box__img
+          img(src='img/menu_user.png' alt='')
+        .box__content
+          h3.title__ Alexis Alcalá
+      ul.tag
+        li
+          span InnerCamp founder
+        li
+          span Holistic coach
+        li
+          span Breathwork master
+        li
+          span Tantra teacher
+      .block__
+        p Internationally acclaimed Breathwork master and tantra teacher. Alexis is renowned for his depth of study and ability to communicate ancient wisdom in a practical, encouraging manner, combining extensive science with spirituality.
+        p When his own life plan started to unravel after years in the corporate world, Alexis discovered the principles of a holistic lifestyle that helped him create a new vision for the life he wanted. 
+        p When his own life plan started to unravel after years in the corporate world, Alexis discovered the principles of a holistic lifestyle that helped him create a new vision for the life he wanted. 
+        p When his own life plan started to unravel after years in the corporate world, Alexis discovered the principles of a holistic lifestyle that helped him create a new vision for the life he wanted. 
+        p When his own life plan started to unravel after years in the corporate world, Alexis discovered the principles of a holistic lifestyle that helped him create a new vision for the life he wanted. 
+        p When his own life plan started to unravel after years in the corporate world, Alexis discovered the principles of a holistic lifestyle that helped him create a new vision for the life he wanted. 
+          
+   
+   
+    .filter__by
+      .bock__top
+        a.close__(href='javascript:;')
+   
+      
+    .user__menu.open
+      .bock__top
+        a.close__(href='javascript:;')
+        
+        
+        
+        
+      
     
     .profile__menu
       .bock__top
@@ -1217,7 +1259,34 @@ html(lang='en')
                 a(href='javascript:;') QI LIBRARY
 
 
+    a.bot_modal(data-fancybox='', data-src='#brochure', href='javascript:;') brochure
+    // //// MODAL ////
+    #brochure.brochure.modal(style='display: none;')
+      .content_modal
+        .box__top
+          h3.title__ Download Brochure
+          a.Close(href='javascript:;' data-fancybox-close)
+            svg(width='62', height='62', viewbox='0 0 62 62', fill='none', xmlns='http://www.w3.org/2000/svg')
+              path(d='M31 56.8333C45.2673 56.8333 56.8333 45.2673 56.8333 31C56.8333 16.7326 45.2673 5.16663 31 5.16663C16.7326 5.16663 5.16666 16.7326 5.16666 31C5.16666 45.2673 16.7326 56.8333 31 56.8333Z', fill='white', fill-opacity='0.75')
+              path(d='M38.75 23.25L23.25 38.75', stroke='#C6C1B3', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              path(d='M23.25 23.25L38.75 38.75', stroke='#C6C1B3', stroke-width='2', stroke-linecap='round', stroke-linejoin='round')
+              
+              
+        form(method='POST', action='javascript:void(null);')
+          // Hidden Required Fields
 
+          .form_input
+            span.field
+              input(type='text', name='name', required='', value='', placeholder='Your name')
+
+          .form_input
+            span.field
+              input.password__(type='password', name='phone', required='', value='', placeholder='password')
+
+
+          button.bundle.download(type='submit', name='send') Download PDF
+
+          
 
                   
     a.bot_modal(data-fancybox='', data-src='#modal-1', href='javascript:;') Open Modal 1
