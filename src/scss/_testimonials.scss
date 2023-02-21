@@ -12,7 +12,7 @@
     height: 100%;
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
   }
-  
+
   .row {
     display: flex;
     flex-direction: column;
@@ -48,7 +48,7 @@
     left: 0;
     width: 100%;
     height: 2px;
-    background: url("../img/testimonials/subtitle-white-line.svg");
+    background: url('../img/testimonials/subtitle-white-line.svg');
     background-size: cover;
   }
 
@@ -90,7 +90,7 @@
     }
 
     li {
-      background: #FFFFFF;
+      background: #ffffff;
       border-radius: 25px;
       padding: 13px 46px 26px;
       box-shadow: 7px 8px 32px rgba(0, 0, 0, 0.14);
@@ -143,13 +143,13 @@
         }
       }
     }
-    
+
     .number {
       font: 700 40px/66px var(--p);
       letter-spacing: 0.005em;
-      color: #424F44;
+      color: #424f44;
     }
-    
+
     .list-description {
       text-align: center;
       font: 700 18px/30px var(--ob);
@@ -170,7 +170,7 @@
         padding-top: 6px;
         padding-right: 6px;
 
-        @include wid(601-991){
+        @include wid(601-991) {
           display: none;
         }
         @include wid(600) {
@@ -206,7 +206,6 @@
 
 .testimonial__2-top-slider {
   margin-bottom: 142px;
-  
 }
 
 .testimonial__2-bottom-slider {
@@ -249,14 +248,15 @@
 }
 .training-testimony-item,
 .retreats-testimony-item {
-  background: #FFFFFF;
-  box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.25), inset 5px 6px 14px rgba(0, 0, 0, 0.12);
+  background: #ffffff;
+  box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.25),
+    inset 5px 6px 14px rgba(0, 0, 0, 0.12);
   border-radius: 34px;
   padding: 43px 47px 43px 40px;
 
-      min-height: 420px;
-    display: flex;
-    flex-direction: column;
+  min-height: 420px;
+  display: flex;
+  flex-direction: column;
 
   .block__ {
     margin-bottom: 40px;
@@ -277,7 +277,12 @@
       border-radius: 50%;
       overflow: hidden;
       margin-right: 27px;
-
+      img {
+        /*----Добавить рекомендацию к ACF полю чтоб заливали картинки 90х90px-----*/
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
       @include wid(600) {
         display: none;
       }
@@ -293,7 +298,7 @@
         font: 400 18px/30px var(--o);
         text-transform: uppercase;
         letter-spacing: 0.005em;
-        color: #444F43;
+        color: #444f43;
 
         @include wid(600) {
           margin-bottom: 9px;
@@ -316,12 +321,11 @@
         }
       }
     }
-
   }
 }
 
 .testimonial__3 {
-  background: #424F44;
+  background: #424f44;
   position: relative;
   padding: 85px 0;
   overflow: hidden;
@@ -333,15 +337,15 @@
   @include wid(600) {
     padding: 40px 30px;
   }
-   .col {
+  .col {
     position: relative;
 
-     @include wid(601-991) {
-       padding: 30px 0;
-     }
-     @include wid(600) {
-       padding: 30px 0;
-     }
+    @include wid(601-991) {
+      padding: 30px 0;
+    }
+    @include wid(600) {
+      padding: 30px 0;
+    }
 
     &::before {
       position: absolute;
@@ -350,7 +354,7 @@
       left: 0;
       width: 2px;
       height: 100%;
-      background: url("../img/testimonials/vertical-line.svg");
+      background: url('../img/testimonials/vertical-line.svg');
       background-size: cover;
 
       @include wid(601-991) {
@@ -358,7 +362,7 @@
         content: '';
         top: 0;
         left: 0;
-        background: url("../img/testimonials/subtitle-white-line.svg");
+        background: url('../img/testimonials/subtitle-white-line.svg');
         width: 100%;
         height: 2px;
         background-size: cover;
@@ -368,7 +372,7 @@
         content: '';
         top: 0;
         left: 0;
-        background: url("../img/testimonials/subtitle-white-line.svg");
+        background: url('../img/testimonials/subtitle-white-line.svg');
         width: 100%;
         height: 2px;
         background-size: cover;
@@ -381,7 +385,7 @@
       right: 0;
       width: 2px;
       height: 100%;
-      background: url("../img/testimonials/vertical-line.svg");
+      background: url('../img/testimonials/vertical-line.svg');
       background-size: cover;
 
       @include wid(601-991) {
@@ -389,7 +393,7 @@
         content: '';
         top: 100%;
         left: 0;
-        background: url("../img/testimonials/subtitle-white-line.svg");
+        background: url('../img/testimonials/subtitle-white-line.svg');
         width: 100%;
         height: 2px;
         background-size: cover;
@@ -399,7 +403,7 @@
         content: '';
         top: 100%;
         left: 0;
-        background: url("../img/testimonials/subtitle-white-line.svg");
+        background: url('../img/testimonials/subtitle-white-line.svg');
         width: 100%;
         height: 2px;
         background-size: cover;
@@ -407,7 +411,7 @@
     }
   }
 
-  .title{
+  .title {
     color: #fff;
     text-align: center;
     font: 400 64px/60px var(--p);
@@ -496,7 +500,8 @@
 #video-testimonials-slider-1,
 #video-testimonials-slider-2 {
   .video-testimony-item {
-    box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.25), inset 5px 6px 14px rgba(0, 0, 0, 0.12);
+    box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.25),
+      inset 5px 6px 14px rgba(0, 0, 0, 0.12);
     position: relative;
     width: 100%;
     height: 100%;
@@ -510,7 +515,7 @@
       left: 0;
       width: 100%;
       height: 100%;
-      content: "";
+      content: '';
       border-radius: 34px;
       background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     }
@@ -574,9 +579,8 @@
   }
 }
 
-
-
-.retreats-testimony-item .user, .training-testimony-item .user {
+.retreats-testimony-item .user,
+.training-testimony-item .user {
   margin-bottom: 117px;
   padding-top: 223px;
   display: flex;
@@ -601,8 +605,6 @@
   -ms-flex-pack: start;
   justify-content: flex-start;
 }
-
-
 
 .testimonial__5 {
   position: relative;
@@ -643,7 +645,7 @@
         left: 50%;
         transform: translateX(-50%);
         content: '';
-        background: url("../img/testimonials/google.svg");
+        background: url('../img/testimonials/google.svg');
         width: 189px;
         height: 148px;
         background-size: contain;
@@ -661,14 +663,14 @@
         left: 50%;
         transform: translateX(-50%);
         content: '';
-        background: url("../img/testimonials/trust.svg");
+        background: url('../img/testimonials/trust.svg');
         width: 189px;
         height: 148px;
         background-size: contain;
         background-repeat: no-repeat;
 
-        @media(max-width: 1591px){
-          background: url("../img/testimonials/trust-reverse.svg");
+        @media (max-width: 1591px) {
+          background: url('../img/testimonials/trust-reverse.svg');
           width: 189px;
           height: 148px;
           background-size: contain;
@@ -676,7 +678,7 @@
           top: 70%;
         }
 
-        @media(min-width:320px) and (max-width: 600px) {
+        @media (min-width: 320px) and (max-width: 600px) {
           width: 82px;
           height: 56px;
         }
@@ -684,4 +686,3 @@
     }
   }
 }
-

@@ -1,0 +1,10 @@
+/node_modules/
+.DS_Store
+/.idea/
+.idea/
+/src/.DS_Store
+/src/build
+/src/video
+/src/audio
+/src/static
+package-lock.json
