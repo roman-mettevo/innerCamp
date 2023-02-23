@@ -699,101 +699,49 @@ if(document.getElementById('trainings')){
 
 
 
-if(document.getElementById('workshop')){
-    var spliden = new Splide('#workshop',{
-        easing: 'ease-in-out',
+if (document.getElementById('workshop')) {
+  var spliden = new Splide('#workshop', {
+    easing: 'ease-in-out',
+    autoWidth: true,
     //    fixedWidth: '300px',
-        gap: '0',
-        focus: 'center',
-//        pagination: false,
-        perPage  : 3,
-//        start: 1,
-         perMove: 1,
-        trimSpace: false,
-        type: 'loop',
-        arrows: false,
-      
-      padding: '0',
-        
+    gap: '0',
+    focus: 'center',
+    //        pagination: false,
+    perPage: 3,
+    //        start: 1,
+    perMove: 1,
+    trimSpace: false,
+    type: 'loop',
+    arrows: false,
+    padding: '0',
+    breakpoints: {
+      1150: {
+        gap: '0px',
+        perPage: 2,
 
-      
-//                 autoplay     : true,
-//              interval     : 5000,
-//  paginationDirection: false,
-// drag: false, 
-        
-   
-//         speed: 3,
-        
-//  autoScroll: {
-//    speed: 1,
-//  },
-        
-        breakpoints: {
-          '1150': {
-                 gap: '0px',
-                perPage  : 2,
-            
-           fixedWidth : false,
-            
-          },
-          '800': {
-           
-                 gap: '0px',
-                perPage  : 1,
-                     fixedWidth : false,
-            
-//              fixedWidth : '95%',
-    //				direction: 'ltr',
-    //				fixedWidth: 90,
-    //              	fixedHeight: 110,
-    //                drag: true,
-    //                arrows: true,
-    //				perPage: 4,
-    //              	height: '110px',
-    //				cover: true,
-    //				focus: 'left',
-//              paginationDirection: false,
-          },
+        autoWidth: true,
+      },
+      800: {
+        gap: '0px',
+        perPage: 1,
+        autoWidth: true,
+      },
 
-          '600': {
-            
-//              fixedWidth : '30rem',
-                    fixedWidth : false,
-            
-                 gap: '0px',
-                      perPage  : 1,
-            
-              padding: '50px',
-// destroy: true,
-    //				direction: 'ltr',
-    //				fixedWidth: 90,
-    //              	fixedHeight: 110,
-    //                drag: true,
-    //                arrows: true,
-    //				perPage: 4,
-    //              	height: '110px',
-    //				cover: true,
-    //				focus: 'left',
-            
-//              paginationDirection: 'ltr',
-          }
-        },
-      
-
+      600: {
+        autoWidth: true,
+        gap: '0px',
+        padding: '50px',
+      },
+    },
 
     classes: {
-//      arrows: 'splide__arrows your-class-arrows',
-//      arrow : 'splide__arrow your-class-arrow',
-//      prev  : 'splide__arrow--prev your-class-prev',
-//      next  : 'splide__arrow--next your-class-next',
+      //      arrows: 'splide__arrows your-class-arrows',
+      //      arrow : 'splide__arrow your-class-arrow',
+      //      prev  : 'splide__arrow--prev your-class-prev',
+      //      next  : 'splide__arrow--next your-class-next',
     },
-      }).mount();
-
-
+  }).mount();
 }
-
-
 
 
 if(document.getElementById('brand_logo')){

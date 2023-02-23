@@ -99,6 +99,12 @@
 
   li {
     margin-bottom: 10px;
+    
+    &.active{
+      a{
+            color: #424f44;
+      }
+    }
   }
 
   a {
@@ -106,6 +112,15 @@
     letter-spacing: 0.005em;
     text-decoration-line: underline;
     color: #9A9F96;
+  }
+  
+  
+  nav{
+    ul{
+      height: calc(100vh - 150px);
+    overflow-y: auto;
+    position: relative;
+    }
   }
 }
 
@@ -291,7 +306,7 @@
       display: none;
     }
 
-    a {
+    a,span,p,div {
       background: #D3E1CF;
       border-radius: 31px;
       padding: 9px 21px;

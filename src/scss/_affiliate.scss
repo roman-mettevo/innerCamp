@@ -1,0 +1,664 @@
+.profile-affiliate__1 {
+  padding: 142px 0 180px;
+  overflow: hidden;
+  background: url('../img/workshop/bg.svg') repeat;
+  @include wid(601-991) {
+    padding: 125px 0 150px;
+  }
+  @include wid(600) {
+    padding: 107px 0 120px;
+  }
+  .col {
+    @include wid(1500) {
+      padding: 0;
+    }
+    @include wid(601-991) {
+      padding: 0;
+    }
+    @include wid(600) {
+      padding: 0 30px;
+    }
+  }
+  .title {
+    line-height: 1.46em;
+    margin-bottom: 30px;
+    letter-spacing: -0.035em;
+    color: #424f44;
+    @include wid(601-991) {
+      line-height: 1.41em;
+      margin-bottom: 22px;
+    }
+    @include wid(600) {
+      line-height: 1.36em;
+      margin-bottom: 14px;
+    }
+  }
+  .affiliate-content-nav {
+    padding: 10px 30px;
+    background: #fff;
+    display: none;
+    margin: 0 -30px;
+    overflow-x: scroll;
+    @include wid(600) {
+      display: flex;
+    }
+  }
+  .affiliate-content-nav-tab {
+    text-align: center;
+    display: block;
+    min-width: 150px;
+    max-width: 150px;
+    font: 14px/1.65em var(--ob);
+    letter-spacing: 0.005em;
+    color: #b68742;
+    padding: 14px 0;
+    &:not(:last-child) {
+      margin-right: 5px;
+    }
+    &.active {
+      color: #ffffff;
+      border-radius: 51px;
+      background: #424f44;
+      box-shadow: 7px 8px 32px rgba(0, 0, 0, 0.14);
+    }
+  }
+  .stats-wrapper {
+    position: relative;
+    padding-bottom: 80px;
+    @include wid(601-991) {
+      padding-bottom: 55px;
+    }
+    @include wid(600) {
+      padding-bottom: 60px;
+    }
+    .splide__track {
+      overflow: visible;
+    }
+  }
+  .stats-item {
+    max-width: 201px;
+    min-width: 201px;
+    width: 100%;
+    padding: 14px 24px;
+    background: var(--white-color-1);
+    box-shadow: 19px 25px 53px rgba(114, 114, 114, 0.25),
+      inset 2px 2px 7px rgba(0, 0, 0, 0.21);
+    border-radius: 17px;
+    @include wid(601-991) {
+      max-width: 163px;
+      min-width: 163px;
+      padding: 15px 20px;
+    }
+    @include wid(600) {
+      max-width: 124px;
+      min-width: 124px;
+      padding: 15px;
+    }
+  }
+  .stats-icon {
+    @extend %flex;
+    background: #f2f1fd;
+    width: 53px;
+    height: 53px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    @include wid(601-991) {
+      width: 41px;
+      height: 41px;
+      margin-bottom: 20px;
+    }
+    @include wid(600) {
+      width: 30px;
+      height: 30px;
+      margin-bottom: 10px;
+    }
+    img {
+      width: 100%;
+    }
+  }
+  .stats-price {
+    color: #424f44;
+    letter-spacing: 0.005em;
+    font: 18px/1.65em var(--ob);
+    @include wid(601-991) {
+      font-size: 16px;
+    }
+    @include wid(600) {
+      font-size: 14px;
+    }
+  }
+  .stats-name {
+    letter-spacing: 0.005em;
+    color: #adadad;
+    font: 14px/1.65em var(--osb);
+    @include wid(601-991) {
+      font-size: 12px;
+    }
+    @include wid(600) {
+      font-size: 10px;
+    }
+  }
+
+  .affiliate-content {
+    display: grid;
+    position: relative;
+    align-items: flex-start;
+    padding-top: 80px;
+    @include wid(1500) {
+      grid-template-areas:
+        'referrals products'
+        'payout payout';
+      grid-template-columns: minmax(635px, 790px) minmax(415px, 511px);
+      gap: 30px;
+    }
+    @include wid(992) {
+      grid-template-areas:
+        'referrals'
+        'products'
+        'payout';
+      grid-template-columns: 1fr;
+      gap: 15px;
+    }
+    @include wid(601-991) {
+      grid-template-areas:
+        'referrals'
+        'products'
+        'payout';
+      grid-template-columns: 1fr;
+      gap: 15px;
+      padding-top: 55px;
+    }
+    @include wid(600) {
+      display: block;
+      padding-top: 30px;
+    }
+    &::after {
+      @extend %bef-aft;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(
+        90deg,
+        rgba(182, 135, 66, 0) 4.27%,
+        #b68742 41.15%,
+        rgba(182, 135, 66, 0) 96.04%
+      );
+      @include wid(600) {
+        display: none;
+      }
+    }
+  }
+  .affiliate-content-item {
+    width: 100%;
+    //   height: 100px;
+    background: var(--white-color-1);
+    box-shadow: 19px 25px 53px rgba(114, 114, 114, 0.25),
+      inset 2px 2px 7px rgba(0, 0, 0, 0.21);
+    border-radius: 17px;
+    padding: 15px 37px;
+    @include wid(601-991) {
+      padding: 15px 20px;
+    }
+    @include wid(600) {
+      padding: 15px 16px;
+      display: none;
+    }
+    &.active {
+      @include wid(600) {
+        display: block;
+      }
+    }
+  }
+  .referrals {
+    grid-area: referrals;
+  }
+  .products {
+    grid-area: products;
+  }
+  .payout-history {
+    grid-area: payout;
+  }
+  .content-heading {
+    font: 24px/1.65em var(--ob);
+    letter-spacing: 0.005em;
+    color: #424f44;
+    margin-bottom: 30px;
+    @include wid(601-991) {
+      font-size: 19px;
+      margin-bottom: 22px;
+    }
+    @include wid(600) {
+      font-size: 14px;
+      margin-bottom: 15px;
+    }
+  }
+  .affiliate-table-header {
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    position: relative;
+    @include wid(600) {
+      font-size: 10px !important;
+      padding-bottom: 10px;
+      margin-bottom: 10px;
+    }
+    &::after {
+      @extend %bef-aft;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: linear-gradient(
+        90deg,
+        rgba(182, 135, 66, 0) 4.27%,
+        #b68742 41.15%,
+        rgba(182, 135, 66, 0) 96.04%
+      );
+    }
+  }
+  .affiliate-table-pagination {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    column-gap: 5px;
+    color: #adadad;
+    font: 18px/1.25em var(--o);
+    .pagination-arrows {
+      display: flex;
+      align-items: center;
+      @include wid(600) {
+        display: none;
+      }
+    }
+    .affiliate-table-seemore {
+      font: 14px/1.2em var(--ob);
+      padding: 5px 0 5px 30px;
+      color: #b68742;
+      position: relative;
+      background: transparent;
+      margin: 0 auto;
+      display: none;
+      @include wid(600) {
+        display: block;
+      }
+      &::before {
+        @extend %bef-aft;
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background: center / contain no-repeat
+          url(../img/affiliate/see-more.svg);
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+    .affiliate-table-arrow {
+      width: 32px;
+      height: 32px;
+      background: transparent;
+      @extend %flex;
+      padding: 0;
+    }
+  }
+  .referrals-table-row {
+    display: grid;
+
+    gap: 15px;
+    color: #424f44;
+    letter-spacing: 0.005em;
+    font: 18px/1.65em var(--ob);
+    align-items: center;
+    @include wid(1500) {
+      grid-template-columns:
+        12px minmax(190px, 215px) minmax(110px, 190px) minmax(100px, 145px)
+        minmax(65px, 95px);
+    }
+    @include wid(992) {
+      grid-template-columns:
+        12px minmax(190px, 523px) minmax(110px, 190px) minmax(100px, 145px)
+        minmax(65px, 95px);
+    }
+    @include wid(601-991) {
+      grid-template-columns:
+        12px minmax(190px, 450px) minmax(110px, 190px) minmax(100px, 145px)
+        minmax(65px, 95px);
+    }
+    @include wid(600) {
+      grid-template-columns: 12px minmax(165px, 343px) 75px;
+      font-size: 14px;
+    }
+    &.affiliate-table-header {
+      .affiliate-table-date {
+        @include wid(600) {
+          display: none;
+        }
+      }
+      .affiliate-table-commission {
+        @include wid(600) {
+          text-align: right;
+        }
+      }
+      .affiliate-table-status {
+        @include wid(600) {
+          display: none;
+        }
+      }
+    }
+  }
+  .referrals-table-body {
+    .referrals-table-row {
+      padding: 17px 0;
+      margin-bottom: 10px;
+      position: relative;
+      &:not(:last-child) {
+        &::before {
+          @extend %bef-aft;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(
+            89.96deg,
+            rgba(182, 135, 66, 0) 3.94%,
+            rgba(173, 173, 173, 0) 3.95%,
+            #adadad 46.24%,
+            rgba(173, 173, 173, 0) 92.72%
+          );
+        }
+      }
+    }
+    .affiliate-table-number {
+    }
+    .affiliate-table-name {
+      display: flex;
+      column-gap: 14px;
+      .photo {
+        max-width: 66px;
+        width: 100%;
+        height: 66px;
+        @include wid(600) {
+          display: none;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .name-wrapper {
+        @include wid(600) {
+          display: flex;
+          flex-direction: column;
+        }
+      }
+      .id {
+        font-family: var(--o);
+        color: #adadad;
+        @include wid(600) {
+          font-size: 10px;
+        }
+      }
+    }
+    .affiliate-table-commission {
+      @include wid(600) {
+        text-align: right;
+      }
+    }
+    .affiliate-table-date {
+      font-family: var(--o);
+      @include wid(600) {
+        display: none;
+      }
+    }
+    .affiliate-table-status {
+      //   padding: 4px 23px;
+      @extend %flex;
+      width: 100%;
+      height: 38px;
+      border-radius: 20px;
+      background: #ddeddf;
+      font-family: var(--o);
+      @include wid(600) {
+        display: none;
+      }
+    }
+  }
+  .products-table-row {
+    display: grid;
+    grid-template-columns: 12px minmax(200px, 294px) minmax(100px, 100px);
+    gap: 15px;
+    color: #424f44;
+    letter-spacing: 0.005em;
+    font: 18px/1.65em var(--ob);
+    align-items: center;
+
+    @include wid(1500) {
+      grid-template-columns: 12px minmax(200px, 294px) minmax(100px, 100px);
+    }
+    @include wid(992) {
+      grid-template-columns: 12px minmax(200px, 880px) minmax(100px, 100px);
+    }
+    @include wid(601-991) {
+      grid-template-columns: 12px minmax(200px, 880px) minmax(100px, 100px);
+    }
+    @include wid(600) {
+      grid-template-columns: 12px minmax(164px, 880px) 75px;
+      font-size: 14px;
+      line-height: 1.13em;
+    }
+  }
+  .products-table-row.affiliate-table-header .affiliate-table-sales {
+    text-align: right;
+  }
+  .products-table-body {
+    .products-table-row {
+      padding: 17px 0;
+      margin-bottom: 10px;
+      position: relative;
+      &:not(:last-child) {
+        &::before {
+          @extend %bef-aft;
+          position: absolute;
+          bottom: 0;
+          width: 100%;
+          height: 2px;
+          background: linear-gradient(
+            89.96deg,
+            rgba(182, 135, 66, 0) 3.94%,
+            rgba(173, 173, 173, 0) 3.95%,
+            #adadad 46.24%,
+            rgba(173, 173, 173, 0) 92.72%
+          );
+        }
+      }
+    }
+    .affiliate-table-sales {
+      text-align: right;
+    }
+    .affiliate-table-product {
+      display: flex;
+      column-gap: 14px;
+      .photo {
+        max-width: 66px;
+        width: 100%;
+        height: 66px;
+        @include wid(600) {
+          max-width: 51px;
+          height: 51px;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .name {
+        @include wid(600) {
+          margin-bottom: 4px;
+        }
+      }
+      .quantity {
+        font-family: var(--o);
+        color: #adadad;
+        @include wid(600) {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .payout-table-row {
+    display: grid;
+    grid-template-columns:
+      12px minmax(110px, 358px) minmax(100px, 389px) minmax(100px, 220px)
+      minmax(100px, 220px);
+    gap: 15px;
+    color: #424f44;
+    letter-spacing: 0.005em;
+    font: 18px/1.65em var(--ob);
+    align-items: center;
+    justify-content: space-between;
+    @include wid(600) {
+      grid-template-columns: 12px minmax(110px, 358px) minmax(100px, 100px);
+    }
+    &.affiliate-table-header {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      @include wid(600) {
+        padding-bottom: 10px;
+        margin-bottom: 10px;
+      }
+      .affiliate-table-method {
+        @include wid(600) {
+          display: none;
+        }
+      }
+      .affiliate-table-amount {
+        @include wid(600) {
+          text-align: right;
+        }
+      }
+      .affiliate-table-notes {
+        text-align: right;
+        @include wid(600) {
+          display: none;
+        }
+      }
+    }
+  }
+  .no-payouts-to-show {
+    color: #424f44;
+    font: 18px/1.65em var(--ob);
+    padding-bottom: 15px;
+    @include wid(601-991) {
+      font: 16px/1.38em var(--ob);
+    }
+    @include wid(600) {
+      padding: 30px 0 40px;
+      text-align: center;
+      font: 14px/1.13em var(--ob);
+    }
+  }
+}
+
+.profile-affiliate__modal {
+  position: fixed;
+  bottom: 0;
+  z-index: 10;
+  background: #ffffff;
+  box-shadow: 0px -5px 18px rgba(0, 0, 0, 0.15);
+  border-radius: 34px 34px 0px 0px;
+  height: 158px;
+  width: 100%;
+  display: none;
+  padding: 12px 30px;
+  &.active {
+    display: none;
+    @include wid(600) {
+      display: block;
+    }
+  }
+
+  .close {
+    position: absolute;
+    width: 23px;
+    height: 23px;
+    top: 23px;
+    right: 30px;
+    background: #fff;
+    @extend %flex;
+    border-radius: 50%;
+    z-index: 10;
+    filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.13));
+  }
+  .modal-name-row {
+    display: flex;
+    column-gap: 12px;
+    position: relative;
+    padding-bottom: 17px;
+    margin-bottom: 15px;
+    .img {
+      width: 45px;
+      height: 45px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .name {
+      color: #424f44;
+      font: 14px/1.65em var(--ob);
+      letter-spacing: 0.005em;
+    }
+    .id {
+      color: #adadad;
+      letter-spacing: 0.005em;
+      font: 10px/1.65em var(--o);
+    }
+    &::after {
+      @extend %bef-aft;
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: linear-gradient(
+        89.96deg,
+        rgba(182, 135, 66, 0) 3.94%,
+        rgba(173, 173, 173, 0) 3.95%,
+        #adadad 46.24%,
+        rgba(173, 173, 173, 0) 92.72%
+      );
+    }
+  }
+  .modal-options-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .commission-name {
+      font: 14px/1.65em var(--ob);
+      letter-spacing: 0.005em;
+      color: #424f44;
+    }
+    .commission-date {
+      color: #adadad;
+      letter-spacing: 0.005em;
+      font: 10px/1.65em var(--o);
+    }
+    .price {
+      color: #424f44;
+      letter-spacing: 0.005em;
+      font: 14px/1.65em var(--ob);
+    }
+    .active {
+      width: 60px;
+      height: 31px;
+      background: #ddeddf;
+      @extend %flex;
+      border-radius: 30px;
+      font: 14px/1.65em var(--o);
+    }
+  }
+}

@@ -2775,8 +2775,6 @@ html body{
 //      backdrop-filter: blur(6px);
       /* Note: backdrop-filter has minimal browser support */
 
-
-     
      
   @include wid(1500)     {       border-radius: 25px;  padding: 70px 55px;  min-width: 344px }
 @include wid(1200-1499){       border-radius: 25px;  padding: 55px 35px;  }
@@ -2843,27 +2841,28 @@ html body{
      &.active{     
        
          a{
-
+           
+           color: #fff;
            position: relative;
 
-              &:before{
+           &:before{
                 @extend %bef-aft;
 
-                   background: #FFFFFF;
-                    box-shadow: 0px 4px 4px rgba(95, 128, 247, 0.1);
-                    border-radius: 15px;
-                   width: 3px;
-                   height: 100%;
+                  background: #FFFFFF;
+                  box-shadow: 0px 4px 4px rgba(95, 128, 247, 0.1);
+                  border-radius: 15px;
+                  width: 3px;
+                  height: 100%;
 
-                position: absolute;
+                  position: absolute;
 
-                  @include wid(1500)     {       left: -51px;}
-                  @include wid(1200-1499){       left: -41px; }
+                  @include wid(1500)     {  left: -51px; }
+                  @include wid(1200-1499){  left: -41px; }
                   @include wid(992-1199) {  }
                   @include wid(601-991)  {  }
                   @include wid(600)      {  }
 
-              }
+            }
 
          }
        
