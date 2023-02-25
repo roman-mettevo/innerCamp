@@ -1,0 +1,1719 @@
+section.tantra-retreat__1 {
+  @extend %flex;
+  min-height: 754px;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(../img/bodywork-1/section-1-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  @include wid(600) {
+    min-height: 812px;
+  }
+  .col {
+    @include wid(1500) {
+      padding: 0;
+    }
+    @include wid(601-991) {
+      padding-top: 80px;
+    }
+    @include wid(600) {
+      padding: 110px 20px 0;
+    }
+    &::before {
+      @extend %bef-aft;
+      position: absolute;
+      left: 0;
+      top: calc(50% + 92px);
+      transform: translateY(-50%);
+      height: 520px;
+      width: 2px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 52.68%,
+        rgba(255, 255, 255, 0) 99.15%
+      );
+      @include wid(991) {
+        top: calc(50% + 40px);
+      }
+      @include wid(600) {
+        display: none;
+      }
+    }
+    &::after {
+      @extend %bef-aft;
+      position: absolute;
+      right: 0;
+      top: calc(50% + 92px);
+      transform: translateY(-50%);
+      height: 520px;
+      width: 2px;
+      background: linear-gradient(
+        180deg,
+        rgba(255, 255, 255, 0) 0%,
+        #ffffff 52.68%,
+        rgba(255, 255, 255, 0) 99.15%
+      );
+      @include wid(991) {
+        top: calc(50% + 40px);
+      }
+      @include wid(600) {
+        display: none;
+      }
+    }
+  }
+  .sub {
+    margin-bottom: 0;
+    text-align: center;
+    color: var(--white-color-1);
+  }
+  .title {
+    color: var(--white-color-1);
+    max-width: 868px;
+    text-align: center;
+    margin: 0 auto 30px;
+    line-height: 1.02em;
+    position: relative;
+    @include wid(600) {
+      padding-bottom: 30px;
+      margin-bottom: 30px;
+      font: 36px/1.06em var(--p);
+      letter-spacing: -0.035em;
+    }
+    &::before {
+      @extend %bef-aft;
+      position: absolute;
+      @include wid(600) {
+        top: -30px;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0%,
+          #ffffff 52.68%,
+          rgba(255, 255, 255, 0) 99.15%
+        );
+      }
+    }
+    &::after {
+      @extend %bef-aft;
+      position: absolute;
+      @include wid(600) {
+        bottom: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          rgba(255, 255, 255, 0) 0%,
+          #ffffff 52.68%,
+          rgba(255, 255, 255, 0) 99.15%
+        );
+      }
+    }
+  }
+  .short-info-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+  }
+  .short-info-item {
+    background: var(--white-color-1);
+    border-radius: 23px;
+    padding: 8px 21px 8px 65px;
+    color: var(--green-color-8);
+    font: 18px/1.65em var(--osb);
+    letter-spacing: 0.005em;
+    position: relative;
+    @include wid(601-991) {
+      font: 16px/1.56em var(--osb);
+      padding: 8px 21px 8px 58px;
+    }
+    @include wid(600) {
+      font: 14px/1.48em var(--osb);
+      padding: 8px 21px 8px 51px;
+    }
+    &::before {
+      @extend %bef-aft;
+      position: absolute;
+      left: 21px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      background-repeat: no-repeat !important;
+      background-size: contain !important;
+      background-position: center center !important;
+      @include wid(601-991) {
+        width: 26px;
+        height: 26px;
+      }
+      @include wid(600) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+  .name-item {
+    &::before {
+      background: url(../img/retreat/flower.svg);
+      width: 44px;
+      @include wid(601-991) {
+        width: 36px;
+      }
+      @include wid(600) {
+        width: 28px;
+      }
+    }
+  }
+  .level-item {
+    @include wid(600) {
+      order: 3;
+    }
+    &::before {
+      background: url(../img/retreat/calendar.svg);
+    }
+  }
+  .calendar-item {
+    @include wid(600) {
+      order: 2;
+    }
+    &::before {
+      background: url(../img/retreat/map-pin.svg);
+    }
+  }
+  .check-item {
+    @include wid(600) {
+      order: 1;
+    }
+    &::before {
+      background: url(../img/bodywork-1/check-icon.svg);
+    }
+  }
+
+  p.description {
+    color: var(--white-color-1);
+    font: 18px/1.65em var(--ob);
+    letter-spacing: 0.005em;
+    max-width: 747px;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 30px;
+    @include wid(601-991) {
+      font: 16px/1.63em var(--ob);
+    }
+    @include wid(600) {
+      font: 14px/1.62em var(--ob);
+      padding: 0 10px;
+    }
+  }
+  .bundle {
+    margin: 0 auto;
+    max-width: 248px;
+    @include wid(600) {
+      max-width: 316px;
+    }
+  }
+}
+
+section.tantra-retreat__2 {
+  padding: 90px 0 180px;
+  @include wid(601-991) {
+    padding: 85px 0 150px;
+  }
+  @include wid(600) {
+    padding: 80px 0 120px;
+  }
+  .col {
+    @include wid(1500) {
+      padding: 0px;
+    }
+    @include wid(600) {
+      padding: 0 30px;
+    }
+  }
+  .retreat-product-card {
+    display: flex;
+    background: #ffffff;
+    box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.14),
+      inset 5px 6px 14px rgba(0, 0, 0, 0.13);
+    border-radius: 34px;
+    overflow: hidden;
+    @include wid(991) {
+      flex-direction: column;
+    }
+    .img {
+      max-width: 721px;
+      min-height: 402px;
+      height: 100%;
+      @include wid(991) {
+        flex-direction: column;
+        max-width: unset;
+        min-height: unset;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        min-height: 402px;
+        object-fit: cover;
+        display: block;
+        @include wid(991) {
+          min-height: unset;
+        }
+      }
+    }
+    .retreat-product-card-body {
+      padding: 48px 68px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+      min-width: 496px;
+      @include wid(601-991) {
+        min-width: 420px;
+        padding: 30px;
+        align-items: center;
+      }
+      @include wid(600) {
+        padding: 31px 22px;
+        min-width: unset;
+      }
+    }
+    .bundle {
+      @include wid(601-991) {
+        max-width: 100%;
+      }
+      @include wid(600) {
+        max-width: 271px;
+      }
+    }
+    .icon-and-text-list {
+      margin: 41px 0 20px;
+      padding-top: 41px;
+      position: relative;
+      @include wid(601-991) {
+        display: flex;
+        column-gap: 20px;
+      }
+      @include wid(600) {
+        margin: 30px 0 8px;
+        padding-top: 30px;
+      }
+      &::before {
+        @extend %bef-aft;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 2px;
+        background: linear-gradient(
+          90deg,
+          rgba(182, 135, 66, 0) 0%,
+          #b68742 52.68%,
+          rgba(182, 135, 66, 0) 99.15%
+        );
+      }
+    }
+    .icon-and-text-item {
+      padding-left: 44px;
+      position: relative;
+      color: #444f43;
+      font: 24px/1.48em var(--ob);
+      letter-spacing: 0.005em;
+      @include wid(601-991) {
+        font: 19px/1.48em var(--ob);
+        padding-left: 37px;
+      }
+      @include wid(600) {
+        font: 14px/1.48em var(--ob);
+        padding-left: 30px;
+      }
+      &::before {
+        @extend %bef-aft;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 32px;
+        height: 32px;
+        background-position: center center !important;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        @include wid(601-991) {
+          width: 26px;
+          height: 26px;
+        }
+        @include wid(600) {
+          width: 20px;
+          height: 20px;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 20px;
+        @include wid(601-991) {
+          margin-bottom: 14px;
+        }
+        @include wid(600) {
+          margin-bottom: 8px;
+        }
+      }
+    }
+    .icon-and-text-date {
+      &::before {
+        background: url(../img/retreat/calendar.svg);
+      }
+    }
+    .icon-and-text-address {
+      &::before {
+        background: url(../img/retreat/map-pin.svg);
+      }
+    }
+    .status {
+      font: 24px/1.65em var(--ob);
+      letter-spacing: 0.005em;
+      color: #b68742;
+      background: #efe4d3;
+      border-radius: 31px;
+      display: inline-flex;
+      padding: 0 17px;
+      @include wid(601-991) {
+        padding: 1px 13px;
+        font: 19px/1.42em var(--ob);
+      }
+      @include wid(600) {
+        padding: 3px 10px;
+        font: 14px/1.48em var(--ob);
+      }
+    }
+  }
+}
+
+section.tantra-retreat__3 {
+  padding-bottom: 180px;
+  @include wid(601-991) {
+    padding-bottom: 150px;
+  }
+  @include wid(600) {
+    padding-bottom: 120px;
+  }
+  .col {
+    display: flex;
+    @include wid(1500) {
+      column-gap: 52px;
+      padding: 0;
+    }
+    @include wid(992) {
+      column-gap: 15px;
+    }
+    @include wid(601-991) {
+      column-gap: 15px;
+    }
+    @include wid(600) {
+      row-gap: 30px;
+      flex-direction: column-reverse;
+      padding: 0 30px;
+    }
+    .text {
+      @include wid(601-991) {
+        width: 65%;
+      }
+    }
+    .title {
+      margin-bottom: 30px;
+      line-height: 0.94em;
+      @include wid(601-991) {
+        font: 32px/1.2em var(--p);
+      }
+      @include wid(600) {
+        font: 28px/1.36em var(--p);
+      }
+    }
+    p {
+      font: 18px/1.65em var(--o);
+      letter-spacing: 0.005em;
+      color: var(--green-color-5);
+      @include wid(601-991) {
+        font: 16px/1.65em var(--o);
+      }
+      @include wid(600) {
+        font: 14px/1.65em var(--o);
+      }
+      &:not(:last-child) {
+        margin-bottom: 25px;
+        @include wid(600) {
+          margin-bottom: 30px;
+        }
+      }
+    }
+    .img {
+      max-width: 376px;
+      width: 100%;
+      @include wid(601-991) {
+        max-width: 35%;
+      }
+      @include wid(600) {
+        max-width: unset;
+        display: flex;
+        justify-content: center;
+      }
+      img {
+        width: 100%;
+        border-radius: 34px;
+        @include wid(600) {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+section.tantra-retreat__4 {
+  padding-bottom: 180px;
+  @include wid(601-991) {
+    padding-bottom: 137px;
+  }
+  @include wid(600) {
+    padding-bottom: 95px;
+  }
+  .row {
+    .col {
+      @include wid(1500) {
+        padding: 0;
+      }
+      @include wid(600) {
+        padding: 0 30px;
+      }
+    }
+    .title {
+      margin-bottom: 60px;
+      @include wid(601-991) {
+        margin-bottom: 45px;
+      }
+      @include wid(600) {
+        margin-bottom: 30px;
+      }
+    }
+    .tahuma-recovery {
+      display: flex;
+      column-gap: 52px;
+      @include wid(991) {
+        row-gap: 30px;
+        flex-direction: column;
+      }
+    }
+    .tahuma-recovery-list {
+      padding: 33px 41px;
+      border: 2px dashed var(--green-color-5);
+      border-radius: 34px;
+      max-width: 677px;
+      width: 100%;
+      @include wid(991) {
+        max-width: unset;
+      }
+      @include wid(601-991) {
+        padding: 24px 28px;
+      }
+      @include wid(600) {
+        padding: 15px;
+        border-radius: 17px;
+      }
+    }
+    .tahuma-recovery-item {
+      padding-left: 47px;
+      font: 18px/1.65em var(--o);
+      letter-spacing: 0.005em;
+      color: var(--green-color-5);
+      position: relative;
+      @include wid(601-991) {
+        padding-left: 43px;
+        font: 16px/1.65em var(--o);
+      }
+      @include wid(600) {
+        padding-left: 40px;
+        padding-top: 3px;
+        font: 14px/1.65em var(--o);
+      }
+      &::before {
+        @extend %bef-aft;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 34px;
+        height: 34px;
+        background: url(../img/bodywork-1/check-circle.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        @include wid(601-991) {
+          width: 32px;
+          height: 32px;
+        }
+        @include wid(600) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+    .img {
+      max-width: 488px;
+      width: 100%;
+      @include wid(991) {
+        display: none;
+      }
+      img {
+        width: 100%;
+        border-radius: 34px;
+        @include wid(991) {
+          width: unset;
+        }
+      }
+    }
+  }
+}
+
+section.tantra-retreat__5 {
+  background: #424f44;
+  padding: 66px 0 60px;
+  @include wid(601-991) {
+    padding: 46px 0 40px;
+  }
+  @include wid(600) {
+    padding: 25px 0 20px;
+  }
+  .col {
+    @include wid(1200) {
+      padding: 0;
+    }
+    @include wid(600) {
+      padding: 0 30px;
+    }
+  }
+  .section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 60px;
+    @include wid(601-991) {
+      margin-bottom: 45px;
+    }
+    @include wid(600) {
+      margin-bottom: 30px;
+    }
+    .title {
+      color: var(--white-color-3);
+      line-height: 0.94em;
+      @include wid(601-991) {
+        line-height: 1.15em;
+      }
+      @include wid(600) {
+        line-height: 1.36em;
+      }
+    }
+    .faciliated-by {
+      display: flex;
+      align-items: center;
+      @include wid(991) {
+        display: none;
+      }
+      span {
+        font: 20px/1.65em var(--ob);
+        color: var(--white-color-3);
+        letter-spacing: 0.005em;
+        margin-right: 20px;
+      }
+    }
+    .faciliated-users-list {
+      display: flex;
+      flex-direction: row-reverse;
+    }
+    .faciliated-users-item {
+      margin-right: -15px;
+      img {
+        border-radius: 50%;
+      }
+    }
+  }
+
+  .heading {
+    color: var(--green-color-5);
+    margin-bottom: 25px;
+  }
+  .schedule-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 20px;
+    row-gap: 20px;
+    @include wid(1500) {
+      column-gap: 36px;
+      row-gap: 60px;
+    }
+    @include wid(1200) {
+      column-gap: 15px;
+      row-gap: 15px;
+    }
+    @include wid(991) {
+      grid-template-columns: 1fr;
+      row-gap: 30px;
+    }
+    @include wid(601-991) {
+    }
+    @include wid(600) {
+    }
+  }
+  .schedule-grid-item {
+    background: #ffffff;
+    box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.14),
+      inset 5px 6px 14px rgba(0, 0, 0, 0.13);
+    border-radius: 34px;
+    overflow: hidden;
+
+    .schedule-header {
+      img {
+        width: 100%;
+        display: block;
+        min-height: 60px;
+      }
+    }
+    .schedule-body {
+      padding: 30px 36px;
+      @include wid(1500) {
+        padding: 30px 36px;
+      }
+      @include wid(1200) {
+        padding: 20px 15px;
+      }
+      @include wid(601-991) {
+        padding: 25px 24px;
+      }
+      @include wid(600) {
+        padding: 25px 24px;
+      }
+    }
+    .heading {
+      font: 36px/1.54em var(--p);
+      color: #424f44;
+      margin-bottom: 25px;
+      @include wid(601-991) {
+        margin-bottom: 20px;
+        font: 30px/1.4em var(--p);
+      }
+      @include wid(600) {
+        margin-bottom: 15px;
+        font: 24px/1.25em var(--p);
+      }
+    }
+    .schedule-list-item {
+      color: var(--green-color-8);
+      font: 18px/1.48em var(--o);
+      display: flex;
+      column-gap: 35px;
+      @include wid(601-991) {
+        column-gap: 27px;
+        font: 16px/1.48em var(--o);
+      }
+      @include wid(600) {
+        column-gap: 18px;
+        font: 14px/1.48em var(--o);
+      }
+      &:not(:last-child) {
+        margin-bottom: 25px;
+        @include wid(601-991) {
+          margin-bottom: 20px;
+        }
+        @include wid(600) {
+          margin-bottom: 15px;
+        }
+      }
+    }
+    .schedule-text {
+      font-family: var(--ob);
+    }
+    &:nth-child(2) {
+      @include wid(992) {
+        grid-column: 2/4;
+      }
+      .schedule-list {
+        columns: 2;
+        @include wid(600) {
+          columns: 1;
+        }
+      }
+      .schedule-list-item {
+        float: left;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    }
+    &:nth-child(3) {
+      @include wid(992) {
+        grid-column: 1/3;
+      }
+      .schedule-list {
+        columns: 2;
+        @include wid(600) {
+          columns: 1;
+        }
+      }
+      .schedule-list-item {
+        float: left;
+        page-break-inside: avoid;
+        break-inside: avoid;
+      }
+    }
+  }
+}
+
+section.tantra-retreat__6 {
+  padding: 180px 0 180px;
+  @include wid(601-991) {
+    padding: 140px 0 125px;
+  }
+  @include wid(600) {
+    padding: 100px 0 74px;
+    background: #424f44;
+  }
+  .row {
+    background: url(../img/retreat/sun-bg.svg);
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    @include wid(600) {
+      background: none;
+    }
+    .col {
+      @include wid(600) {
+        padding: 0 30px;
+      }
+    }
+    .cacao-ceremony {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      column-gap: 20px;
+      background: #424f44;
+      padding: 32px;
+      border-radius: 34px;
+      position: relative;
+      z-index: 2;
+      @include wid(600) {
+        flex-direction: column;
+        background: unset;
+        padding: 0px;
+        align-items: unset;
+        margin-bottom: 60px;
+      }
+      .cacao-text {
+        max-width: 620px;
+        width: 100%;
+        @include wid(600) {
+          max-width: unset;
+          margin-bottom: 20px;
+        }
+        p {
+          color: #ffffff;
+          font: 36px/1.54em var(--p);
+          @include wid(601-991) {
+            font: 26px/1.49em var(--p);
+          }
+          @include wid(600) {
+            font: 16px/1.44em var(--p);
+          }
+          strong {
+            font-family: var(--p);
+          }
+        }
+      }
+      .img {
+        max-width: 451px;
+        width: 100%;
+        @include wid(600) {
+          max-width: unset;
+        }
+        img {
+          border-radius: 34px;
+          box-shadow: inset 5px 6px 14px rgba(0, 0, 0, 0.12);
+          filter: drop-shadow(18px 41px 71px rgba(0, 0, 0, 0.25));
+          @include wid(600) {
+            border-radius: 10px;
+            width: 100%;
+          }
+        }
+      }
+    }
+    .arrow-gap {
+      position: relative;
+      z-index: 0;
+      width: 100%;
+      height: 180px;
+      @include wid(600) {
+        display: none;
+      }
+      &::after {
+        @extend %bef-aft;
+        position: absolute;
+        background: center / contain no-repeat url(../img/retreat/arrow-12.svg);
+        width: 430px;
+        height: 321px;
+        z-index: 0;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+    .yogi-tea {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-radius: 34px;
+      overflow: hidden;
+      background: #424f44;
+      position: relative;
+      z-index: 2;
+      @include wid(600) {
+        flex-direction: column-reverse;
+        background: unset;
+        border-radius: 0;
+        align-items: unset;
+      }
+      .yogi-text {
+        padding: 20px 69px;
+        max-width: 615px;
+        @include wid(601-991) {
+          padding: 20px;
+        }
+        @include wid(600) {
+          padding: 0;
+          margin-bottom: 20px;
+        }
+        p {
+          color: #ffffff;
+          font: 36px/1.54em var(--p);
+          @include wid(601-991) {
+            font: 26px/1.49em var(--p);
+          }
+          @include wid(600) {
+            font: 16px/1.44em var(--p);
+          }
+          strong {
+            font-family: var(--p);
+          }
+        }
+      }
+      .img {
+        max-width: 600px;
+        width: 100%;
+        @include wid(600) {
+          max-width: unset;
+          width: unset;
+        }
+        img {
+          width: 100%;
+          min-height: 400px;
+          object-fit: cover;
+          @include wid(600) {
+            min-height: unset;
+            width: 100%;
+            object-fit: unset;
+            border-radius: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+section.tantra-retreat__7 {
+  padding-bottom: 180px;
+  @include wid(601-991) {
+    padding-bottom: 150px;
+  }
+  @include wid(600) {
+    padding-bottom: 120px;
+    padding-top: 46px;
+  }
+  .row {
+    .col {
+      @include wid(1500) {
+        padding: 0px;
+      }
+      @include wid(600) {
+        padding: 0 30px;
+      }
+    }
+    .title {
+      font: 64px/0.94em var(--p);
+      color: #424f44;
+      margin-bottom: 72px;
+      @include wid(601-991) {
+        font: 46px/1.15em var(--p);
+        margin-bottom: 45px;
+      }
+      @include wid(600) {
+        font: 28px/1.36em var(--p);
+        margin-bottom: 30px;
+      }
+    }
+    .coach-blocks {
+      @include wid(991) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px;
+      }
+    }
+    .chach-item {
+      display: flex;
+      justify-content: space-between;
+      column-gap: 20px;
+      position: relative;
+      @include wid(991) {
+        flex-direction: column;
+        justify-content: flex-start;
+      }
+      &:not(:last-child) {
+        margin-bottom: 80px;
+        padding-bottom: 80px;
+        @include wid(991) {
+          margin-bottom: 0;
+          padding-bottom: 0;
+        }
+
+        &::after {
+          @extend %bef-aft;
+          position: absolute;
+          bottom: 0;
+          height: 2px;
+          width: 100%;
+          background: linear-gradient(
+            90deg,
+            rgba(182, 135, 66, 0) 1.4%,
+            #b68742 51.69%,
+            rgba(182, 135, 66, 0) 111.2%
+          );
+          @include wid(991) {
+            display: none;
+          }
+        }
+      }
+    }
+    .img {
+      max-width: 486px;
+      width: 100%;
+      @include wid(991) {
+        margin-bottom: 15px;
+      }
+      img {
+        width: 100%;
+        border-radius: 34px;
+        @include wid(991) {
+          border-radius: 17px;
+        }
+      }
+    }
+    .coach-text-box {
+      max-width: 675px;
+      width: 100%;
+      .name {
+        color: #424f44;
+        font: 36px/1.54em var(--p);
+        margin-bottom: 18px;
+        position: relative;
+        padding-left: 39px;
+        @include wid(991) {
+          margin-bottom: 0px;
+          padding-left: 0;
+          text-align: center;
+        }
+        @include wid(601-991) {
+          font: 26px/1.33em var(--p);
+        }
+        @include wid(600) {
+          font: 16px/1.12em var(--p);
+        }
+        &::before {
+          @extend %bef-aft;
+          position: absolute;
+          left: 0;
+          top: 50%;
+          transform: translateY(-50%);
+          background: center / contain no-repeat url(../img/retreat/ic-mark.svg);
+          width: 23px;
+          height: 54px;
+          @include wid(991) {
+            display: none;
+          }
+        }
+      }
+      .about-labels {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 16px;
+        margin-bottom: 55px;
+        @include wid(991) {
+          display: none;
+        }
+      }
+      .about-label {
+        padding: 9px 21px;
+        background: #d3e1cf;
+        border-radius: 31px;
+        color: #404f42;
+        font: 18px/1.65em var(--o);
+        letter-spacing: 0.005em;
+        display: inline-flex;
+      }
+      .about-text {
+        font: 18px/1.65em var(--o);
+        letter-spacing: 0.005em;
+        color: #404f42;
+        @include wid(991) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+
+section.tantra-retreat__8 {
+  padding-bottom: 180px;
+  @include wid(601-991) {
+    padding-bottom: 150px;
+  }
+  @include wid(600) {
+    padding-bottom: 120px;
+  }
+  .row {
+    .col {
+      display: flex;
+      column-gap: 20px;
+      @include wid(1500) {
+        column-gap: 55px;
+        padding: 0;
+      }
+      @include wid(600) {
+        padding: 0 30px;
+      }
+    }
+    .text-column {
+      width: 100%;
+      .title {
+        color: #424f44;
+        line-height: 1.09em;
+        margin-bottom: 15px;
+        @include wid(601-991) {
+          line-height: 1.22em;
+        }
+        @include wid(600) {
+          line-height: 1.36em;
+        }
+      }
+      .text-after-heading {
+        font: 36px/1.54em var(--p);
+        margin-bottom: 30px;
+        color: #424f44;
+        @include wid(601-991) {
+          font: 26px/1.49em var(--p);
+        }
+        @include wid(600) {
+          font: 16px/1.44em var(--p);
+        }
+      }
+      .dotted-text-block {
+        padding: 33px 41px;
+        border: 2px dashed #424f44;
+        border-radius: 34px;
+        margin-bottom: 30px;
+        @include wid(601-991) {
+          padding: 24px 28px;
+        }
+        @include wid(600) {
+          padding: 15px;
+          border-radius: 17px;
+        }
+        p {
+          font: 18px/1.65em var(--o);
+          color: #424f44;
+          letter-spacing: 0.005em;
+          @include wid(601-991) {
+            font: 16px/1.65em var(--o);
+          }
+          @include wid(600) {
+            font: 14px/1.65em var(--o);
+          }
+          &:not(:last-child) {
+            margin-bottom: 25px;
+          }
+        }
+      }
+      .address-box {
+        background: #ffffff;
+        box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.14),
+          inset 5px 6px 14px rgba(0, 0, 0, 0.13);
+        border-radius: 34px;
+        padding: 26px 31px 26px 75px;
+        position: relative;
+        color: #b68742;
+        font: 18px/1.48em var(--ob);
+        @include wid(601-991) {
+          font: 16px/1.48em var(--ob);
+          padding: 20px 31px 20px 61px;
+        }
+        @include wid(600) {
+          font: 14px/1.48em var(--ob);
+          padding: 15px 23px 15px 47px;
+          border-radius: 17px;
+        }
+        &::before {
+          @extend %bef-aft;
+          position: absolute;
+          background: center / contain no-repeat url(../img/retreat/map-pin.svg);
+          width: 32px;
+          height: 32px;
+          top: 26px;
+          left: 31px;
+          @include wid(601-991) {
+            width: 26px;
+            height: 26px;
+            top: 20px;
+            left: 23px;
+          }
+          @include wid(600) {
+            width: 20px;
+            height: 20px;
+            top: 15px;
+            left: 15px;
+          }
+        }
+      }
+    }
+    .img-column {
+      width: 100%;
+      @include wid(991) {
+        display: none;
+      }
+      .images {
+        display: flex;
+        flex-direction: column;
+        row-gap: 37px;
+        position: sticky;
+        top: 10px;
+      }
+      .img-column-track {
+        height: 100%;
+      }
+      img {
+        border-radius: 34px;
+        border: solid #fff;
+        border-width: 2px 1px 0 1px;
+      }
+    }
+  }
+}
+
+section.tantra-retreat__9 {
+  padding-bottom: 180px;
+  @include wid(601-991) {
+    padding-bottom: 150px;
+  }
+  @include wid(600) {
+    padding-bottom: 120px;
+  }
+  .row {
+    .col {
+      position: relative;
+      @include wid(600) {
+        padding: 0 30px;
+      }
+      .arrows {
+        position: absolute;
+        right: 30px;
+        bottom: 30px;
+        @include wid(600) {
+          display: none;
+        }
+      }
+    }
+    .photo-and-map-slide {
+      height: 674px;
+      width: 100%;
+      border-radius: 34px;
+      border: solid #fff;
+      border-width: 2px 1px 0 1px;
+      background: linear-gradient(
+          169.67deg,
+          rgba(0, 0, 0, 0) 68.62%,
+          rgba(0, 0, 0, 0.73) 92.29%
+        ),
+        url(../img/retreat/slide-1.jpg);
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+      @include wid(601-991) {
+        height: 492px;
+      }
+      @include wid(600) {
+        height: 309px;
+      }
+      iframe {
+        position: absolute;
+        left: 30px;
+        bottom: 30px;
+        @include wid(601-991) {
+          height: 160px;
+          width: 200px;
+          border-radius: 17px;
+        }
+        @include wid(600) {
+          display: none;
+        }
+      }
+    }
+  }
+}
+section.tantra-retreat__10 {
+  padding: 46px 0;
+  background: var(--green-color-5);
+  @include wid(601-991) {
+    padding: 38px 0;
+  }
+  @include wid(600) {
+    padding: 30px 0;
+  }
+  .col {
+    @include wid(600) {
+      padding: 0 30px;
+    }
+  }
+  .title {
+    margin-bottom: 14px;
+    text-align: center;
+    @extend %flex;
+    color: var(--white-color-3);
+    @include wid(600) {
+      font: 28px/1.36em var(--p);
+      justify-content: flex-start;
+    }
+    &::before {
+      @extend %bef-aft;
+      background: url(../img/workshop/help-circle.svg);
+      background-size: contain;
+      background-repeat: no-repeat;
+      max-width: 69px;
+      width: 100%;
+      height: 69px;
+      margin-right: 15px;
+      @include wid(601-991) {
+        max-width: 50px;
+        height: 50px;
+        margin-right: 13px;
+      }
+      @include wid(600) {
+        max-width: 30px;
+        height: 30px;
+        margin-right: 10px;
+      }
+    }
+  }
+  p {
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--white-color-3);
+    font: 18px/1.65em var(--o);
+    letter-spacing: 0.005em;
+    @include wid(601-991) {
+      font: 16px/1.65em var(--o);
+    }
+    @include wid(600) {
+      font: 14px/1.65em var(--o);
+      text-align: left;
+    }
+  }
+  .bundle {
+    margin: 0 auto;
+    max-width: 287px;
+
+    @include wid(600) {
+      max-width: 315px;
+      margin: 0 auto 0 0;
+    }
+  }
+  //  @include wid(601-991)   {   }
+  //  @include wid(600)       {   }
+}
+
+section.tantra-retreat__11 {
+  padding: 180px 0 180px;
+  @include wid(601-991) {
+    padding: 135px 0 150px;
+  }
+  @include wid(600) {
+    padding: 90px 0 120px;
+  }
+  .row {
+    .col {
+      @include wid(992) {
+        padding: 0;
+      }
+      @include wid(600) {
+        padding: 0 30px;
+      }
+    }
+    .innercamp-retreat {
+      padding: 48px 64px;
+      background: var(--white-color-1);
+      box-shadow: 18px 41px 71px rgba(0, 0, 0, 0.25),
+        inset 5px 6px 14px rgba(0, 0, 0, 0.12);
+      border-radius: 34px;
+      border: solid var(--white-color-1);
+      border-width: 2px 1px 0 1px;
+      @include wid(601-991) {
+        padding: 24px 32px;
+      }
+      @include wid(600) {
+        padding: 0;
+        background: none;
+        border: none;
+        box-shadow: none;
+      }
+    }
+    .innercamp-retreat-header {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      padding-bottom: 60px;
+      margin-bottom: 30px;
+      position: relative;
+      @include wid(991) {
+        flex-direction: column;
+        margin-bottom: 0;
+        align-items: flex-start;
+      }
+      &::after {
+        @extend %bef-aft;
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(
+          90deg,
+          rgba(182, 135, 66, 0) 0%,
+          #b68742 52.68%,
+          rgba(182, 135, 66, 0) 99.15%
+        );
+        @include wid(991) {
+          display: none;
+        }
+      }
+      .title {
+        letter-spacing: -0.035em;
+        color: var(--green-color-5);
+        line-height: 0.89em;
+        @include wid(601-991) {
+          line-height: 1.25em;
+          margin-bottom: 30px;
+        }
+        @include wid(600) {
+          line-height: 1.36em;
+          margin-bottom: 30px;
+        }
+      }
+      .retreat-date {
+        position: relative;
+        padding: 9px 21px 9px 65px;
+        background: var(--white-color-3);
+        border-radius: 24px;
+        font: 18px/1.65em var(--osb);
+        color: var(--green-color-8);
+        letter-spacing: 0.005em;
+        @include wid(992) {
+          white-space: nowrap;
+        }
+        @include wid(601-991) {
+          font: 16px/1.48em var(--osb);
+          padding: 8px 21px 8px 58px;
+        }
+        @include wid(600) {
+          font: 14px/1.48em var(--osb);
+          padding: 8px 21px 8px 51px;
+          background: var(--white-color-1);
+        }
+        &::before {
+          @extend %bef-aft;
+          position: absolute;
+          left: 21px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 32px;
+          height: 32px;
+          background: center / contain no-repeat
+            url(../img/retreat/calendar.svg);
+          @include wid(601-991) {
+            width: 26px;
+            height: 26px;
+          }
+          @include wid(600) {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+    }
+    .body-title {
+      color: var(--green-color-5);
+      font: 24px/1.65em var(--ob);
+      letter-spacing: 0.005em;
+      margin-bottom: 30px;
+      @include wid(601-991) {
+        font: 20px/1.65em var(--ob);
+      }
+      @include wid(600) {
+        font: 16px/1.65em var(--ob);
+      }
+    }
+    .retreat-room-list {
+      margin-bottom: 30px;
+      display: flex;
+      justify-content: space-between;
+      column-gap: 10px;
+      row-gap: 25px;
+      @include wid(601-991) {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+      }
+      @include wid(600) {
+        flex-direction: column;
+      }
+      .retreat-room-item {
+        max-width: 315px;
+        width: 100%;
+        padding: 20px;
+        border-radius: 17px;
+        background: var(--white-color-3);
+        @include wid(601-991) {
+          max-width: unset;
+          padding: 17px;
+        }
+        @include wid(600) {
+          max-width: unset;
+          padding: 15px;
+          background: var(--white-color-1);
+        }
+        &.active {
+          background: #424f44;
+          .retreat-room-bads path {
+            fill: #fff;
+          }
+          .room-name {
+            color: #fff;
+          }
+          .room-price {
+            color: #fff;
+          }
+        }
+      }
+      .retreat-room-bads {
+        display: flex;
+        column-gap: 10px;
+        margin-bottom: 10px;
+      }
+      .room-name {
+        color: var(--green-color-5);
+        font: 24px/0.87em var(--ob);
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        position: relative;
+        height: 72px;
+        @include wid(601-991) {
+          font: 20px/0.87em var(--ob);
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+          height: unset;
+        }
+        @include wid(600) {
+          font: 16px/1.92em var(--ob);
+          padding-bottom: 15px;
+          margin-bottom: 15px;
+          height: unset;
+        }
+        &::before {
+          @extend %bef-aft;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+          height: 2px;
+          max-width: 216px;
+          width: 100%;
+          background: linear-gradient(
+            90deg,
+            rgba(182, 135, 66, 0) 0%,
+            #b68742 52.68%,
+            rgba(182, 135, 66, 0) 99.15%
+          );
+          @include wid(601-991) {
+            max-width: unset;
+          }
+          @include wid(600) {
+            max-width: unset;
+          }
+        }
+      }
+      .room-availability {
+        margin-bottom: 16px;
+        .available {
+          padding: 4px 17px 4px 47px;
+          background: var(--green-color-1);
+          border-radius: 31px;
+          position: relative;
+          font: 14px/1.65em var(--o);
+          color: var(--green-color-5);
+          display: inline-flex;
+          &::before {
+            @extend %bef-aft;
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 17px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: center / contain no-repeat
+              url(../img/retreat/green-check.svg);
+          }
+        }
+      }
+      .room-price {
+        color: var(--green-color-5);
+        font: 20px/1.63em var(--ob);
+        @include wid(601-991) {
+          font: 17px/1.63em var(--ob);
+        }
+        @include wid(600) {
+          font: 14px/1.63em var(--ob);
+        }
+      }
+    }
+    .bundle {
+      max-width: 392px;
+      width: 100%;
+    }
+  }
+}
+
+section.tantra-retreat__12 {
+  padding-bottom: 180px;
+  @include wid(601-991) {
+    padding-bottom: 150px;
+  }
+  @include wid(600) {
+    padding-bottom: 120px;
+  }
+  .row {
+    .col {
+      @include wid(600) {
+        padding: 0 30px;
+      }
+    }
+    .heading {
+      font: 36px/1.54em var(--p);
+      margin-bottom: 10px;
+      color: var(--green-color-5);
+      @include wid(601-991) {
+        font: 32px/1.45em var(--p);
+        margin-bottom: 20px;
+      }
+      @include wid(600) {
+        font: 28px/1.36em var(--p);
+        margin-bottom: 30px;
+      }
+    }
+    .included-and-notincluded {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 25px;
+      row-gap: 120px;
+      @include wid(601-991) {
+        grid-template-columns: 1fr;
+      }
+      @include wid(600) {
+        grid-template-columns: 1fr;
+      }
+    }
+    ul {
+      padding: 33px 41px;
+      border: 2px dashed var(--green-color-5);
+      border-radius: 34px;
+      /*-----minus heading height-----*/
+      height: calc(100% - 66px);
+      @include wid(601-991) {
+        padding: 24px 28px;
+        border-radius: 17px;
+        height: auto;
+      }
+      @include wid(600) {
+        padding: 15px;
+        border-radius: 17px;
+        height: auto;
+      }
+    }
+    li {
+      padding: 2px 0 0 47px;
+      color: var(--green-color-5);
+      letter-spacing: 0.005em;
+      font: 18px/1.65em var(--o);
+      position: relative;
+      @include wid(601-991) {
+        padding: 3px 0 0 43px;
+        font: 16px/1.65em var(--o);
+      }
+      @include wid(600) {
+        padding: 4px 0 0 40px;
+        font: 14px/1.65em var(--o);
+      }
+      &::before {
+        @extend %bef-aft;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 34px;
+        height: 34px;
+        @include wid(601-991) {
+          width: 32px;
+          height: 32px;
+        }
+        @include wid(600) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+    .included-item {
+      &::before {
+        background: center / contain no-repeat
+          url(../img/retreat/check-circle.svg);
+      }
+    }
+    .notincluded-item {
+      &::before {
+        background: center / contain no-repeat
+          url(../img/retreat/error-circle.svg);
+      }
+    }
+    .included-footer {
+      padding-top: 25px;
+      color: var(--green-color-5);
+      letter-spacing: 0.005em;
+      font: 18px/1.65em var(--o);
+      @include wid(601-991) {
+        padding-top: 27px;
+        font: 16px/1.65em var(--o);
+      }
+      @include wid(600) {
+        padding-top: 30px;
+        font: 14px/1.65em var(--o);
+      }
+    }
+  }
+}

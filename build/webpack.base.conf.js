@@ -358,6 +358,12 @@ module.exports = {
       filename: './testimonials.html',
     }),
 
+    new HtmlWebpackPlugin({
+      hash: false,
+      template: `${PATHS.src}/tantra-retreat.html`,
+      filename: './tantra-retreat.html',
+    }),
+
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/img`, to: `${PATHS.assets}img` },
       { from: `${PATHS.src}/static`, to: '' },
