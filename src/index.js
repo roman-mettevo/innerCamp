@@ -1621,28 +1621,6 @@ if (document.getElementById('bodywork-testimonials-slider')) {
     });
 }
 
-if (document.getElementById('maps-slider')) {
-  var bodyworkTestimonials = new Splide('#maps-slider', {
-    type: 'slide',
-    perPage: 1,
-    perMove: 1,
-    gap: 0,
-    arrows: false,
-    pagination: false,
-  });
-  bodyworkTestimonials.mount();
-  document
-    .querySelector('#maps-slider .arrows .left_a')
-    .addEventListener('click', () => {
-      bodyworkTestimonials.go('<');
-    });
-  document
-    .querySelector('#maps-slider .arrows .right_a')
-    .addEventListener('click', () => {
-      bodyworkTestimonials.go('>');
-    });
-}
-
 import './js/';
 // NEED import
 
